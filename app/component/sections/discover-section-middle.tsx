@@ -1,0 +1,110 @@
+'use client';
+
+import { useState } from 'react';
+
+const items = [
+  {
+    title: 'Indonesia',
+    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/padar-island-with-scenic-high-view-of-three-beautiful-white-sandy-beaches-surrounded-by-a-wide-ocean-e1687500056237.jpg',
+  },
+  {
+    title: 'Thailand',
+    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/ancient-siam-or-ancient-city-bangkok-thailand--e1687499815736.jpg',
+  },
+  {
+    title: 'Turkey',
+    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/happy-couple-in-cappadocia-the-man-proposed-to-the-girl-honeymoon-in-cappadocia-e1687499848976.jpg',
+  },
+  {
+    title: 'Japan',
+    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/himeji-castle-japan-in-spring-e1687500113328.jpg',
+  },
+  {
+    title: 'Singapore',
+    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/marina-bay-area-in-singapore-city--e1687499908842.jpg',
+  },
+];
+
+export default function PianoGalleryResponsive() {
+  const [active, setActive] = useState(2);
+
+  return (
+    <section className="relative bg-black text-white">
+      {/* ================= DESKTOP ================= */}
+      <div className="relative hidden h-screen overflow-hidden lg:block">
+        {/* BACKGROUND IMAGE */}
+        <div
+          key={active}
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${items[active].img})` }}
+        />
+
+        {/* OVERLAY */}
+        <div className="absolute inset-0 bg-black/30" />
+
+        {/* DIVIDER LINES */}
+        <div className="pointer-events-none absolute inset-0 z-20 flex">
+          {items.map(
+            (_, i) =>
+              i !== 0 && (
+                <span
+                  key={i}
+                  className="h-full w-px bg-white/40"
+                  style={{ marginLeft: '20%' }}
+                />
+              )
+          )}
+        </div>
+
+        {/* PIANO TABS */}
+        <div className="relative z-30 flex h-full">
+          {items.map((item, i) => (
+            <div
+              key={i}
+              onMouseEnter={() => setActive(i)} // hover works
+              onClick={() => setActive(i)} // click works
+              className={`flex w-1/5 cursor-pointer items-start justify-center pt-20 text-center
+                transition-transform duration-200
+                ${active === i ? 'translate-y-3' : ''}`}>
+              <div>
+                <p className="mb-2 text-sm tracking-widest">VISIT</p>
+                <h2 className="font-serif text-3xl">{item.title}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ================= MOBILE ================= */}
+      <div className="lg:hidden">
+        <div className="relative h-[60vh] overflow-hidden">
+          {/* BACKGROUND IMAGE */}
+          <div
+            key={active}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${items[active].img})` }}
+          />
+
+          {/* OVERLAY */}
+          <div className="absolute inset-0 bg-black/30" />
+
+          {/* GRID BUTTONS */}
+          <div className="absolute inset-0 z-20 grid grid-cols-2 gap-px bg-white/20">
+            {items.map((item, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`flex items-center justify-center text-center
+                  ${active === i ? 'bg-black/50' : 'bg-black/30'}`}>
+                <div>
+                  <p className="text-xs tracking-widest">VISIT</p>
+                  <h3 className="font-serif text-lg">{item.title}</h3>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
