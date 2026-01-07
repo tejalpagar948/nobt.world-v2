@@ -85,92 +85,94 @@ const TravelSection = () => {
   const filteredData = travelData.filter((item) => item.category === activeTab);
 
   return (
-    <section className="my-27">
-      {/* HEADING */}
-      <div className="text-center max-w-[520px] mx-auto">
-        <h3 className="text-5xl font-serif font-semibold">
-          Find Out The Best <br /> Travel Choice in Asia
-        </h3>
-        <p className="mt-4 text-gray-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          commodo ligula eget dolor.
-        </p>
-      </div>
-
-      {/* TABS */}
-      <div className="flex justify-center mb-11 mt-10">
-        <div className="flex gap-2 border rounded-full p-3">
-          <button
-            onClick={() => setActiveTab('destination')}
-            className={`px-7 py-2.5 rounded-full text-sm font-medium transition uppercase hover:bg-black hover:text-white
-              ${activeTab === 'destination' ? 'bg-gray-100' : ''}`}>
-            Destination
-          </button>
-
-          <button
-            onClick={() => setActiveTab('accommodation')}
-            className={`px-7 py-2.5 rounded-full text-sm font-medium transition uppercase hover:bg-black hover:text-white
-              ${activeTab === 'accommodation' ? 'bg-gray-100' : ''}`}>
-            Accomodation
-          </button>
-
-          <button
-            onClick={() => setActiveTab('activity')}
-            className={`px-7 py-2.5 rounded-full text-sm font-medium transition uppercase hover:bg-black hover:text-white
-              ${activeTab === 'activity' ? 'bg-gray-100' : ''}`}>
-            Activity
-          </button>
+    <section className="my-14 lg:my-27">
+      <div className="wrapper">
+        {/* HEADING */}
+        <div className="text-center max-w-[520px] mx-auto">
+          <h3 className="text-4xl lg:text-5xl font-serif font-semibold">
+            Find Out The Best <br /> Travel Choice in Asia
+          </h3>
+          <p className="mt-4 text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            commodo ligula eget dolor.
+          </p>
         </div>
-      </div>
 
-      {/* CARDS */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-6">
-        {filteredData.map((item, index) => (
-          <div
-            key={index}
-            className="relative h-[380px] rounded-2xl overflow-hidden">
-            <Image
-              src={destination2.src}
-              alt={item.title}
-              fill
-              className="object-cover"
-            />
+        {/* TABS */}
+        <div className="flex justify-center mb-11 mt-10">
+          <div className="flex gap-2 border rounded-full p-3 flex-wrap md:flex-nowrap justify-center">
+            <button
+              onClick={() => setActiveTab('destination')}
+              className={`px-7 py-2.5 rounded-full text-sm font-medium transition uppercase hover:bg-black hover:text-white
+              ${activeTab === 'destination' ? 'bg-gray-100' : ''}`}>
+              Destination
+            </button>
 
-            {/* OVERLAY */}
-            <div className="absolute inset-0 bg-black/30" />
+            <button
+              onClick={() => setActiveTab('accommodation')}
+              className={`px-7 py-2.5 rounded-full text-sm font-medium transition uppercase hover:bg-black hover:text-white
+              ${activeTab === 'accommodation' ? 'bg-gray-100' : ''}`}>
+              Accomodation
+            </button>
 
-            {/* CONTENT */}
-            <div className="absolute bottom-0 w-full px-5 py-4 text-white">
-              {/* TOP ROW */}
-              <div className="flex justify-between items-start">
-                {/* LEFT */}
-                <div>
-                  <h3 className="text-2xl font-serif leading-none">
-                    {item.title}
-                  </h3>
+            <button
+              onClick={() => setActiveTab('activity')}
+              className={`px-7 py-2.5 rounded-full text-sm font-medium transition uppercase hover:bg-black hover:text-white
+              ${activeTab === 'activity' ? 'bg-gray-100' : ''}`}>
+              Activity
+            </button>
+          </div>
+        </div>
 
-                  <div className="flex items-center gap-2 mt-3 text-sm text-white/70">
-                    <Image
-                      src={locationIcon.src}
-                      alt="Location Icon"
-                      width={20}
-                      height={20}
-                    />
-                    <span>{item.country}</span>
+        {/* CARDS */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-6">
+          {filteredData.map((item, index) => (
+            <div
+              key={index}
+              className="relative h-[380px] rounded-2xl overflow-hidden">
+              <Image
+                src={destination2.src}
+                alt={item.title}
+                fill
+                className="object-cover"
+              />
+
+              {/* OVERLAY */}
+              <div className="absolute inset-0 bg-black/30" />
+
+              {/* CONTENT */}
+              <div className="absolute bottom-0 w-full px-5 py-4 text-white">
+                {/* TOP ROW */}
+                <div className="flex justify-between items-start">
+                  {/* LEFT */}
+                  <div>
+                    <h3 className="text-2xl font-serif leading-none">
+                      {item.title}
+                    </h3>
+
+                    <div className="flex items-center gap-2 mt-3 text-sm text-white/70">
+                      <Image
+                        src={locationIcon.src}
+                        alt="Location Icon"
+                        width={20}
+                        height={20}
+                      />
+                      <span>{item.country}</span>
+                    </div>
                   </div>
-                </div>
 
-                {/* RIGHT */}
-                <div className="text-right flex flex-col gap-3">
-                  <span className="text-sm text-white block">Start From</span>
-                  <span className="text-2xl font-semibold leading-none">
-                    ${item.price}
-                  </span>
+                  {/* RIGHT */}
+                  <div className="text-right flex flex-col gap-3">
+                    <span className="text-sm text-white block">Start From</span>
+                    <span className="text-2xl font-semibold leading-none">
+                      ${item.price}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

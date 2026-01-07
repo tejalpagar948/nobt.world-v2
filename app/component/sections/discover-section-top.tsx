@@ -1,7 +1,7 @@
 const DiscoverSectionTop = () => {
   return (
-    <div className="mx-auto max-w-7xl wrapper pt-27 pb-18">
-      <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-5">
+    <div className="mx-auto max-w-7xl wrapper lg:pt-27 lg:pb-18 pb-9 pt-14">
+      <div className="grid grid-cols-1 items-center gap-6 lg:gap-12 lg:grid-cols-5">
         {/* LEFT CONTENT */}
         <h3 className="font-serif text-4xl leading-tight text-white lg:col-span-3 lg:text-[50px]">
           Discover A Mesmerizing <br />

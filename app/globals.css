@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
-  @apply w-[98%] mx-auto max-w-350;
+  @apply w-[95%] md:w-[98%] mx-auto max-w-350;
 }
 
 .hero-cta {
-  @apply !px-3.5 !py-2 font-[500];
+  @apply !px-4 !py-3 font-[500];
 }
 
 .hero-cta span {
@@ -24,4 +28,16 @@
 
 .slick-slide > div {
   height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 100vh;
+  }
 }

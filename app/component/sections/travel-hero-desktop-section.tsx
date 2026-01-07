@@ -1,21 +1,23 @@
 'use client';
-
 import Image from 'next/image';
 import LargeImage from '../../../public/assets/images/travel-hero-section-large-image.jpg';
 import SecondImage from '../../../public/assets/images/travel-section-image2.jpg';
 
-const HeroTravelSection = () => {
+interface HeroTravelDesktopProps {
+  className?: string; // optional string
+}
+
+const HeroTravelDesktop: React.FC<HeroTravelDesktopProps> = ({ className }) => {
   return (
-    <section className="w-full bg-white my-27">
+    <section
+      className={`w-full bg-white my-14 lg:my-27 hidden lg:block ${className}`}>
       <div className="wrapper">
         {/* TOP CONTENT */}
         <div className="grid grid-cols-1 lg:grid-cols-9 items-start pb-13">
-          {/* LEFT TITLE */}
           <h3 className="font-serif text-[48px] leading-[1.2] max-w-xl lg:col-span-5">
             Begin Your New Life Experience With Exploring New Destination
           </h3>
 
-          {/* RIGHT TEXT + BUTTONS */}
           <div className="max-w-lg lg:col-span-4">
             <p className="text-gray-500 mb-8 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -36,7 +38,6 @@ const HeroTravelSection = () => {
 
         {/* BOTTOM IMAGES */}
         <div className="relative grid grid-cols-1 lg:grid-cols-11 gap-2 items-start">
-          {/* LARGE LANDSCAPE IMAGE */}
           <div className="lg:col-span-6 w-full">
             <figure className="absolute transform -translate-x-1/2 left-0 w-full h-[700px]">
               <Image
@@ -47,9 +48,8 @@ const HeroTravelSection = () => {
               />
             </figure>
           </div>
-          {/* RIGHT STACK */}
+
           <div className="lg:col-span-5 grid lg:grid-cols-6 gap-13">
-            {/* TOP IMAGE */}
             <div className="lg:col-span-6 col-span-2 relative h-[340px]">
               <Image
                 src={SecondImage.src}
@@ -60,7 +60,6 @@ const HeroTravelSection = () => {
             </div>
 
             <div className="flex col-span-6 flex-wrap flex-col">
-              {/* BOTTOM LEFT IMAGE */}
               <div className="relative w-[60%] h-[400px]">
                 <Image
                   src={SecondImage.src}
@@ -70,9 +69,7 @@ const HeroTravelSection = () => {
                 />
               </div>
 
-              {/* BOTTOM RIGHT CARD */}
               <div className="bg-black text-white rounded-3xl p-8 flex flex-col justify-center h-[250px] w-[50%] ml-15">
-                {/* ICON */}
                 <div className="w-12 h-12 mb-6 rounded-full bg-white flex items-center justify-center">
                   <svg
                     width="20"
@@ -89,12 +86,10 @@ const HeroTravelSection = () => {
                   </svg>
                 </div>
 
-                {/* TITLE */}
                 <h4 className="font-serif text-2xl leading-snug mb-4">
                   Variation Of Asian <br /> Travel Trip
                 </h4>
 
-                {/* DESCRIPTION */}
                 <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                   Lorem ipsum dolor sit amet, aenean commodo ligula.
                 </p>
@@ -107,4 +102,4 @@ const HeroTravelSection = () => {
   );
 };
 
-export default HeroTravelSection;
+export default HeroTravelDesktop;

@@ -99,10 +99,10 @@ export default function ExperienceSection() {
   const [openRight, setOpenRight] = useState<number | null>(null);
 
   return (
-    <section className="relative bg-gradient-to-br from-black via-[#1a0f05] to-black text-white py-27">
+    <section className="relative bg-gradient-to-br from-black via-[#1a0f05] to-black text-white py-14 lg:py-27">
       <div className="wrapper">
         {/* TOP CONTENT */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-16 items-center mb-5">
           <h3 className="font-serif text-[44px] leading-[1.15] lg:text-[50px] max-w-xl">
             Enjoy Our Best Quality <br />
             Tour & Experience
@@ -122,7 +122,7 @@ export default function ExperienceSection() {
         </div>
 
         {/* FAQ GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16">
           {/* LEFT COLUMN */}
           <div>
             {leftItems.map((item, i) => (
@@ -153,7 +153,7 @@ export default function ExperienceSection() {
         </div>
 
         <video
-          className="h-screen w-full object-cover rounded-2xl mt-15"
+          className="h-[250px] lg:h-screen w-full object-cover rounded-2xl mt-15"
           autoPlay
           loop
           muted

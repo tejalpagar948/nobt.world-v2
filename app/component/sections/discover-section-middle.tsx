@@ -25,59 +25,85 @@ const items = [
   },
 ];
 
-export default function PianoGalleryExact() {
+export default function PianoGalleryResponsive() {
   const [active, setActive] = useState(2);
 
   return (
-    <section className="relative h-screen overflow-hidden bg-black">
-      {/* IMAGE STRIP */}
-      <div
-        className="absolute inset-0 flex"
-        style={{
-          width: `${items.length * 100}vw`,
-          transform: `translateX(-${active * 100}vw)`,
-        }}>
-        {items.map((item, i) => (
-          <div
-            key={i}
-            className="h-full w-screen bg-cover bg-center"
-            style={{ backgroundImage: `url(${item.img})` }}
-          />
-        ))}
-      </div>
+    <section className="relative bg-black text-white">
+      {/* ================= DESKTOP ================= */}
+      <div className="relative hidden h-screen overflow-hidden lg:block">
+        {/* BACKGROUND IMAGE */}
+        <div
+          key={active}
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${items[active].img})` }}
+        />
 
-      {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-black/30" />
+        {/* OVERLAY */}
+        <div className="absolute inset-0 bg-black/30" />
 
-      {/* WHITE DIVIDER LINES */}
-      <div className="pointer-events-none absolute inset-0 z-20 flex">
-        {items.map(
-          (_, i) =>
-            i !== 0 && (
-              <span
-                key={i}
-                className="h-full w-px bg-white/40"
-                style={{ marginLeft: '20%' }}
-              />
-            )
-        )}
-      </div>
+        {/* DIVIDER LINES */}
+        <div className="pointer-events-none absolute inset-0 z-20 flex">
+          {items.map(
+            (_, i) =>
+              i !== 0 && (
+                <span
+                  key={i}
+                  className="h-full w-px bg-white/40"
+                  style={{ marginLeft: '20%' }}
+                />
+              )
+          )}
+        </div>
 
-      {/* TABS */}
-      <div className="relative z-30 flex h-full">
-        {items.map((item, i) => (
-          <div
-            key={i}
-            onMouseEnter={() => setActive(i)}
-            className={`flex w-1/5 cursor-pointer items-start justify-center pt-20 text-center text-white
-                        transform transition-transform duration-150
-                        ${active === i ? 'translate-y-3' : ''}`}>
-            <div>
-              <p className="mb-2 text-sm tracking-widest">VISIT</p>
-              <h2 className="font-serif text-3xl">{item.title}</h2>
+        {/* PIANO TABS */}
+        <div className="relative z-30 flex h-full">
+          {items.map((item, i) => (
+            <div
+              key={i}
+              onMouseEnter={() => setActive(i)} // hover works
+              onClick={() => setActive(i)} // click works
+              className={`flex w-1/5 cursor-pointer items-start justify-center pt-20 text-center
+                transition-transform duration-200
+                ${active === i ? 'translate-y-3' : ''}`}>
+              <div>
+                <p className="mb-2 text-sm tracking-widest">VISIT</p>
+                <h2 className="font-serif text-3xl">{item.title}</h2>
+              </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ================= MOBILE ================= */}
+      <div className="lg:hidden">
+        <div className="relative h-[60vh] overflow-hidden">
+          {/* BACKGROUND IMAGE */}
+          <div
+            key={active}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${items[active].img})` }}
+          />
+
+          {/* OVERLAY */}
+          <div className="absolute inset-0 bg-black/30" />
+
+          {/* GRID BUTTONS */}
+          <div className="absolute inset-0 z-20 grid grid-cols-2 gap-px bg-white/20">
+            {items.map((item, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`flex items-center justify-center text-center
+                  ${active === i ? 'bg-black/50' : 'bg-black/30'}`}>
+                <div>
+                  <p className="text-xs tracking-widest">VISIT</p>
+                  <h3 className="font-serif text-lg">{item.title}</h3>
+                </div>
+              </button>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );

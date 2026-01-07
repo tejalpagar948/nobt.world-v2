@@ -74,7 +74,7 @@ const TestimonialsCarousel = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="wrapper pt-18 pb-27 relative z-10">
+      <div className="wrapper pt-9 pb-14 lg:pt-18 lg:pb-27 relative z-10">
         <Slider {...settings}>
           {testimonials.map((item, idx) => (
             <div key={idx} className="px-5.5 h-full">

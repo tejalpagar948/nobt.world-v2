@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Playfair_Display } from 'next/font/google';
 import Button from '../button';
@@ -5,11 +6,7 @@ import ArrowIcon from '../../../public/assets/icons/arrow.svg';
 import ClockIcon from '../../../public/assets/icons/clock.svg';
 import ArrowDown from '../../../public/assets/images/arrow-down.png';
 import Image from 'next/image';
-import Link from 'next/link';
-import facebook from '../../../public/assets/icons/facebook.svg';
-import twitter from '../../../public/assets/icons/twitter.svg';
-import instagram from '../../../public/assets/icons/instagram.svg';
-import Navbar from '../navBar';
+import SocialIcons from '../social-icons';
 import Header from '../site-header';
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -17,10 +14,9 @@ const playfair = Playfair_Display({
 });
 
 const HeroSection: React.FC = () => {
-  // console.log('Arrow', BannerVideo);
   return (
     <>
-      <section className="relative min-h-screen w-full overflow-hidden text-white">
+      <section className="hero-section relative min-h-screen w-full overflow-hidden text-white">
         <div className="wrapper">
           {/* Background Video */}
           <div className="relative h-[276px]"></div>
@@ -36,23 +32,21 @@ const HeroSection: React.FC = () => {
               type="video/mp4"
             />
           </video>
-
           <Header />
-
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40" />
 
           {/* Main Content */}
-          <div className="relative z-10 flex min-h-screen flex-col mb-23">
+          <div className="relative z-10 flex min-h-screen flex-col mb-6 md:mb-23 -top-28 md:top-0">
             {/* HERO CONTENT */}
-            <div className="max-w-xl flex flex-col gap-2 mb-32">
+            <div className="w-[90%] max-w-xl flex flex-col gap-4 md:gap-2 mb-12 md:mb-32">
               <Button
                 className="border border-white/40 !bg-[#ffffff2b] !text-white hero-cta"
                 title={`Feel The Experience`}
                 href={`FIXME`}
               />
               <h2
-                className={`mb-9 text-4xl md:text-7xl font-bold leading-tight ${playfair.className}`}>
+                className={`mb-5 md:mb-9 text-5xl md:text-7xl font-bold leading-tight ${playfair.className}`}>
                 Explore The Majestic Asia Landscape Now
               </h2>
               <Button
@@ -63,9 +57,9 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* BOTTOM INFO */}
-            <ul className="flex gap-10">
-              <li className="flex w-1/3 gap-3.5">
-                <figure className="p-3 rounded-full border border-white/40 bg-[#ffffff2b]">
+            <ul className="flex gap-7 md:gap-10 flex-col md:flex-row">
+              <li className="flex gap-3.5 lg:w-1/3 max-w-[400px]">
+                <figure className="p-3 h-max rounded-full border border-white/40 bg-[#ffffff2b] ">
                   <Image
                     src={ClockIcon.src}
                     alt="Clock Icon"
@@ -78,8 +72,9 @@ const HeroSection: React.FC = () => {
                   Aenean commodo ligula.
                 </p>
               </li>
-              <li className="flex w-1/3 gap-3.5">
-                <figure className="p-3 rounded-full border border-white/40 bg-[#ffffff2b]">
+
+              <li className="flex gap-3.5 lg:w-1/3 max-w-[400px]">
+                <figure className="p-3 h-max rounded-full border border-white/40 bg-[#ffffff2b] ">
                   <Image
                     src={ClockIcon.src}
                     alt="Clock Icon"
@@ -96,67 +91,33 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* SOCIAL ICONS */}
-          <ul className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-4 text-white/80 z-200">
-            <li className="w-10">
-              <Link
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block">
-                <figure
-                  // href={`FIXME`}
-                  className="p-3 rounded-full border border-white/40 bg-[#ffffff2b]">
-                  <Image src={facebook.src} alt="Icon" width={40} height={40} />
-                </figure>
-              </Link>
-            </li>
-            <li className="w-10">
-              <Link
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block">
-                <figure
-                  // href={`FIXME`}
-                  className="p-3 rounded-full border border-white/40 bg-[#ffffff2b]">
-                  <Image src={twitter.src} alt="Icon" width={40} height={40} />
-                </figure>
-              </Link>
-            </li>
-            <li className="w-10">
-              <Link
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block">
-                <figure
-                  // href={`FIXME`}
-                  className="p-3 rounded-full border border-white/40 bg-[#ffffff2b]">
-                  <Image
-                    src={instagram.src}
-                    alt="Icon"
-                    width={40}
-                    height={40}
-                  />
-                </figure>
-              </Link>
-            </li>
-          </ul>
+          <SocialIcons
+            ulClassName="absolute right-6 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4 text-white/80"
+            figureClassName="p-3 rounded-full border border-white/40 bg-[#ffffff2b]"
+            iconSize={32}
+          />
 
           {/* SCROLL INDICATOR */}
-          <div className="z-200 absolute bottom-9 right-6 hidden md:flex items-center text-xs tracking-widest">
+          <div className="z-200 absolute bottom-23 right-6 hidden lg:flex items-center text-xs tracking-widest">
             <span className="rotate-270 leading-none -mr-4 font-medium">
               SCROLL
             </span>
-            <Link href="#next">
+
+            <button
+              type="button"
+              onClick={() =>
+                document
+                  .getElementById('explore-grid')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className="cursor-pointer">
               <Image
                 src={ArrowDown.src}
                 alt="Scroll down"
                 width={16}
                 height={30}
-                className=""
               />
-            </Link>
+            </button>
           </div>
         </div>
       </section>

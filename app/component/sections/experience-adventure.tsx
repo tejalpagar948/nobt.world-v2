@@ -1,6 +1,9 @@
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import playButton from '../../../public/assets/icons/play-button.svg';
 import SecurityIcon from '../../../public/assets/icons/security.svg';
+import VideoModal from '.././video-modal';
 
 const features = [
   {
@@ -24,17 +27,26 @@ const videoCards = [
   {
     src: 'https://images.unsplash.com/photo-1548013146-72479768bada',
     alt: 'Temple',
+    videoUrl: 'assets/videos/Nobt-world-banner.mp4',
   },
   {
     src: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
     alt: 'Market',
+    videoUrl: 'assets/videos/Nobt-world-banner.mp4',
   },
 ];
 
 const ExperienceAdventure = () => {
+  const [open, setOpen] = useState(false);
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
+  const handlePlay = (videoUrl: string) => {
+    setActiveVideo(videoUrl);
+    setOpen(true);
+  };
   return (
-    <section className="w-full bg-white my-30">
-      <div className="wrapper mx-auto grid max-w-7xl grid-cols-1 gap-16 lg:grid-cols-5">
+    <section className="w-full bg-white my-15 lg:my-30">
+      <div className="wrapper mx-auto grid max-w-7xl grid-cols-1 gap-10 lg:grid-cols-5">
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2">
           <h3 className="font-serif text-5xl text-black">
@@ -49,12 +61,13 @@ const ExperienceAdventure = () => {
           <div className="mt-7 space-y-6">
             {features.map((item, index) => (
               <div key={index} className="flex gap-5">
-                <figure className="flex h-12 w-22 items-center justify-center rounded-full bg-black text-white mt-[6px]">
+                <figure className="flex h-max items-center justify-center rounded-full bg-black text-white mt-[6px] p-4">
                   <Image
                     src={item.icon.src}
                     alt="icon"
-                    width={28}
-                    height={28}
+                    width={50}
+                    height={50}
+                    className=""
                   />
                 </figure>
                 <div>
@@ -81,30 +94,44 @@ const ExperienceAdventure = () => {
           </figure>
 
           {/* VIDEO CARDS */}
-          <div className="absolute transform -translate-x-1/2 left-1/2 bottom-5 flex gap-5 w-full z-10 px-5 justify-end">
+          <div className="absolute transform -translate-x-1/2 left-1/2 bottom-5 flex gap-5 w-full z-10 px-5 justify-end  flex-col md:flex-row">
             {videoCards.map((card, index) => (
               <div
                 key={index}
-                className="relative w-[39%] overflow-hidden rounded-3xl h-39 border-13 border-[#ffffff2b]">
+                className="relative w-full md:w-[39%] overflow-hidden rounded-3xl h-39 border-13 border-[#ffffff2b]">
                 <Image
                   src={card.src}
                   alt={card.alt}
                   fill
                   className="object-cover rounded-2xl"
                 />
+
+                {/* Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                  <div className="rounded-full bg-white p-3">
+                  <button
+                    onClick={() => handlePlay(card.videoUrl)}
+                    className="rounded-full bg-white p-3 hover:scale-110 transition">
                     <Image
                       src={playButton.src}
                       alt="Play Button"
                       width={20}
                       height={20}
                     />
-                  </div>
+                  </button>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* VIDEO MODAL */}
+          <VideoModal
+            open={open}
+            videoUrl={activeVideo}
+            onClose={() => {
+              setOpen(false);
+              setActiveVideo(null);
+            }}
+          />
         </div>
       </div>
     </section>

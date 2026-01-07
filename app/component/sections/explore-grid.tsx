@@ -16,28 +16,28 @@ const exploreData: ExploreItem[] = [
     title: 'Kelingking Beach',
     subtitle: 'Nusa Penida, Bali',
     image: 'https://images.unsplash.com/photo-1549880338-65ddcdfd017b',
-    wrapperClass: 'md:row-span-2', // tall
+    wrapperClass: 'h-[320px] lg:row-span-2 lg:h-auto',
   },
   {
     id: 2,
     title: 'Grand Palace',
     subtitle: 'Bangkok, Thailand',
     image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a',
-    wrapperClass: 'md:h-[280px]', // slightly smaller
+    wrapperClass: 'h-[320px] lg:h-[280px]',
   },
   {
     id: 3,
     title: 'Cappadocia',
     subtitle: 'Turkey',
     image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c',
-    wrapperClass: 'md:h-[280px]', // slightly smaller
+    wrapperClass: 'h-[320px] lg:h-[280px]',
   },
   {
     id: 4,
     title: 'Padar Island',
     subtitle: 'East Nusa Tenggara',
     image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',
-    wrapperClass: 'md:col-span-2 md:h-[400px]', // a little larger
+    wrapperClass: 'h-[320px] lg:col-span-2 lg:h-[400px]',
   },
 ];
 
@@ -79,8 +79,8 @@ const Card = ({
 
 export default function ExploreGrid() {
   return (
-    <section className="max-w-7xl mx-auto px-4 my-30">
-      <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr] gap-11">
+    <section className="my-15 lg:my-30" id="explore-grid">
+      <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr_1fr] gap-5 lg:gap-11 wrapper">
         {exploreData.map((item) => (
           <div key={item.id} className={item.wrapperClass ?? ''}>
             <Link href="./" className="" target="_self">
