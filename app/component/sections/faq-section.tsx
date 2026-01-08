@@ -94,12 +94,14 @@ function AccordionItem({
   );
 }
 
-export default function ExperienceSection() {
+export default function FaqSection() {
   const [openLeft, setOpenLeft] = useState<number | null>(null);
   const [openRight, setOpenRight] = useState<number | null>(null);
 
   return (
-    <section className="relative bg-gradient-to-br from-black via-[#1a0f05] to-black text-white py-14 lg:py-27">
+    <section
+      className="relative bg-gradient-to-br from-black via-[#1a0f05] to-black text-white py-14 lg:py-27"
+      id="faq">
       <div className="wrapper">
         {/* TOP CONTENT */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-16 items-center mb-5">

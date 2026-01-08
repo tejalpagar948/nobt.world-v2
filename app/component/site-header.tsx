@@ -16,17 +16,7 @@ const Header: React.FC = () => {
     <header className="absolute top-0 left-0 z-20 w-full py-4">
       <div className="flex items-center justify-between wrapper">
         {/* Logo */}
-        <h1>
-          <Link href="/" className="text-3xl font-bold text-white">
-            <Image
-              src={LogoWhite.src}
-              alt="Matour Logo"
-              width={150}
-              height={50}
-              priority
-            />
-          </Link>
-        </h1>
+        <h1>NoBT</h1>
 
         {/* Desktop Navigation */}
         <Navbar />

@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
               type="video/mp4"
             />
           </video>
-          <Header />
+          {/* <Header /> */}
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40" />
 

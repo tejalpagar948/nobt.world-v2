@@ -43,18 +43,7 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ open, onClose }) => {
         {/* CONTENT */}
         <div className="flex h-full flex-col justify-center px-10">
           {/* LOGO / TITLE */}
-          <h1 className=" mb-5">
-            <Link href="/" className="text-3xl font-bold text-white">
-              <Image
-                src={LogoWhite.src}
-                alt="NoBT World Logo"
-                width={150}
-                height={50}
-                unoptimized
-                priority
-              />
-            </Link>
-          </h1>
+          <h1 className="mb-5">NoBT</h1>
 
           <p className="text-gray-400 mb-8 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
