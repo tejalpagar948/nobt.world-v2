@@ -8,7 +8,7 @@ const DiscoverSection = () => {
     <section className="w-full bg-[#0b0704]">
       <DiscoverSectionTop />
       <PortfolioGallery />
-      <TestimonialCard />
+      {/* <TestimonialCard /> */}
     </section>
   );
 };
