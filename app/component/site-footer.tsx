@@ -21,18 +21,7 @@ const Footer: React.FC = () => {
       <div className="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 pb-12">
         {/* Logo & Address */}
         <div>
-          <h1 className="text-3xl text-white font-serif mb-4">
-            <Link href="./" target="_self">
-              <Image
-                src={LogoWhite.src}
-                alt="NoBT World Logo"
-                width={150}
-                height={50}
-                unoptimized
-                priority
-              />
-            </Link>
-          </h1>
+          <h1 className="mb-4">NoBT</h1>
           <p>Badung, Bali —</p>
           <p>Jl. Desa Sawangan, No. 11</p>
           <p>Nusa Dua, 81566</p>
@@ -65,22 +54,22 @@ const Footer: React.FC = () => {
           <h2 className="text-white font-semibold text-2xl mb-4">Page</h2>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="/about" className="hover:text-white">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="#" className="hover:text-white">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="#faq" className="hover:text-white">
                 FAQ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="/contact-us" className="hover:text-white">
                 Contact Us
               </a>
             </li>
@@ -94,7 +83,7 @@ const Footer: React.FC = () => {
           </h2>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="/privacy-policy" className="hover:text-white">
                 Privacy Policy
               </a>
             </li>
@@ -109,7 +98,7 @@ const Footer: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="/terms-and-conditions" className="hover:text-white">
                 Term & Condition
               </a>
             </li>

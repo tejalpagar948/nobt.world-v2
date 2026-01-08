@@ -30,7 +30,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
       <div className="relative h-full overflow-y-auto px-2 pt-6 text-white">
         {/* Header */}
         <div className="flex items-center justify-between mb-10 px-4">
-          <Image src={LogoWhite} alt="Matour" className="w-36" />
+          <h1>NoBT</h1>
           <button
             onClick={onClose}
             className="text-2xl font-bold focus:outline-none"
@@ -57,6 +57,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
             ABOUT US
           </Link>
 
+          {/* ABOUT */}
+          <Link
+            href="/contact-us"
+            onClick={onClose}
+            className="block px-6 py-3 rounded-full hover:bg-[#4b453f] transition">
+            CONTACT US
+          </Link>
+
           {/* DESTINATION */}
           <div>
             <button
@@ -79,71 +87,20 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
             </button>
             {active === 'destination' && (
               <div className="mt-3 rounded-2xl bg-white text-black px-6 py-4 space-y-3">
-                <Link href="/destination" onClick={onClose} className="block">
-                  DESTINATION
-                </Link>
                 <Link
-                  href="/destination-detail"
+                  href="/destination/kerala"
                   onClick={onClose}
                   className="block">
-                  DESTINATION DETAIL
+                  KERALA
+                </Link>
+                <Link
+                  href="/destination/ooty"
+                  onClick={onClose}
+                  className="block">
+                  OOTY
                 </Link>
               </div>
             )}
-          </div>
-
-          {/* PAGE */}
-          <div>
-            <button
-              onClick={() => toggle('page')}
-              className={`w-full flex items-center justify-between px-6 py-3 rounded-full transition
-                ${
-                  active === 'page'
-                    ? 'bg-white text-black'
-                    : 'text-white hover:bg-[#4b453f]'
-                }
-              `}
-              aria-expanded={active === 'page'}>
-              <span>PAGE</span>
-              <ChevronDown
-                size={18}
-                className={`transition-transform duration-300 ${
-                  active === 'page' ? 'rotate-180' : ''
-                }`}
-              />
-            </button>
-            {active === 'page' && (
-              <div className="mt-3 rounded-2xl bg-white text-black px-6 py-4 space-y-3">
-                <Link href="/page-1" onClick={onClose} className="block">
-                  PAGE 1
-                </Link>
-                <Link href="/page-2" onClick={onClose} className="block">
-                  PAGE 2
-                </Link>
-              </div>
-            )}
-          </div>
-
-          {/* BLOG */}
-          <div>
-            <button
-              onClick={() => toggle('blog')}
-              className={`w-full flex items-center justify-between px-6 py-3 rounded-full transition
-                ${
-                  active === 'blog'
-                    ? 'bg-white text-black'
-                    : 'text-white hover:bg-[#4b453f]'
-                }
-              `}
-              aria-expanded={active === 'blog'}>
-              <span>BLOG</span>
-              <ChevronDown
-                size={18}
-                className={`transition-transform duration-300 ${
-                  active === 'blog' ? 'rotate-180' : ''
-                }`}
-              />
-            </button>
           </div>
         </nav>
         {/* SOCIAL ICONS */}

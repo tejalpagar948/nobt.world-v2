@@ -41,3 +41,8 @@ html {
     height: 100vh;
   }
 }
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+  @apply text-5xl font-light text-white;
+}
