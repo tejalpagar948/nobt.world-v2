@@ -43,6 +43,5 @@ html {
 }
 
 h1 {
-  font-family: 'Lobster', sans-serif;
   @apply text-5xl font-light text-white;
 }

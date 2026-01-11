@@ -35,7 +35,7 @@ export default function PianoGalleryResponsive() {
         {/* BACKGROUND IMAGE */}
         <div
           key={active}
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center transition-opacity duration-500"
           style={{ backgroundImage: `url(${items[active].img})` }}
         />
 
@@ -61,14 +61,24 @@ export default function PianoGalleryResponsive() {
           {items.map((item, i) => (
             <div
               key={i}
-              onMouseEnter={() => setActive(i)} // hover works
-              onClick={() => setActive(i)} // click works
-              className={`flex w-1/5 cursor-pointer items-start justify-center pt-20 text-center
-                transition-transform duration-200
-                ${active === i ? 'translate-y-3' : ''}`}>
-              <div>
-                <p className="mb-2 text-sm tracking-widest">VISIT</p>
-                <h2 className="font-serif text-3xl">{item.title}</h2>
+              onMouseEnter={() => setActive(i)}
+              onClick={() => setActive(i)}
+              className="flex w-1/5 cursor-pointer items-start justify-center text-center">
+              {/* TAB */}
+              <div className="relative w-full h-[190px] py-15 overflow-hidden">
+                {/* SLIDE DOWN BACKGROUND */}
+                <div
+                  className={`absolute inset-0 bg-black
+                transform transition-transform duration-500 ease-in-out
+                ${active === i ? 'translate-y-0' : '-translate-y-full'}
+              `}
+                />
+
+                {/* CONTENT */}
+                <div className="relative z-10">
+                  <p className="mb-2 text-sm tracking-widest">VISIT</p>
+                  <h2 className="font-serif text-3xl">{item.title}</h2>
+                </div>
               </div>
             </div>
           ))}
@@ -94,9 +104,17 @@ export default function PianoGalleryResponsive() {
               <button
                 key={i}
                 onClick={() => setActive(i)}
-                className={`flex items-center justify-center text-center
-                  ${active === i ? 'bg-black/50' : 'bg-black/30'}`}>
-                <div>
+                className="relative flex items-center justify-center text-center overflow-hidden">
+                {/* SLIDE DOWN BACKGROUND */}
+                <div
+                  className={`absolute inset-0 bg-black
+                 transform transition-transform duration-500 ease-in-out
+                 ${active === i ? 'translate-y-0' : '-translate-y-full'}
+               `}
+                />
+
+                {/* CONTENT */}
+                <div className="relative z-10 text-white">
                   <p className="text-xs tracking-widest">VISIT</p>
                   <h3 className="font-serif text-lg">{item.title}</h3>
                 </div>

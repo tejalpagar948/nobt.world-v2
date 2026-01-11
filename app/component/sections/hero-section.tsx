@@ -7,7 +7,7 @@ import ClockIcon from '../../../public/assets/icons/clock.svg';
 import ArrowDown from '../../../public/assets/images/arrow-down.png';
 import Image from 'next/image';
 import SocialIcons from '../social-icons';
-import Header from '../site-header';
+
 const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '600', '700'],

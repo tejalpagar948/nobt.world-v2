@@ -4,9 +4,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
-import LogoWhite from '../../public/assets/images/matour-logo_1.png';
 import SocialIcons from './social-icons';
-
+import Logo from './logo';
 interface MobileMenuProps {
   open: boolean;
   onClose: () => void;
@@ -30,7 +29,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
       <div className="relative h-full overflow-y-auto px-2 pt-6 text-white">
         {/* Header */}
         <div className="flex items-center justify-between mb-10 px-4">
-          <h1>NoBT</h1>
+          <Logo />
           <button
             onClick={onClose}
             className="text-2xl font-bold focus:outline-none"

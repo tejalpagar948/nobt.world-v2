@@ -3,10 +3,10 @@ import React from 'react';
 import facebook from '../../public/assets/icons/facebook.svg';
 import twitter from '../../public/assets/icons/twitter.svg';
 import instagram from '../../public/assets/icons/instagram.svg';
-import LogoWhite from '../../public/assets/images/matour-logo_1.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import Logo from './logo';
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
       <div className="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 pb-12">
         {/* Logo & Address */}
         <div>
-          <h1 className="mb-4">NoBT</h1>
+          <Logo className="mt-[-20px]" />
           <p>Badung, Bali —</p>
           <p>Jl. Desa Sawangan, No. 11</p>
           <p>Nusa Dua, 81566</p>

@@ -1,32 +1,208 @@
 {
   "kerala": {
+    "slug": "kerala",
     "title": "Kerala",
     "description": "Kerala is known for its serene backwaters, lush greenery, and beaches.",
-    "image": "/assets/images/destination1.jpg",
+    "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
     "packages": [
       {
-        "name": "Luxury Backwater Cruise",
-        "price": "₹25,000",
+        "slug": "luxury-backwater-cruise",
+        "title": "Luxury Backwater Cruise",
+        "startingPrice": "₹25,000",
+        "priceNote": "Per Person",
         "duration": "3 Nights / 4 Days",
-        "description": "Enjoy a luxury houseboat cruise through Kerala’s backwaters."
+        "nights": "3 Nights",
+        "days": "4 Days",
+        "heroImage": "https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Experience Kerala’s famous backwaters with a luxury houseboat stay, premium meals, and scenic village views.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Kochi",
+            "description": "Arrival at Kochi airport, private transfer to hotel, evening at leisure."
+          },
+          {
+            "day": "Day 2",
+            "title": "Alleppey Houseboat Stay",
+            "description": "Check-in to luxury houseboat, cruise through backwaters with meals onboard."
+          },
+          {
+            "day": "Day 3",
+            "title": "Kumarakom Sightseeing",
+            "description": "Visit Kumarakom Bird Sanctuary and enjoy village walks."
+          },
+          {
+            "day": "Day 4",
+            "title": "Departure",
+            "description": "Checkout and transfer to Kochi airport."
+          }
+        ],
+        "includes": [
+          "Luxury houseboat stay (1 night)",
+          "Daily breakfast & dinner",
+          "Private airport transfers",
+          "All sightseeing by private vehicle",
+          "All taxes and service charges"
+        ],
+        "excludes": [
+          "Airfare",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
       },
       {
-        "name": "Kerala Nature Escape",
-        "price": "₹18,000",
+        "slug": "kerala-nature-escape",
+        "title": "Kerala Nature Escape",
+        "startingPrice": "₹18,000",
+        "priceNote": "Per Person",
         "duration": "4 Nights / 5 Days",
-        "description": "Explore tea gardens, waterfalls, and scenic hill stations."
+        "nights": "4 Nights",
+        "days": "5 Days",
+        "heroImage": "https://images.unsplash.com/photo-1593693401060-9fc28cf9e368?auto=format&fit=crop&w=1200&q=80",
+        "overview": "A perfect nature getaway covering Munnar hills, tea gardens, waterfalls, and scenic viewpoints.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival & Transfer to Munnar",
+            "description": "Pickup from Kochi and scenic drive to Munnar."
+          },
+          {
+            "day": "Day 2",
+            "title": "Munnar Sightseeing",
+            "description": "Visit Tea Museum, Mattupetty Dam, Echo Point."
+          },
+          {
+            "day": "Day 3",
+            "title": "Waterfalls & Nature Walk",
+            "description": "Visit Attukad waterfalls and enjoy nature walks."
+          },
+          {
+            "day": "Day 4",
+            "title": "Leisure Day",
+            "description": "Free day for shopping or relaxing."
+          },
+          {
+            "day": "Day 5",
+            "title": "Departure",
+            "description": "Checkout and transfer to airport."
+          }
+        ],
+        "includes": [
+          "Hotel accommodation",
+          "Daily breakfast",
+          "Sightseeing as per itinerary",
+          "All transfers by AC vehicle"
+        ],
+        "excludes": [
+          "Lunch & dinner",
+          "Entry tickets",
+          "Personal expenses",
+          "Adventure activities"
+        ]
       },
       {
-        "name": "Adventure Kerala",
-        "price": "₹22,000",
+        "slug": "adventure-kerala",
+        "title": "Adventure Kerala",
+        "startingPrice": "₹22,000",
+        "priceNote": "Per Person",
         "duration": "5 Nights / 6 Days",
-        "description": "Trekking, kayaking, jungle safari, and outdoor adventures."
+        "nights": "5 Nights",
+        "days": "6 Days",
+        "heroImage": "https://images.unsplash.com/photo-1588416936097-41850ab3d86d",
+        "overview": "Designed for adventure lovers with trekking, wildlife safari, and outdoor experiences.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Kochi",
+            "description": "Pickup and hotel check-in."
+          },
+          {
+            "day": "Day 2",
+            "title": "Wayanad Transfer",
+            "description": "Drive to Wayanad and evening campfire."
+          },
+          {
+            "day": "Day 3",
+            "title": "Trekking & Caves",
+            "description": "Trek to Chembra Peak and explore Edakkal Caves."
+          },
+          {
+            "day": "Day 4",
+            "title": "Wildlife Safari",
+            "description": "Jeep safari in Wayanad Wildlife Sanctuary."
+          },
+          {
+            "day": "Day 5",
+            "title": "Leisure",
+            "description": "Free day for optional activities."
+          },
+          {
+            "day": "Day 6",
+            "title": "Departure",
+            "description": "Return transfer to airport."
+          }
+        ],
+        "includes": [
+          "Hotel & camp stay",
+          "Breakfast & dinner",
+          "Trekking assistance",
+          "Wildlife safari"
+        ],
+        "excludes": [
+          "Trekking gear",
+          "Personal insurance",
+          "Optional adventure sports"
+        ]
       },
       {
-        "name": "Cultural Kerala Experience",
-        "price": "₹20,000",
+        "slug": "cultural-kerala-experience",
+        "title": "Cultural Kerala Experience",
+        "startingPrice": "₹20,000",
+        "priceNote": "Per Person",
         "duration": "4 Nights / 5 Days",
-        "description": "Discover temples, Kathakali shows, Ayurveda, and local cuisine."
+        "nights": "4 Nights",
+        "days": "5 Days",
+        "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Explore Kerala’s culture, temples, Ayurveda, Kathakali shows, and local cuisine.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Kochi",
+            "description": "Pickup and hotel check-in."
+          },
+          {
+            "day": "Day 2",
+            "title": "Fort Kochi",
+            "description": "Visit Chinese fishing nets and heritage sites."
+          },
+          {
+            "day": "Day 3",
+            "title": "Cultural Show",
+            "description": "Kathakali & Kalaripayattu performance."
+          },
+          {
+            "day": "Day 4",
+            "title": "Ayurveda Session",
+            "description": "Traditional Ayurveda massage."
+          },
+          {
+            "day": "Day 5",
+            "title": "Departure",
+            "description": "Checkout and airport transfer."
+          }
+        ],
+        "includes": [
+          "Hotel stay",
+          "Breakfast",
+          "Cultural show tickets",
+          "Ayurveda session"
+        ],
+        "excludes": [
+          "Flights",
+          "Personal expenses",
+          "Additional spa treatments"
+        ]
       }
     ],
     "gallery": [
@@ -65,33 +241,206 @@
     ]
   },
   "ooty": {
+    "slug": "ooty",
     "title": "Ooty",
-    "description": "Ooty is a peaceful hill station with tea gardens and misty hills.",
-    "image": "/assets/images/destination1.jpg",
+    "description": "Ooty (Udhagamandalam) is a charming hill station in the Nilgiri Hills known for its cool climate, scenic lakes, tea gardens, and misty mountain views.",
+    "image": "https://images.unsplash.com/photo-1756009481685-1513779372cf?auto=format&fit=crop&w=1200&q=80",
     "packages": [
       {
-        "name": "Ooty Hill Station Tour",
-        "price": "₹15,000",
+        "slug": "ooty-hill-station-getaway",
+        "title": "Ooty Hill Station Getaway",
+        "startingPrice": "₹16,500",
+        "priceNote": "Per Person",
         "duration": "3 Nights / 4 Days",
-        "description": "Explore Ooty’s tea gardens, lakes, and viewpoints."
+        "nights": "3 Nights",
+        "days": "4 Days",
+        "heroImage": "https://images.unsplash.com/photo-1756009481685-1513779372cf?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Enjoy cool mountain air, scenic views, lakes, and tea estate tours in Ooty.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival & Lake Visit",
+            "description": "Reach Ooty, check in and enjoy boating at Ooty Lake."
+          },
+          {
+            "day": "Day 2",
+            "title": "Tea Gardens & Viewpoints",
+            "description": "Explore tea gardens and scenic viewpoints in the Nilgiris."
+          },
+          {
+            "day": "Day 3",
+            "title": "Botanical Gardens & Rose Garden",
+            "description": "Visit Government Botanical Garden and Rose Garden."
+          },
+          {
+            "day": "Day 4",
+            "title": "Departure",
+            "description": "Check out and transfer back."
+          }
+        ],
+        "includes": [
+          "Hotel accommodation",
+          "Daily breakfast",
+          "Sightseeing as per itinerary",
+          "All transfers"
+        ],
+        "excludes": [
+          "Airfare",
+          "Personal expenses",
+          "Adventure activities"
+        ]
       },
       {
-        "name": "Romantic Ooty Getaway",
-        "price": "₹18,000",
-        "duration": "3 Nights / 4 Days",
-        "description": "Perfect for couples with scenic stays and boat rides."
-      },
-      {
-        "name": "Adventure Ooty Trip",
-        "price": "₹20,000",
+        "slug": "ooty-nature-and-lake-tour",
+        "title": "Ooty Nature & Lake Tour",
+        "startingPrice": "₹19,000",
+        "priceNote": "Per Person",
         "duration": "4 Nights / 5 Days",
-        "description": "Trekking, nature walks, and outdoor activities."
+        "nights": "4 Nights",
+        "days": "5 Days",
+        "heroImage": "https://images.unsplash.com/photo-1655546454267-f367a6be0c54?auto=format&fit=crop&w=1200&q=80",
+        "overview": "A relaxed tour of forests, lakes, and viewpoints in the Nilgiris.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival & Exploration",
+            "description": "Arrival and local sightseeing."
+          },
+          {
+            "day": "Day 2",
+            "title": "Pykara Lake Excursion",
+            "description": "Visit Pykara Lake & waterfalls."
+          },
+          {
+            "day": "Day 3",
+            "title": "Doddabetta Peak",
+            "description": "Visit the highest point for panoramic views."
+          },
+          {
+            "day": "Day 4",
+            "title": "Free Day",
+            "description": "Free day to enjoy gardens or markets."
+          },
+          {
+            "day": "Day 5",
+            "title": "Departure",
+            "description": "Return journey."
+          }
+        ],
+        "includes": [
+          "Hotel accommodation",
+          "Daily breakfast",
+          "Sightseeing as per itinerary",
+          "All transfers"
+        ],
+        "excludes": [
+          "Airfare",
+          "Personal expenses",
+          "Adventure activities"
+        ]
       },
       {
-        "name": "Family Ooty Holiday",
-        "price": "₹17,000",
+        "slug": "ooty-adventure-hill-trip",
+        "title": "Ooty Adventure Hill Trip",
+        "startingPrice": "₹21,000",
+        "priceNote": "Per Person",
+        "duration": "5 Nights / 6 Days",
+        "nights": "5 Nights",
+        "days": "6 Days",
+        "heroImage": "https://images.unsplash.com/photo-1617196033963-7a7a41a0bfb0?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Adventure-packed Ooty trip with trekking, lake boating, and nature trails.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Ooty",
+            "description": "Check in to hotel and evening free."
+          },
+          {
+            "day": "Day 2",
+            "title": "Trekking & Forest Walks",
+            "description": "Guided trekking in Nilgiri hills and forest trails."
+          },
+          {
+            "day": "Day 3",
+            "title": "Lake & Boat Ride",
+            "description": "Boating at Ooty Lake and leisure time."
+          },
+          {
+            "day": "Day 4",
+            "title": "Doddabetta & Tea Gardens",
+            "description": "Visit Doddabetta peak and tea estates."
+          },
+          {
+            "day": "Day 5",
+            "title": "Adventure Activities",
+            "description": "Optional zip-lining, cycling, and horse riding."
+          },
+          {
+            "day": "Day 6",
+            "title": "Departure",
+            "description": "Checkout and return transfer."
+          }
+        ],
+        "includes": [
+          "Hotel stay",
+          "Daily breakfast",
+          "Trekking guidance",
+          "Lake boating"
+        ],
+        "excludes": [
+          "Adventure equipment",
+          "Personal expenses",
+          "Airfare"
+        ]
+      },
+      {
+        "slug": "ooty-relax-and-culture",
+        "title": "Ooty Relax & Culture",
+        "startingPrice": "₹18,500",
+        "priceNote": "Per Person",
         "duration": "4 Nights / 5 Days",
-        "description": "Family-friendly tour with sightseeing and leisure activities."
+        "nights": "4 Nights",
+        "days": "5 Days",
+        "heroImage": "https://images.unsplash.com/photo-1617196033963-7a7a41a0bfb0?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Relaxing Ooty trip with gardens, museums, local markets, and cultural experiences.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival & Leisure",
+            "description": "Check-in and evening leisure at hotel."
+          },
+          {
+            "day": "Day 2",
+            "title": "Botanical Gardens & Museums",
+            "description": "Visit the Government Botanical Garden and local museums."
+          },
+          {
+            "day": "Day 3",
+            "title": "Tea Factory & Market",
+            "description": "Tour of tea factory and local market shopping."
+          },
+          {
+            "day": "Day 4",
+            "title": "Rose Garden & Leisure",
+            "description": "Visit Rose Garden and relax."
+          },
+          {
+            "day": "Day 5",
+            "title": "Departure",
+            "description": "Checkout and return journey."
+          }
+        ],
+        "includes": [
+          "Hotel accommodation",
+          "Daily breakfast",
+          "Sightseeing as per itinerary",
+          "All transfers"
+        ],
+        "excludes": [
+          "Airfare",
+          "Personal expenses",
+          "Additional spa treatments"
+        ]
       }
     ],
     "gallery": [
