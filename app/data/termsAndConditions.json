@@ -1,0 +1,69 @@
+{
+  "intro": "These Terms & Conditions govern your use of the NOBT World website and services. By accessing this website or confirming a booking, you agree to be bound by the terms outlined below.",
+  "sections": [
+    {
+      "id": "booking-usage",
+      "title": "1. Booking & Usage Terms",
+      "type": "list",
+      "items": [
+        "By accessing and using this website, you agree to the following terms and conditions.",
+        "All bookings are subject to availability and confirmation.",
+        "Prices mentioned are subject to change without prior notice.",
+        "By proceeding with a booking, you accept these terms."
+      ]
+    },
+    {
+      "id": "company-role",
+      "title": "2. Company Role & Liability",
+      "type": "list",
+      "items": [
+        "The company acts as a facilitator for travel services such as accommodation, transport, and activities.",
+        "The company is not liable for changes caused by weather conditions, government regulations, or unforeseen circumstances.",
+        "The company reserves the right to modify itineraries if required for safety or operational reasons."
+      ]
+    },
+    {
+      "id": "traveler-responsibilities",
+      "title": "3. Traveler Responsibilities",
+      "type": "list",
+      "items": [
+        "Travelers must carry valid identification documents and comply with local laws during the trip.",
+        "Any damage to property or misconduct during the trip will be the responsibility of the traveler.",
+        "Certain trips may require participants to meet physical, mental, or health requirements. Travelers should consult the company before booking."
+      ]
+    },
+    {
+      "id": "cancellation-policy",
+      "title": "4. Cancellation & Refund Policy",
+      "type": "mixed",
+      "subSections": [
+        {
+          "title": "Non-Refundable Circumstances",
+          "items": [
+            "No-show or early departure",
+            "Denial of boarding or entry due to visa, documentation, or personal issues",
+            "Failure to meet health, fitness, or participation requirements",
+            "Cancellation due to personal reasons beyond the stated policy timeline",
+            "Force majeure events where suppliers do not provide refunds"
+          ]
+        },
+        {
+          "title": "Standard Cancellation Schedule",
+          "items": [
+            "More than 30 days before departure: Up to 90% refund (after service and processing fees)",
+            "30 days before departure: Up to 75% refund",
+            "15–20 days before departure: Up to 50% refund",
+            "Less than 7 days before departure: No refund"
+          ]
+        }
+      ],
+      "note": "Certain services such as flights, special permits, luxury accommodations, wellness retreats, adventure activities, or third-party bookings may be non-refundable or partially refundable as per supplier policies."
+    },
+    {
+      "id": "acceptance",
+      "title": "5. Acceptance Clause",
+      "type": "paragraph",
+      "content": "By accessing this website or confirming any booking, you acknowledge that you have read, understood, and agreed to the Terms & Conditions, Cancellation & Refund Policy, and Disclaimer."
+    }
+  ]
+}

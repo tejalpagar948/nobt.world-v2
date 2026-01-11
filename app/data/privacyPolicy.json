@@ -1,0 +1,44 @@
+{
+  "intro": "This Privacy Policy explains how NOBT World collects, uses, and safeguards your personal information when you use our website and services.",
+  "sections": [
+    {
+      "id": "information-collection",
+      "title": "1. Information Collection",
+      "type": "paragraph",
+      "content": "We collect personal information such as name, contact details, and identification only for booking and communication purposes."
+    },
+    {
+      "id": "use-of-information",
+      "title": "2. Use of Information",
+      "type": "list",
+      "items": [
+        "Your information is used for booking confirmation, travel arrangements, and customer communication.",
+        "We may use your contact information to send booking updates, important notices, or promotional content (you can opt out anytime)."
+      ]
+    },
+    {
+      "id": "data-sharing",
+      "title": "3. Data Sharing",
+      "type": "list",
+      "items": [
+        "Your data is never sold or shared with third parties.",
+        "Information may be shared only where required for travel arrangements (hotels, transport providers, activity operators, etc.)."
+      ]
+    },
+    {
+      "id": "payment-security",
+      "title": "4. Payment Security",
+      "type": "list",
+      "items": [
+        "All payment information is processed through secure and encrypted payment gateways.",
+        "We do not store sensitive payment details on our servers."
+      ]
+    },
+    {
+      "id": "user-consent",
+      "title": "5. User Consent",
+      "type": "paragraph",
+      "content": "By using our website, you consent to our privacy practices as described in this Privacy Policy."
+    }
+  ]
+}

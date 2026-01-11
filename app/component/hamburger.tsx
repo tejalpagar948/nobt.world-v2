@@ -12,7 +12,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ open, onClick }) => {
     <button
       onClick={onClick}
       aria-label="Toggle menu"
-      className="relative h-12 w-12 flex items-center justify-center">
+      className="relative h-12 flex items-center justify-end mr-2.5 w-[140px]">
       <span
         className={`absolute h-[2px] w-6 rounded-full bg-white transition-all duration-300 ease-in-out
           ${open ? 'rotate-45' : '-translate-y-2'}

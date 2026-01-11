@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "Who We Are",
+    "subtitle": "Discover the world through meaningful journeys, unforgettable experiences, and stories that stay with you forever.",
+    "image": "/assets/images/blog-section-image.jpg"
+  },
+  "story": {
+    "title": "Our Story",
+    "paragraph": [
+      "We are a travel experience company focused on creating meaningful, immersive, and well-curated journeys. We believe travel is not just about visiting places—it’s about stories, connections, culture, and transformation. Our aim is to move beyond standard sightseeing and offer thoughtfully designed travel experiences that blend comfort, authenticity, and discovery. Whether it’s exploring hidden destinations, cultural trails, nature-based retreats, or curated group journeys, we focus on quality over quantity."
+    ],
+    "image": "/assets/images/travel-hero-section-large-image.jpg"
+  },
+  "missionVision": {
+    "sectionTitle": "Our Mission",
+    "items": [
+      {
+        "title": "Our Mission",
+        "description": "To design travel experiences that are memorable, responsible, and enriching—while supporting local communities and sustainable practices."
+      },
+      {
+        "title": "Our Vision",
+        "description": "To become a trusted travel brand known for originality, reliability, and depth, offering journeys that leave a lasting impact on travelers."
+      }
+    ]
+  },
+  "whatMakesUsDifferent": {
+    "title": "What Makes Us Different",
+    "features": [
+      {
+        "title": "Curated itineraries, not generic packages",
+        "description": "Every journey is thoughtfully crafted to offer unique experiences, ensuring no two trips feel the same. We design itineraries that go beyond templates, focusing on depth, flexibility, and meaningful exploration.",
+        "icon": "/assets/icons/security.svg"
+      },
+      {
+        "title": "Strong local partnerships",
+        "description": "We collaborate closely with trusted local guides, hosts, and service providers to deliver authentic experiences while supporting local communities and cultures.",
+        "icon": "/assets/icons/security.svg"
+      },
+      {
+        "title": "Transparent pricing",
+        "description": "What you see is what you get. Our pricing is clear, honest, and upfront, with no hidden costs—so you can plan your travels with complete confidence.",
+        "icon": "/assets/icons/security.svg"
+      },
+      {
+        "title": "Focus on experience, safety, and authenticity",
+        "description": "Your comfort and safety come first. From carefully selected accommodations to immersive activities, every detail is designed to deliver genuine experiences without compromising security or quality.",
+        "icon": "/assets/icons/security.svg"
+      }
+    ]
+  },
+  "services": {
+    "title": "What We Offer",
+    "items": [
+      {
+        "title": "Customized Trips",
+        "description": "Personalized travel plans designed around your interests and pace.",
+        "image": "/assets/images/destination1.jpg"
+      },
+      {
+        "title": "Group Tours",
+        "description": "Well-organized group experiences that bring people together.",
+        "image": "/assets/images/destination1.jpg"
+      },
+      {
+        "title": "Travel Assistance",
+        "description": "End-to-end support to ensure a smooth and worry-free journey.",
+        "image": "/assets/images/destination1.jpg"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Explore the World?",
+    "subtitle": "Let NOBT World help you plan your next unforgettable journey.",
+    "buttonText": "Start Your Journey",
+    "backgroundImage": "/assets/images/travel-hero-section-large-image.jpg"
+  }
+}

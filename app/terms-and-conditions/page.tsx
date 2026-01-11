@@ -2,13 +2,48 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import TermsHero from '../../public/assets/images/travel-hero-section-large-image.jpg';
+import termsData from '@/app/data/termsAndConditions.json';
+
+/* ================= TYPES ================= */
+
+type ListSection = {
+  id: string;
+  title: string;
+  type: 'list';
+  items: string[];
+};
+
+type ParagraphSection = {
+  id: string;
+  title: string;
+  type: 'paragraph';
+  content: string;
+};
+
+type MixedSection = {
+  id: string;
+  title: string;
+  type: 'mixed';
+  subSections: {
+    title: string;
+    items: string[];
+  }[];
+  note?: string;
+};
+
+type Section = ListSection | ParagraphSection | MixedSection;
+
+/* ================= COMPONENT ================= */
 
 export default function TermsAndConditions() {
+  const sections = termsData.sections as Section[];
+
   return (
     <main className="w-full bg-white text-black">
       {/* ================= HERO SECTION ================= */}
-      <section className="relative h-[60vh] w-full">
+      <section className="relative h-[80vh] w-full">
         <Image
           src={TermsHero}
           alt="Terms and Conditions"
@@ -23,75 +58,61 @@ export default function TermsAndConditions() {
               Terms & Conditions
             </h1>
             <p className="mt-5 text-white/80 text-lg">
-              Please read these terms carefully before using NOBT World.
+              Please read these terms carefully before booking with NOBT World.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ================= CONTENT SECTION ================= */}
-      <section className="py-14 lg:py-24 bg-[#fafafa]">
+      {/* ================= CONTENT ================= */}
+      <section className="py-14 lg:py-20 bg-[#fafafa]">
         <div className="wrapper max-w-4xl">
-          {/* INTRO */}
-          <p className="text-gray-600 leading-relaxed mb-10">
-            These Terms & Conditions govern your use of the NOBT World website
-            and services. By accessing or using our website, you agree to be
-            bound by these terms.
+          <p className="text-gray-600 leading-relaxed mb-12">
+            {termsData.intro}
           </p>
 
-          {/* TERMS BLOCK */}
-          {[
-            {
-              title: '1. Use of Website',
-              content:
-                'You agree to use this website only for lawful purposes. You must not use the site in any way that may cause damage to the website or impair accessibility for others.',
-            },
-            {
-              title: '2. Travel Information',
-              content:
-                'All travel-related information provided on NOBT World is for general guidance only. Prices, availability, and itineraries may change without prior notice.',
-            },
-            {
-              title: '3. Bookings & Payments',
-              content:
-                'Bookings made through NOBT World are subject to availability and confirmation. Payments must be completed as per the provided instructions to confirm your reservation.',
-            },
-            {
-              title: '4. Cancellations & Refunds',
-              content:
-                'Cancellation and refund policies vary depending on the service provider. Please review the specific terms applicable to your booking before making a purchase.',
-            },
-            {
-              title: '5. Intellectual Property',
-              content:
-                'All content on this website, including text, images, logos, and designs, is the property of NOBT World and may not be reproduced without written permission.',
-            },
-            {
-              title: '6. Limitation of Liability',
-              content:
-                'NOBT World shall not be liable for any loss, injury, or damages arising from the use of this website or participation in any travel activities.',
-            },
-            {
-              title: '7. Third-Party Links',
-              content:
-                'Our website may contain links to third-party websites. NOBT World is not responsible for the content or practices of these external sites.',
-            },
-            {
-              title: '8. Changes to Terms',
-              content:
-                'We reserve the right to update or modify these Terms & Conditions at any time. Continued use of the website constitutes acceptance of the revised terms.',
-            },
-            {
-              title: '9. Governing Law',
-              content:
-                'These terms are governed by and interpreted in accordance with applicable laws. Any disputes shall be subject to the jurisdiction of relevant courts.',
-            },
-          ].map((item, index) => (
+          {sections.map((section) => (
             <div
-              key={index}
+              key={section.id}
               className="mb-8 rounded-2xl bg-white p-8 shadow-sm border border-gray-200">
-              <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{item.content}</p>
+              <h3 className="text-xl font-semibold mb-4">{section.title}</h3>
+
+              {/* LIST SECTION */}
+              {section.type === 'list' && (
+                <ul className="list-disc pl-6 space-y-3 text-gray-600 leading-relaxed">
+                  {section.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              )}
+
+              {/* PARAGRAPH SECTION */}
+              {section.type === 'paragraph' && (
+                <p className="text-gray-600 leading-relaxed">
+                  {section.content}
+                </p>
+              )}
+
+              {/* MIXED SECTION */}
+              {section.type === 'mixed' && (
+                <>
+                  {section.subSections.map((sub, i) => (
+                    <div key={i} className="mb-6">
+                      <h4 className="font-medium text-lg mb-3">{sub.title}</h4>
+                      <ul className="list-disc pl-6 space-y-2 text-gray-600 leading-relaxed">
+                        {sub.items.map((item, j) => (
+                          <li key={j}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                  {section.note && (
+                    <p className="text-gray-600 leading-relaxed">
+                      {section.note}
+                    </p>
+                  )}
+                </>
+              )}
             </div>
           ))}
         </div>
@@ -99,7 +120,6 @@ export default function TermsAndConditions() {
 
       {/* ================= CTA ================= */}
       <section className="relative py-24 text-white">
-        {/* Background Image */}
         <Image
           src={TermsHero.src}
           alt="Contact NOBT World"
@@ -107,11 +127,8 @@ export default function TermsAndConditions() {
           priority
           className="object-cover"
         />
-
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70" />
 
-        {/* Content */}
         <div className="relative z-10 wrapper text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-serif mb-6">
             Have Questions About Our Terms?
@@ -121,9 +138,12 @@ export default function TermsAndConditions() {
             Feel free to reach out to us for any clarification.
           </p>
 
-          <button className="rounded-full bg-white text-black px-10 py-4 font-medium hover:bg-gray-200 transition">
+          <Link
+            href="/contact-us"
+            target="_blank"
+            className="inline-block rounded-full bg-white text-black px-10 py-4 font-medium hover:bg-gray-200 transition">
             Contact Us
-          </button>
+          </Link>
         </div>
       </section>
     </main>

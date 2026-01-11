@@ -2,9 +2,7 @@
 
 import React from 'react';
 import SocialIcons from './social-icons';
-import Link from 'next/link';
-import Image from 'next/image';
-import LogoWhite from '../../public/assets/images/matour-logo_1.png';
+import Logo from './logo';
 
 interface DesktopMenuProps {
   open: boolean;
@@ -43,7 +41,7 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ open, onClose }) => {
         {/* CONTENT */}
         <div className="flex h-full flex-col justify-center px-10">
           {/* LOGO / TITLE */}
-          <h1 className="mb-5">NoBT</h1>
+          <Logo className="mb-5" />
 
           <p className="text-gray-400 mb-8 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit

@@ -35,8 +35,8 @@ export default function ContactPage() {
       </section>
 
       {/* ================= CONTACT CONTENT ================= */}
-      <section className="py-14 lg:py-27">
-        <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+      <section className="py-14 lg:py-20">
+        <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* LEFT CONTENT */}
           <div>
             <h2 className="text-3xl md:text-5xl font-serif mb-6">
