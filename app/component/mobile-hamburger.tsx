@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { ChevronDown } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { ChevronDown } from 'lucide-react';
+
 import SocialIcons from './social-icons';
 import Logo from './logo';
 
@@ -21,43 +21,45 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
     setActive(active === key ? null : key);
   };
 
-  /* Auto open DESTINATION if route matches */
+  /* Auto open DESTINATION on destination pages */
   useEffect(() => {
     if (pathname.startsWith('/destination')) {
       setActive('destination');
     }
   }, [pathname]);
 
-  const activeClass = 'bg-[#4b453f]';
+  /* Reset submenu when menu closes */
+  useEffect(() => {
+    if (!open) {
+      setActive(null);
+    }
+  }, [open]);
+
+  const mainActive = 'bg-[#4b453f]';
+  const subActive = 'bg-black text-white font-semibold';
 
   return (
     <div
       className={`fixed inset-0 z-[60] lg:hidden transition-transform duration-500 ease-in-out
         ${open ? 'translate-x-0' : '-translate-x-full'}`}>
-      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-black to-[#1a120b]" />
 
-      {/* Content */}
       <div className="relative h-full overflow-y-auto px-2 pt-6 text-white">
         {/* Header */}
         <div className="flex items-center justify-between mb-10 px-4">
           <Logo />
-          <button
-            onClick={onClose}
-            className="text-2xl font-bold"
-            aria-label="Close menu">
+          <button onClick={onClose} className="text-2xl font-bold">
             ✕
           </button>
         </div>
 
-        {/* Navigation */}
         <nav className="space-y-4 text-sm font-medium tracking-widest">
           {/* HOME */}
           <Link
             href="/"
             onClick={onClose}
             className={`block rounded-full px-6 py-3 transition
-              ${pathname === '/' ? activeClass : 'hover:bg-[#4b453f]'}`}>
+              ${pathname === '/' ? mainActive : 'hover:bg-[#4b453f]'}`}>
             HOME
           </Link>
 
@@ -66,7 +68,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
             href="/about"
             onClick={onClose}
             className={`block rounded-full px-6 py-3 transition
-              ${pathname === '/about' ? activeClass : 'hover:bg-[#4b453f]'}`}>
+              ${pathname === '/about' ? mainActive : 'hover:bg-[#4b453f]'}`}>
             ABOUT US
           </Link>
 
@@ -76,7 +78,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
             onClick={onClose}
             className={`block rounded-full px-6 py-3 transition
               ${
-                pathname === '/contact-us' ? activeClass : 'hover:bg-[#4b453f]'
+                pathname === '/contact-us' ? mainActive : 'hover:bg-[#4b453f]'
               }`}>
             CONTACT US
           </Link>
@@ -91,8 +93,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
                   active === 'destination'
                     ? 'bg-white text-black'
                     : 'hover:bg-[#4b453f]'
-                }`}
-              aria-expanded={active === 'destination'}>
+                }`}>
               <span>DESTINATION</span>
               <ChevronDown
                 size={18}
@@ -102,21 +103,36 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
             </button>
 
             {active === 'destination' && (
-              <div className="mt-3 rounded-2xl bg-white text-black px-6 py-4 space-y-3">
+              <div className="mt-3 rounded-2xl bg-white text-black px-3 py-3 space-y-2">
+                {/* KERALA */}
                 <Link
                   href="/destination/kerala"
-                  onClick={onClose}
-                  className={`block ${
-                    pathname === '/destination/kerala' ? 'font-semibold' : ''
-                  }`}>
+                  onClick={() => {
+                    setActive(null);
+                    onClose();
+                  }}
+                  className={`block rounded-full px-4 py-2 transition
+                    ${
+                      pathname === '/destination/kerala'
+                        ? subActive
+                        : 'hover:bg-gray-200'
+                    }`}>
                   KERALA
                 </Link>
+
+                {/* OOTY */}
                 <Link
                   href="/destination/ooty"
-                  onClick={onClose}
-                  className={`block ${
-                    pathname === '/destination/ooty' ? 'font-semibold' : ''
-                  }`}>
+                  onClick={() => {
+                    setActive(null);
+                    onClose();
+                  }}
+                  className={`block rounded-full px-4 py-2 transition
+                    ${
+                      pathname === '/destination/ooty'
+                        ? subActive
+                        : 'hover:bg-gray-200'
+                    }`}>
                   OOTY
                 </Link>
               </div>
@@ -124,13 +140,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
           </div>
         </nav>
 
-        {/* Social Icons */}
+        {/* Social */}
         <div className="absolute bottom-0 px-4">
-          <SocialIcons
-            ulClassName="flex my-10"
-            figureClassName=""
-            iconSize={20}
-          />
+          <SocialIcons ulClassName="flex my-10" iconSize={20} />
         </div>
       </div>
     </div>
