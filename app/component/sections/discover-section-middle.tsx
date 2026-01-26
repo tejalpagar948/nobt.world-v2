@@ -1,27 +1,33 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 const items = [
   {
-    title: 'Indonesia',
-    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/padar-island-with-scenic-high-view-of-three-beautiful-white-sandy-beaches-surrounded-by-a-wide-ocean-e1687500056237.jpg',
+    title: 'Bali',
+    img: 'https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=80',
+    link: '/destination/bali',
   },
   {
     title: 'Thailand',
     img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/ancient-siam-or-ancient-city-bangkok-thailand--e1687499815736.jpg',
+    link: '/destination/thailand',
   },
   {
     title: 'Turkey',
     img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/happy-couple-in-cappadocia-the-man-proposed-to-the-girl-honeymoon-in-cappadocia-e1687499848976.jpg',
+    link: '/destination/turkey',
   },
   {
     title: 'Japan',
     img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/himeji-castle-japan-in-spring-e1687500113328.jpg',
+    link: '/destination/japan',
   },
   {
-    title: 'Singapore',
-    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/marina-bay-area-in-singapore-city--e1687499908842.jpg',
+    title: 'V ietnam',
+    img: 'https://images.unsplash.com/photo-1504457047772-27faf1c00561?auto=format&fit=crop&w=1200&q=80',
+    link: '/destination/vietnam',
   },
 ];
 
@@ -59,7 +65,8 @@ export default function PianoGalleryResponsive() {
         {/* PIANO TABS */}
         <div className="relative z-30 flex h-full">
           {items.map((item, i) => (
-            <div
+            <Link
+              href={item.link}
               key={i}
               onMouseEnter={() => setActive(i)}
               onClick={() => setActive(i)}
@@ -80,7 +87,7 @@ export default function PianoGalleryResponsive() {
                   <h2 className="font-serif text-3xl">{item.title}</h2>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

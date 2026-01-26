@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Who We Are",
-    "subtitle": "Discover the world through meaningful journeys, unforgettable experiences, and stories that stay with you forever.",
+    "title": "About Us",
+    "subtitle": "We are a global travel and experiences company creating curated group departures and personalized journeys across India and the world.",
     "image": "/assets/images/blog-section-image.jpg"
   },
   "story": {
@@ -21,6 +21,10 @@
       {
         "title": "Our Vision",
         "description": "To become a trusted travel brand known for originality, reliability, and depth, offering journeys that leave a lasting impact on travelers."
+      },
+      {
+        "title": "Our Belief",
+        "description": "We believe travel is not an escape — it is a return. A return to curiosity. A return to culture. A return to self."
       }
     ]
   },
@@ -28,23 +32,23 @@
     "title": "What Makes Us Different",
     "features": [
       {
-        "title": "Curated itineraries, not generic packages",
-        "description": "Every journey is thoughtfully crafted to offer unique experiences, ensuring no two trips feel the same. We design itineraries that go beyond templates, focusing on depth, flexibility, and meaningful exploration.",
+        "title": "Curated, Not Crowded",
+        "description": "Intentional group sizes and carefully designed journeys that prioritize quality over quantity.",
         "icon": "/assets/icons/security.svg"
       },
       {
-        "title": "Strong local partnerships",
-        "description": "We collaborate closely with trusted local guides, hosts, and service providers to deliver authentic experiences while supporting local communities and cultures.",
+        "title": "Global Expertise, Seamless Execution",
+        "description": "With strong international networks and local specialists, we ensure elevated experiences with smooth planning and trusted execution worldwide.",
         "icon": "/assets/icons/security.svg"
       },
       {
-        "title": "Transparent pricing",
-        "description": "What you see is what you get. Our pricing is clear, honest, and upfront, with no hidden costs—so you can plan your travels with complete confidence.",
+        "title": "No Generic Trips",
+        "description": "We don’t do rushed itineraries or tourist traps. Every journey is curated for people who want something real, different, and unforgettab",
         "icon": "/assets/icons/security.svg"
       },
       {
-        "title": "Focus on experience, safety, and authenticity",
-        "description": "Your comfort and safety come first. From carefully selected accommodations to immersive activities, every detail is designed to deliver genuine experiences without compromising security or quality.",
+        "title": "Designed for the Modern Explorer",
+        "description": "Global destinations, niche travel formats, and personalized service for today’s conscious traveler.",
         "icon": "/assets/icons/security.svg"
       }
     ]

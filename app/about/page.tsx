@@ -57,7 +57,7 @@ export default function AboutPage() {
       <section className="py-14 lg:py-20 relative bg-black">
         <div className="wrapper">
           {/* Mission Card */}
-          <div className=" grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-6">
             {AboutPageData.missionVision.items.map((item, index) => (
               <div className="rounded-3xl bg-[#1b1b1b] p-10 shadow-lg border ">
                 <h3 className="text-2xl font-serif mb-4 text-white">
