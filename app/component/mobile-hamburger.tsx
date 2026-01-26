@@ -15,23 +15,19 @@ interface MobileMenuProps {
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
   const pathname = usePathname();
-  const [active, setActive] = useState<string | null>(null);
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
 
-  const toggle = (key: string) => {
-    setActive(active === key ? null : key);
-  };
-
-  /* Auto open DESTINATION on destination pages */
+  /* Auto-open DESTINATION on destination pages */
   useEffect(() => {
     if (pathname.startsWith('/destination')) {
-      setActive('destination');
+      setOpenSubmenu('destination');
     }
   }, [pathname]);
 
-  /* Reset submenu when menu closes */
+  /* Reset submenu when hamburger closes */
   useEffect(() => {
     if (!open) {
-      setActive(null);
+      setOpenSubmenu(null);
     }
   }, [open]);
 
@@ -42,17 +38,23 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
     <div
       className={`fixed inset-0 z-[60] lg:hidden transition-transform duration-500 ease-in-out
         ${open ? 'translate-x-0' : '-translate-x-full'}`}>
+      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-black to-[#1a120b]" />
 
+      {/* Content */}
       <div className="relative h-full overflow-y-auto px-2 pt-6 text-white">
         {/* Header */}
         <div className="flex items-center justify-between mb-10 px-4">
           <Logo />
-          <button onClick={onClose} className="text-2xl font-bold">
+          <button
+            onClick={onClose}
+            className="text-2xl font-bold"
+            aria-label="Close menu">
             ✕
           </button>
         </div>
 
+        {/* Navigation */}
         <nav className="space-y-4 text-sm font-medium tracking-widest">
           {/* HOME */}
           <Link
@@ -86,31 +88,32 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
           {/* DESTINATION */}
           <div>
             <button
-              onClick={() => toggle('destination')}
+              onClick={() =>
+                setOpenSubmenu(
+                  openSubmenu === 'destination' ? null : 'destination'
+                )
+              }
               className={`w-full flex items-center justify-between px-6 py-3 rounded-full transition
                 ${
-                  pathname.startsWith('/destination') ||
-                  active === 'destination'
+                  pathname.startsWith('/destination')
                     ? 'bg-white text-black'
                     : 'hover:bg-[#4b453f]'
-                }`}>
+                }`}
+              aria-expanded={openSubmenu === 'destination'}>
               <span>DESTINATION</span>
               <ChevronDown
                 size={18}
                 className={`transition-transform duration-300
-                  ${active === 'destination' ? 'rotate-180' : ''}`}
+                  ${openSubmenu === 'destination' ? 'rotate-180' : ''}`}
               />
             </button>
 
-            {active === 'destination' && (
+            {openSubmenu === 'destination' && (
               <div className="mt-3 rounded-2xl bg-white text-black px-3 py-3 space-y-2">
                 {/* KERALA */}
                 <Link
                   href="/destination/kerala"
-                  onClick={() => {
-                    setActive(null);
-                    onClose();
-                  }}
+                  onClick={onClose}
                   className={`block rounded-full px-4 py-2 transition
                     ${
                       pathname === '/destination/kerala'
@@ -123,10 +126,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
                 {/* OOTY */}
                 <Link
                   href="/destination/ooty"
-                  onClick={() => {
-                    setActive(null);
-                    onClose();
-                  }}
+                  onClick={onClose}
                   className={`block rounded-full px-4 py-2 transition
                     ${
                       pathname === '/destination/ooty'
@@ -140,7 +140,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
           </div>
         </nav>
 
-        {/* Social */}
+        {/* Social Icons */}
         <div className="absolute bottom-0 px-4">
           <SocialIcons ulClassName="flex my-10" iconSize={20} />
         </div>

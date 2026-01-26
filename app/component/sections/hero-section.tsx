@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
         <div className="wrapper">
           {/* Background Video */}
           <div className="relative h-[276px]"></div>
-          <video
+          {/* <video
             className="absolute inset-0 h-full w-full object-cover"
             autoPlay
             loop
@@ -31,7 +31,26 @@ const HeroSection: React.FC = () => {
               src="assets/videos/Nobt-world-banner.mp4"
               type="video/mp4"
             />
-          </video>
+          </video> */}
+          <div className="hidden xl:block absolute inset-0 w-full h-full overflow-hidden">
+            <div className="absolute top-1/2 left-1/2 w-[200%] h-[200%] -translate-x-1/2 -translate-y-1/2">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/lQTj0lOLDG0?autoplay=1&mute=1&controls=0&loop=1&playlist=lQTj0lOLDG0&modestbranding=1&rel=0"
+                title="YouTube video"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen></iframe>
+            </div>
+          </div>
+          <div className="block xl:hidden absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+            <iframe
+              className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-w-[177.77vh] min-h-[100vh] -translate-x-1/2 -translate-y-1/2"
+              src="https://www.youtube.com/embed/lQTj0lOLDG0?autoplay=1&mute=1&controls=0&loop=1&playlist=lQTj0lOLDG0&modestbranding=1&rel=0"
+              title="YouTube background video"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
+
           {/* <Header /> */}
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40" />

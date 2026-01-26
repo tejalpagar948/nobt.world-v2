@@ -1,5 +1,5 @@
 'use client';
-
+import destinations from '../data/destinations.json';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -82,16 +82,21 @@ export default function Navbar() {
 
           {/* Dropdown */}
           <div
-            className="absolute left-0 top-full mt-2 opacity-0
+            className="absolute left-0 top-full pt-2 opacity-0
               pointer-events-none group-hover:opacity-100
               group-hover:pointer-events-auto transition-opacity">
-            <ul className="w-50 rounded-xl bg-white p-2 text-black shadow-lg z-50">
-              <li className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full">
-                <Link href="/destination/kerala">KERALA</Link>
-              </li>
-              <li className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full">
-                <Link href="/destination/ooty">OOTY</Link>
-              </li>
+            <ul className="w-65 rounded-xl bg-white p-2 text-black shadow-lg z-50">
+              {Object.values(destinations).map((destination) => (
+                <li
+                  key={destination.slug}
+                  className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                  <Link
+                    href={`/destination/${destination.slug}`}
+                    className="uppercase">
+                    {destination.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </li>

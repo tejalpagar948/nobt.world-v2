@@ -64,6 +64,17 @@
       "title": "5. Acceptance Clause",
       "type": "paragraph",
       "content": "By accessing this website or confirming any booking, you acknowledge that you have read, understood, and agreed to the Terms & Conditions, Cancellation & Refund Policy, and Disclaimer."
+    },
+    {
+      "id": "disclaimer",
+      "title": "6. Disclaimer",
+      "type": "list",
+      "items": [
+        "We are not responsible for events beyond our control.",
+        "Adventure, wellness, and spiritual activities involve inherent risks.",
+        "Images and itineraries are indicative and subject to change.",
+        "Travelers are responsible for valid documents, health requirements, and insurance."
+      ]
     }
   ]
 }

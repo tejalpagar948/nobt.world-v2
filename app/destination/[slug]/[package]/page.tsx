@@ -31,13 +31,13 @@ export default async function PackagePage({ params }: PageProps) {
       {/* HERO */}
       <section className="relative h-[85vh]">
         <Image
-          src={pkg.heroImage}
+          src={pkg.heroImage ?? '/images/fallback.jpg'}
           alt={pkg.title}
           fill
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 flex items-center">
-          <div className="mx-auto text-white">
+          <div className="mx-auto text-white flex flex-col items-center">
             <h2 className="text-3xl md:text-5xl font-serif mb-6 text-center">
               {pkg.title}
             </h2>

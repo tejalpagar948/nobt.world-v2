@@ -1,480 +1,1497 @@
 {
-  "kerala": {
-    "slug": "kerala",
-    "title": "Kerala",
-    "description": "Kerala is known for its serene backwaters, lush greenery, and beaches.",
-    "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
+  "bali": {
+    "slug": "bali",
+    "title": "Bali",
+    "description": "Bali is a tropical paradise known for its beautiful beaches, vibrant culture, stunning temples, lush rice terraces, and romantic experiences.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "packages": [
       {
-        "slug": "luxury-backwater-cruise",
-        "title": "Luxury Backwater Cruise",
-        "startingPrice": "₹25,000",
+        "slug": "romantic-bali-honeymoon",
+        "title": "Romantic Bali Getaway",
+        "startingPrice": "₹65,000",
         "priceNote": "Per Person",
-        "duration": "3 Nights / 4 Days",
-        "nights": "3 Nights",
-        "days": "4 Days",
-        "heroImage": "https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=1200&q=80",
-        "overview": "Experience Kerala’s famous backwaters with a luxury houseboat stay, premium meals, and scenic village views.",
+        "duration": "6 Nights / 7 Days",
+        "nights": "6 Nights",
+        "days": "7 Days",
+        "heroImage": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
+        "overview": "A perfect Bali itinerary combining romance, adventure, culture, and luxury stays including a private pool villa in Ubud.",
         "itinerary": [
           {
             "day": "Day 1",
-            "title": "Arrival in Kochi",
-            "description": "Arrival at Kochi airport, private transfer to hotel, evening at leisure."
+            "title": "Arrival & Candle Light Dinner",
+            "description": "Arrival at Bali airport, transfer to hotel in Kuta/Seminyak. Enjoy a romantic candle light dinner."
           },
           {
             "day": "Day 2",
-            "title": "Alleppey Houseboat Stay",
-            "description": "Check-in to luxury houseboat, cruise through backwaters with meals onboard."
+            "title": "Water Sports & Uluwatu Tour",
+            "description": "Enjoy water sports, visit Uluwatu Temple for sunset, and witness the famous Kecak Dance."
           },
           {
             "day": "Day 3",
-            "title": "Kumarakom Sightseeing",
-            "description": "Visit Kumarakom Bird Sanctuary and enjoy village walks."
+            "title": "Nusa Penida Island Tour",
+            "description": "Full-day excursion to Nusa Penida with stunning beaches and viewpoints."
           },
           {
             "day": "Day 4",
+            "title": "Temple & Sunset Tour",
+            "description": "Visit Ulun Danu Beratan Temple, Handara Gate, and Tanah Lot Temple."
+          },
+          {
+            "day": "Day 5",
+            "title": "Kintamani & Ubud Exploration",
+            "description": "Explore Kintamani volcano, Bali Swing, rice terraces, coffee plantation, and Ubud Art Market."
+          },
+          {
+            "day": "Day 6",
+            "title": "Floating Breakfast & ATV Ride",
+            "description": "Enjoy floating breakfast at private pool villa followed by an ATV ride."
+          },
+          {
+            "day": "Day 7",
             "title": "Departure",
-            "description": "Checkout and transfer to Kochi airport."
+            "description": "Checkout and transfer to Bali airport for departure."
           }
         ],
         "includes": [
-          "Luxury houseboat stay (1 night)",
-          "Daily breakfast & dinner",
-          "Private airport transfers",
-          "All sightseeing by private vehicle",
-          "All taxes and service charges"
+          "4 Nights stay in Kuta or Seminyak",
+          "2 Nights stay in Ubud private pool villa",
+          "Daily breakfast",
+          "Candle light dinner",
+          "Floating breakfast",
+          "All sightseeing tours",
+          "Airport transfers",
+          "Water sports & ATV ride"
         ],
         "excludes": [
           "Airfare",
+          "Visa fees",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Bali Beach",
+        "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+      },
+      {
+        "name": "Ubud Rice Terraces",
+        "src": "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b"
+      },
+      {
+        "name": "Bali Swing",
+        "src": "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01"
+      },
+      {
+        "name": "Tanah Lot Temple",
+        "src": "https://images.unsplash.com/photo-1589452271712-64b8a66c4b4b"
+      },
+      {
+        "name": "Uluwatu Temple",
+        "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+      },
+      {
+        "name": "Nusa Penida",
+        "src": "https://images.unsplash.com/photo-1540202404-a2f29016b523"
+      },
+      {
+        "name": "Private Pool Villa",
+        "src": "https://images.unsplash.com/photo-1501117716987-c8e1ecb2103d"
+      },
+      {
+        "name": "Floating Breakfast",
+        "src": "https://images.unsplash.com/photo-1602002418082-a4443e081dd1"
+      }
+    ]
+  },
+  "turkey": {
+    "slug": "turkey",
+    "title": "Turkey",
+    "description": "Turkey is a beautiful blend of history, culture, stunning landscapes, and vibrant cities, offering experiences from ancient monuments to breathtaking coastlines.",
+    "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=80",
+    "packages": [
+      {
+        "slug": "turkey-classic-tour",
+        "title": "Turkey Classic Tour",
+        "startingPrice": "₹85,000",
+        "priceNote": "Per Person",
+        "duration": "6 Nights / 7 Days",
+        "nights": "6 Nights",
+        "days": "7 Days",
+        "heroImage": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Explore the highlights of Turkey covering Istanbul, Cappadocia, and Antalya with cruises, cave hotels, city tours, and scenic beaches.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival & Bosphorus Dinner Cruise",
+            "description": "Arrival in Istanbul and enjoy an evening Bosphorus dinner cruise."
+          },
+          {
+            "day": "Day 2",
+            "title": "Istanbul City Tour",
+            "description": "Explore Hagia Sophia, Blue Mosque, Grand Bazaar, and major landmarks."
+          },
+          {
+            "day": "Day 3",
+            "title": "Istanbul to Cappadocia",
+            "description": "Transfer from Istanbul to Cappadocia and check-in to cave hotel."
+          },
+          {
+            "day": "Day 4",
+            "title": "North Red Tour",
+            "description": "Visit Devrent Valley, Pasabag, Avanos, and local pottery workshops."
+          },
+          {
+            "day": "Day 5",
+            "title": "Cappadocia to Antalya",
+            "description": "Transfer to Antalya and hotel check-in."
+          },
+          {
+            "day": "Day 6",
+            "title": "Antalya City & Beach Tour",
+            "description": "Explore Antalya city, waterfalls, and beautiful beaches."
+          },
+          {
+            "day": "Day 7",
+            "title": "Departure",
+            "description": "Checkout and transfer to airport for departure."
+          }
+        ],
+        "includes": [
+          "2 Nights stay in Istanbul",
+          "2 Nights stay in Cave Hotel Cappadocia",
+          "2 Nights stay in Antalya",
+          "Daily breakfast",
+          "Bosphorus dinner cruise",
+          "All sightseeing tours",
+          "Airport & intercity transfers"
+        ],
+        "excludes": [
+          "Airfare",
+          "Visa fees",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Istanbul City",
+        "src": "https://images.unsplash.com/photo-1524230659092-07f99a75c013"
+      },
+      {
+        "name": "Bosphorus Cruise",
+        "src": "https://images.unsplash.com/photo-1504274066651-8d31a536b11a"
+      },
+      {
+        "name": "Cappadocia Balloons",
+        "src": "https://images.unsplash.com/photo-1549640376-2e5b8a1b7b25"
+      },
+      {
+        "name": "Cappadocia Cave Hotel",
+        "src": "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c"
+      },
+      {
+        "name": "Antalya Beaches",
+        "src": "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+      },
+      {
+        "name": "Antalya Waterfalls",
+        "src": "https://images.unsplash.com/photo-1586796679170-dcddbb3b8c47"
+      }
+    ]
+  },
+  "thailand": {
+    "slug": "thailand",
+    "title": "Thailand",
+    "description": "Thailand is famous for its vibrant cities, stunning beaches, cultural temples, nightlife, and unforgettable cruise and show experiences.",
+    "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+    "packages": [
+      {
+        "slug": "bangkok-pattaya-tour",
+        "title": "Bangkok & Pattaya Highlights",
+        "startingPrice": "₹55,000",
+        "priceNote": "Per Person",
+        "duration": "4 Nights / 5 Days",
+        "nights": "4 Nights",
+        "days": "5 Days",
+        "heroImage": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Enjoy an exciting Thailand trip covering Bangkok and Pattaya with river cruises, cultural tours, and famous entertainment shows.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival & Chao Phraya Dinner Cruise",
+            "description": "Arrival in Bangkok and enjoy an evening Chao Phraya River dinner cruise."
+          },
+          {
+            "day": "Day 2",
+            "title": "Bangkok City Tour",
+            "description": "Visit temples, local attractions, and explore Bangkok city highlights."
+          },
+          {
+            "day": "Day 3",
+            "title": "Bangkok to Pattaya & Alcazar Show",
+            "description": "Transfer from Bangkok to Pattaya and enjoy the famous Alcazar Show."
+          },
+          {
+            "day": "Day 4",
+            "title": "Pattaya City Tour & Tiger Park",
+            "description": "Explore Pattaya city, beaches, and visit Tiger Park."
+          },
+          {
+            "day": "Day 5",
+            "title": "Departure",
+            "description": "Checkout and transfer to airport for departure."
+          }
+        ],
+        "includes": [
+          "Hotel accommodation",
+          "Daily breakfast",
+          "Chao Phraya dinner cruise",
+          "Alcazar Show tickets",
+          "Bangkok & Pattaya city tours",
+          "Airport & intercity transfers"
+        ],
+        "excludes": [
+          "Airfare",
+          "Visa fees",
           "Personal expenses",
           "Travel insurance",
           "Anything not mentioned in inclusions"
         ]
       },
       {
-        "slug": "kerala-nature-escape",
-        "title": "Kerala Nature Escape",
-        "startingPrice": "₹18,000",
-        "priceNote": "Per Person",
-        "duration": "4 Nights / 5 Days",
-        "nights": "4 Nights",
-        "days": "5 Days",
-        "heroImage": "https://images.unsplash.com/photo-1593693401060-9fc28cf9e368?auto=format&fit=crop&w=1200&q=80",
-        "overview": "A perfect nature getaway covering Munnar hills, tea gardens, waterfalls, and scenic viewpoints.",
-        "itinerary": [
-          {
-            "day": "Day 1",
-            "title": "Arrival & Transfer to Munnar",
-            "description": "Pickup from Kochi and scenic drive to Munnar."
-          },
-          {
-            "day": "Day 2",
-            "title": "Munnar Sightseeing",
-            "description": "Visit Tea Museum, Mattupetty Dam, Echo Point."
-          },
-          {
-            "day": "Day 3",
-            "title": "Waterfalls & Nature Walk",
-            "description": "Visit Attukad waterfalls and enjoy nature walks."
-          },
-          {
-            "day": "Day 4",
-            "title": "Leisure Day",
-            "description": "Free day for shopping or relaxing."
-          },
-          {
-            "day": "Day 5",
-            "title": "Departure",
-            "description": "Checkout and transfer to airport."
-          }
-        ],
-        "includes": [
-          "Hotel accommodation",
-          "Daily breakfast",
-          "Sightseeing as per itinerary",
-          "All transfers by AC vehicle"
-        ],
-        "excludes": [
-          "Lunch & dinner",
-          "Entry tickets",
-          "Personal expenses",
-          "Adventure activities"
-        ]
-      },
-      {
-        "slug": "adventure-kerala",
-        "title": "Adventure Kerala",
-        "startingPrice": "₹22,000",
+        "slug": "phuket-krabi-tour",
+        "title": "Phuket & Krabi Island Escape",
+        "startingPrice": "₹65,000",
         "priceNote": "Per Person",
         "duration": "5 Nights / 6 Days",
         "nights": "5 Nights",
         "days": "6 Days",
-        "heroImage": "https://images.unsplash.com/photo-1588416936097-41850ab3d86d",
-        "overview": "Designed for adventure lovers with trekking, wildlife safari, and outdoor experiences.",
+        "overview": "Experience the best of Thailand with beaches, island tours, and scenic transfers.",
         "itinerary": [
           {
             "day": "Day 1",
-            "title": "Arrival in Kochi",
-            "description": "Pickup and hotel check-in."
+            "title": "Arrival in Phuket & City Tour",
+            "description": "Arrival at Phuket airport followed by a city tour."
           },
           {
             "day": "Day 2",
-            "title": "Wayanad Transfer",
-            "description": "Drive to Wayanad and evening campfire."
+            "title": "Phi Phi Island Tour",
+            "description": "Full-day Phi Phi Island tour."
           },
           {
             "day": "Day 3",
-            "title": "Trekking & Caves",
-            "description": "Trek to Chembra Peak and explore Edakkal Caves."
+            "title": "Free Day in Phuket",
+            "description": "Leisure day in Phuket."
           },
           {
             "day": "Day 4",
-            "title": "Wildlife Safari",
-            "description": "Jeep safari in Wayanad Wildlife Sanctuary."
+            "title": "Tiger Park & Transfer to Krabi",
+            "description": "Visit Tiger Park and transfer to Krabi."
           },
           {
             "day": "Day 5",
-            "title": "Leisure",
-            "description": "Free day for optional activities."
+            "title": "Seven Island Tour",
+            "description": "Enjoy the Seven Island Tour."
           },
           {
             "day": "Day 6",
-            "title": "Departure",
-            "description": "Return transfer to airport."
-          }
-        ],
-        "includes": [
-          "Hotel & camp stay",
-          "Breakfast & dinner",
-          "Trekking assistance",
-          "Wildlife safari"
-        ],
-        "excludes": [
-          "Trekking gear",
-          "Personal insurance",
-          "Optional adventure sports"
-        ]
-      },
-      {
-        "slug": "cultural-kerala-experience",
-        "title": "Cultural Kerala Experience",
-        "startingPrice": "₹20,000",
-        "priceNote": "Per Person",
-        "duration": "4 Nights / 5 Days",
-        "nights": "4 Nights",
-        "days": "5 Days",
-        "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-        "overview": "Explore Kerala’s culture, temples, Ayurveda, Kathakali shows, and local cuisine.",
-        "itinerary": [
-          {
-            "day": "Day 1",
-            "title": "Arrival in Kochi",
-            "description": "Pickup and hotel check-in."
-          },
-          {
-            "day": "Day 2",
-            "title": "Fort Kochi",
-            "description": "Visit Chinese fishing nets and heritage sites."
-          },
-          {
-            "day": "Day 3",
-            "title": "Cultural Show",
-            "description": "Kathakali & Kalaripayattu performance."
-          },
-          {
-            "day": "Day 4",
-            "title": "Ayurveda Session",
-            "description": "Traditional Ayurveda massage."
-          },
-          {
-            "day": "Day 5",
             "title": "Departure",
             "description": "Checkout and airport transfer."
           }
         ],
         "includes": [
-          "Hotel stay",
-          "Breakfast",
-          "Cultural show tickets",
-          "Ayurveda session"
+          "Hotel accommodation",
+          "Daily breakfast",
+          "Chao Phraya dinner cruise",
+          "Alcazar Show tickets",
+          "Bangkok & Pattaya city tours",
+          "Airport & intercity transfers"
         ],
         "excludes": [
-          "Flights",
+          "Airfare",
+          "Visa fees",
           "Personal expenses",
-          "Additional spa treatments"
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
         ]
       }
     ],
     "gallery": [
       {
-        "name": "Kerala Backwaters",
-        "src": "https://images.unsplash.com/photo-1588416936097-41850ab3d86d"
+        "name": "Bangkok City",
+        "src": "https://images.unsplash.com/photo-1528181304800-259b08848526"
       },
       {
-        "name": "Munnar Tea Gardens",
-        "src": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944"
+        "name": "Chao Phraya Cruise",
+        "src": "https://images.unsplash.com/photo-1583241800698-6c2f9f0f5a6e"
       },
       {
-        "name": "Houseboat Stay",
-        "src": "https://images.unsplash.com/photo-1548013146-72479768bada"
+        "name": "Pattaya Beach",
+        "src": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
       },
       {
-        "name": "Wayanad Hills",
-        "src": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2"
+        "name": "Alcazar Show",
+        "src": "https://images.unsplash.com/photo-1580657018959-2a20b8a16e2e"
       },
       {
-        "name": "Varkala Beach",
-        "src": "https://images.unsplash.com/photo-1588416936097-41850ab3d86d"
+        "name": "Tiger Park",
+        "src": "https://images.unsplash.com/photo-1552410260-0fd9b577afa6"
       },
       {
-        "name": "Athirappilly Waterfalls",
-        "src": "https://images.unsplash.com/photo-1588416936097-41850ab3d86d"
-      },
-      {
-        "name": "Kathakali Dance",
-        "src": "https://images.unsplash.com/photo-1588416936097-41850ab3d86d"
-      },
-      {
-        "name": "Periyar Wildlife",
-        "src": "https://images.unsplash.com/photo-1552083375-1447ce886485"
+        "name": "Thailand Temples",
+        "src": "https://images.unsplash.com/photo-1549693578-d683be217e58"
       }
     ]
   },
-  "ooty": {
-    "slug": "ooty",
-    "title": "Ooty",
-    "description": "Ooty (Udhagamandalam) is a charming hill station in the Nilgiri Hills known for its cool climate, scenic lakes, tea gardens, and misty mountain views.",
-    "image": "https://images.unsplash.com/photo-1756009481685-1513779372cf?auto=format&fit=crop&w=1200&q=80",
+  "vietnam": {
+    "slug": "vietnam",
+    "title": "Vietnam",
+    "description": "Vietnam is a beautiful Southeast Asian country known for its rich history, scenic landscapes, cruises, mountains, and vibrant cities.",
+    "image": "https://images.unsplash.com/photo-1504457047772-27faf1c00561?auto=format&fit=crop&w=1200&q=80",
     "packages": [
       {
-        "slug": "ooty-hill-station-getaway",
-        "title": "Ooty Hill Station Getaway",
-        "startingPrice": "₹16,500",
+        "slug": "vietnam-complete-tour",
+        "title": "Vietnam Complete Tour",
+        "startingPrice": "₹99,999",
         "priceNote": "Per Person",
-        "duration": "3 Nights / 4 Days",
-        "nights": "3 Nights",
-        "days": "4 Days",
-        "heroImage": "https://images.unsplash.com/photo-1756009481685-1513779372cf?auto=format&fit=crop&w=1200&q=80",
-        "overview": "Enjoy cool mountain air, scenic views, lakes, and tea estate tours in Ooty.",
+        "duration": "7 Nights / 8 Days",
+        "nights": "7 Nights",
+        "days": "8 Days",
+        "heroImage": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Discover the best of Vietnam with city tours, Halong Bay cruise, Bana Hills, Golden Bridge, Hoi An, and Mekong Delta.",
         "itinerary": [
           {
             "day": "Day 1",
-            "title": "Arrival & Lake Visit",
-            "description": "Reach Ooty, check in and enjoy boating at Ooty Lake."
+            "title": "Arrival in Hanoi",
+            "description": "Arrival at Hanoi airport followed by city tour."
           },
           {
             "day": "Day 2",
-            "title": "Tea Gardens & Viewpoints",
-            "description": "Explore tea gardens and scenic viewpoints in the Nilgiris."
+            "title": "Halong Bay Cruise",
+            "description": "Transfer to Halong Bay and enjoy an overnight luxury cruise."
           },
           {
             "day": "Day 3",
-            "title": "Botanical Gardens & Rose Garden",
-            "description": "Visit Government Botanical Garden and Rose Garden."
+            "title": "Halong Bay to Danang",
+            "description": "Return from cruise and flight to Danang."
           },
           {
             "day": "Day 4",
-            "title": "Departure",
-            "description": "Check out and transfer back."
-          }
-        ],
-        "includes": [
-          "Hotel accommodation",
-          "Daily breakfast",
-          "Sightseeing as per itinerary",
-          "All transfers"
-        ],
-        "excludes": [
-          "Airfare",
-          "Personal expenses",
-          "Adventure activities"
-        ]
-      },
-      {
-        "slug": "ooty-nature-and-lake-tour",
-        "title": "Ooty Nature & Lake Tour",
-        "startingPrice": "₹19,000",
-        "priceNote": "Per Person",
-        "duration": "4 Nights / 5 Days",
-        "nights": "4 Nights",
-        "days": "5 Days",
-        "heroImage": "https://images.unsplash.com/photo-1655546454267-f367a6be0c54?auto=format&fit=crop&w=1200&q=80",
-        "overview": "A relaxed tour of forests, lakes, and viewpoints in the Nilgiris.",
-        "itinerary": [
-          {
-            "day": "Day 1",
-            "title": "Arrival & Exploration",
-            "description": "Arrival and local sightseeing."
-          },
-          {
-            "day": "Day 2",
-            "title": "Pykara Lake Excursion",
-            "description": "Visit Pykara Lake & waterfalls."
-          },
-          {
-            "day": "Day 3",
-            "title": "Doddabetta Peak",
-            "description": "Visit the highest point for panoramic views."
-          },
-          {
-            "day": "Day 4",
-            "title": "Free Day",
-            "description": "Free day to enjoy gardens or markets."
+            "title": "Bana Hills & Golden Bridge",
+            "description": "Excursion to Bana Hills and visit the famous Golden Bridge."
           },
           {
             "day": "Day 5",
+            "title": "Marble Mountain & Hoi An",
+            "description": "Visit Marble Mountains and explore Hoi An ancient town."
+          },
+          {
+            "day": "Day 6",
+            "title": "Fly to Ho Chi Minh City",
+            "description": "Flight to Ho Chi Minh City and city tour."
+          },
+          {
+            "day": "Day 7",
+            "title": "Mekong Delta Tour",
+            "description": "Enjoy Mekong Delta boating and local village experience."
+          },
+          {
+            "day": "Day 8",
             "title": "Departure",
-            "description": "Return journey."
+            "description": "Checkout and transfer to airport."
+          }
+        ],
+        "includes": [
+          "International & domestic flights",
+          "Hotel accommodation",
+          "Daily breakfast",
+          "Halong Bay cruise",
+          "Sightseeing as per itinerary",
+          "E-visa",
+          "All transfers"
+        ],
+        "excludes": [
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Halong Bay",
+        "src": "https://images.unsplash.com/photo-1504457047772-27faf1c00561"
+      },
+      {
+        "name": "Golden Bridge",
+        "src": "https://images.unsplash.com/photo-1565967511849-76a60a516170"
+      },
+      {
+        "name": "Hoi An Ancient Town",
+        "src": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+      },
+      {
+        "name": "Ho Chi Minh City",
+        "src": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9"
+      },
+      {
+        "name": "Mekong Delta",
+        "src": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da"
+      }
+    ]
+  },
+  "bhutan": {
+    "slug": "bhutan",
+    "title": "Bhutan",
+    "description": "Bhutan is a peaceful Himalayan kingdom known for its monasteries, mountain landscapes, cultural heritage, and sustainable tourism experiences.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80",
+    "packages": [
+      {
+        "slug": "bhutan-cultural-himalayan-tour",
+        "title": "Bhutan Cultural Himalayan Tour",
+        "startingPrice": "₹67,999",
+        "priceNote": "Per Person",
+        "duration": "7 Nights / 8 Days",
+        "nights": "7 Nights",
+        "days": "8 Days",
+        "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+        "overview": "A complete Bhutan experience covering Phuentsholing, Thimphu, Punakha, and Paro with cultural tours, scenic drives, local cuisine, and authentic Bhutanese experiences.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival at Bagdogra & Transfer to Phuentsholing",
+            "description": "Arrival at Bagdogra airport. Transfer to Phuentsholing / Jaigaon and check-in to 3-star hotel."
+          },
+          {
+            "day": "Day 2",
+            "title": "Phuentsholing to Thimphu",
+            "description": "Checkout and transfer to Thimphu. Hot Pot lunch at Tenziling and Thimphu night tour."
+          },
+          {
+            "day": "Day 3",
+            "title": "Thimphu Sightseeing",
+            "description": "Full-day sightseeing in and around Thimphu by private AC MUV."
+          },
+          {
+            "day": "Day 4",
+            "title": "Thimphu to Punakha",
+            "description": "Checkout and transfer to Punakha. Sightseeing en route with Maggi stop at Lamperi."
+          },
+          {
+            "day": "Day 5",
+            "title": "Punakha to Paro",
+            "description": "Checkout from Punakha and transfer to Paro. Brewery tour with beer tasting."
+          },
+          {
+            "day": "Day 6",
+            "title": "Paro Sightseeing & Hot Stone Bath",
+            "description": "Sightseeing in and around Paro followed by a hot stone bath experience at Eco Farm."
+          },
+          {
+            "day": "Day 7",
+            "title": "Paro Special Experience",
+            "description": "Special cultural experience day in Paro with lunch included at hotel."
+          },
+          {
+            "day": "Day 8",
+            "title": "Paro to Phuentsholing & Departure",
+            "description": "Checkout and transfer back to Phuentsholing, then to Bagdogra airport for departure."
+          }
+        ],
+        "includes": [
+          "Arrival & departure transfers from Bagdogra",
+          "7 nights accommodation in 3-star hotels",
+          "Daily breakfast",
+          "Selected lunches & dinners as per itinerary",
+          "Licensed private guide service for 8 days",
+          "Private AC MUV for sightseeing & transfers",
+          "Hot pot lunch & hot stone bath experience",
+          "Beer tasting & cultural experiences",
+          "Check-in baggage included"
+        ],
+        "excludes": [
+          "Sustainable Development Fee (INR 1200 per person per night)",
+          "Gala dinner during Christmas & New Year",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Thimphu City",
+        "src": "https://images.unsplash.com/photo-1548013146-72479768bada"
+      },
+      {
+        "name": "Punakha Dzong",
+        "src": "https://images.unsplash.com/photo-1586796679170-dcddbb3b8c47"
+      },
+      {
+        "name": "Paro Valley",
+        "src": "https://images.unsplash.com/photo-1524230659092-07f99a75c013"
+      },
+      {
+        "name": "Bhutan Mountains",
+        "src": "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+      },
+      {
+        "name": "Traditional Bhutan Culture",
+        "src": "https://images.unsplash.com/photo-1504274066651-8d31a536b11a"
+      }
+    ]
+  },
+  "hongkong-macau": {
+    "slug": "hongkong-macau",
+    "title": "Hong Kong & Macau",
+    "description": "Hong Kong & Macau offer a perfect mix of theme parks, nightlife, iconic skylines, cruises, and luxury experiences with world-famous attractions.",
+    "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+    "packages": [
+      {
+        "slug": "hongkong-macau-family-tour",
+        "title": "Hong Kong & Macau Highlights",
+        "startingPrice": "On Request",
+        "priceNote": "Per Person",
+        "duration": "6 Nights / 7 Days",
+        "nights": "6 Nights",
+        "days": "7 Days",
+        "heroImage": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80",
+        "overview": "An exciting family-friendly tour covering Hong Kong city highlights, Disneyland, Ocean Park, night tours, and a scenic ferry journey to Macau.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Hong Kong",
+            "description": "Arrival at Hong Kong airport and transfer to 4-star hotel. Check-in and leisure time."
+          },
+          {
+            "day": "Day 2",
+            "title": "Hong Kong Night Tour",
+            "description": "Enjoy Peak Tram, Madame Tussauds, and Star Ferry with shared transfers."
+          },
+          {
+            "day": "Day 3",
+            "title": "Disneyland Tour",
+            "description": "Full-day Disneyland tour with shared transfers."
+          },
+          {
+            "day": "Day 4",
+            "title": "Ocean Park",
+            "description": "Visit Ocean Park with private transfers from Kowloon area hotels."
+          },
+          {
+            "day": "Day 5",
+            "title": "Hong Kong to Macau",
+            "description": "Checkout from Hong Kong hotel. Private transfer to ferry pier and one-way ferry to Macau. Check-in to 4-star hotel."
+          },
+          {
+            "day": "Day 6",
+            "title": "Macau Leisure Day",
+            "description": "Breakfast at hotel. Day free to explore Macau at your own pace."
+          },
+          {
+            "day": "Day 7",
+            "title": "Departure",
+            "description": "Checkout from Macau hotel. Shared transfer via direct transit bus from Macau border to Hong Kong airport."
+          }
+        ],
+        "includes": [
+          "4 nights stay in Hong Kong (4-star hotel)",
+          "2 nights stay in Macau (4-star hotel)",
+          "Daily breakfast",
+          "Hong Kong night tour",
+          "Disneyland tour",
+          "Ocean Park tickets",
+          "Private & shared transfers as mentioned",
+          "One-way ferry ticket from Hong Kong to Macau"
+        ],
+        "excludes": [
+          "Airfare",
+          "Visa fees",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Hong Kong Skyline",
+        "src": "https://images.unsplash.com/photo-1508009603885-50cf7c579365"
+      },
+      {
+        "name": "Victoria Peak",
+        "src": "https://images.unsplash.com/photo-1528181304800-259b08848526"
+      },
+      {
+        "name": "Hong Kong Disneyland",
+        "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5"
+      },
+      {
+        "name": "Ocean Park",
+        "src": "https://images.unsplash.com/photo-1583241800698-6c2f9f0f5a6e"
+      },
+      {
+        "name": "Macau City",
+        "src": "https://images.unsplash.com/photo-1504274066651-8d31a536b11a"
+      },
+      {
+        "name": "Macau Ferry",
+        "src": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
+      }
+    ]
+  },
+  "usa": {
+    "slug": "usa",
+    "title": "USA",
+    "description": "Explore the iconic West Coast coastline and the historic East Coast cities of the USA with exciting city tours, scenic drives, and natural wonders.",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    "packages": [
+      {
+        "slug": "usa-west-coast-golden-cities-coastline",
+        "title": "USA — West Coast: Golden Cities & Coastline",
+        "startingPrice": "₹2,10,000",
+        "priceNote": "Per Person",
+        "duration": "10 Nights / 11 Days",
+        "nights": "10 Nights",
+        "days": "11 Days",
+        "heroImage": "https://images.unsplash.com/photo-1521185496955-15097b20c5fe?auto=format&fit=crop&w=1200&q=80",
+        "overview": "A spectacular road trip along the West Coast from Los Angeles to San Francisco with scenic drives, coastal views, and iconic cities.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrive LAX",
+            "description": "Private transfer to hotel and welcome dinner in Santa Monica. Overnight in Los Angeles."
+          },
+          {
+            "day": "Day 2",
+            "title": "Los Angeles City Tour",
+            "description": "Hollywood Walk of Fame, Getty Center, Venice Beach. Evening group orientation. Overnight in LA."
+          },
+          {
+            "day": "Day 3",
+            "title": "Drive to San Diego",
+            "description": "Explore Coronado & Gaslamp Quarter. Sunset cruise in San Diego. Overnight in San Diego."
+          },
+          {
+            "day": "Day 4",
+            "title": "San Diego to Santa Barbara",
+            "description": "Coastal drive to Santa Barbara with mission visit and wine tasting. Overnight in Santa Barbara."
+          },
+          {
+            "day": "Day 5",
+            "title": "Pacific Coast Highway to Big Sur",
+            "description": "Drive along PCH, stop at scenic viewpoints and Pfeiffer Beach. Overnight in Big Sur/Carmel."
+          },
+          {
+            "day": "Day 6",
+            "title": "Carmel & Monterey",
+            "description": "17-Mile Drive, Monterey Bay Aquarium. Overnight in Monterey."
+          },
+          {
+            "day": "Day 7",
+            "title": "Drive to San Francisco",
+            "description": "Golden Gate Bridge, Fisherman’s Wharf. Overnight in San Francisco."
+          },
+          {
+            "day": "Day 8",
+            "title": "San Francisco City Tour",
+            "description": "Alcatraz (optional), Chinatown, Cable Car ride. Overnight in SF."
+          },
+          {
+            "day": "Day 9",
+            "title": "Napa Valley or Muir Woods",
+            "description": "Luxury wine pairing day in Napa Valley or visit Muir Woods. Overnight in SF."
+          },
+          {
+            "day": "Day 10",
+            "title": "Yosemite National Park",
+            "description": "Day tour to Yosemite National Park (optional overnight stay for trekking)."
+          },
+          {
+            "day": "Day 11",
+            "title": "Departure",
+            "description": "Return to SFO for departure."
+          }
+        ],
+        "includes": [
+          "Private transfers & transportation",
+          "Accommodation for 10 nights",
+          "Daily breakfast",
+          "Sightseeing as per itinerary",
+          "Sunset cruise in San Diego"
+        ],
+        "excludes": [
+          "Airfare",
+          "Visa fees",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      },
+      {
+        "slug": "usa-east-coast-new-york-washington-niagara",
+        "title": "USA — East Coast: New York & Washington D.C.",
+        "startingPrice": "₹1,90,000",
+        "priceNote": "Per Person",
+        "duration": "8 Nights / 9 Days",
+        "nights": "8 Nights",
+        "days": "9 Days",
+        "heroImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Discover the East Coast highlights including New York City, Washington D.C., Philadelphia, and Niagara Falls with an optional Toronto add-on.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrive NYC",
+            "description": "Arrival in New York City. Times Square orientation and evening at leisure."
+          },
+          {
+            "day": "Day 2",
+            "title": "NYC City Highlights",
+            "description": "Central Park, MET, 9/11 Memorial. Broadway option available."
+          },
+          {
+            "day": "Day 3",
+            "title": "NYC Neighborhood Tour",
+            "description": "Explore Brooklyn & DUMBO. Sunset cruise to Statue of Liberty."
+          },
+          {
+            "day": "Day 4",
+            "title": "Philadelphia & Washington D.C.",
+            "description": "Day trip to Philadelphia (Liberty Bell) then transfer to Washington D.C. Overnight in D.C."
+          },
+          {
+            "day": "Day 5",
+            "title": "Washington D.C. Tour",
+            "description": "Monuments, Capitol Hill, Smithsonian museums."
+          },
+          {
+            "day": "Day 6",
+            "title": "Niagara Falls",
+            "description": "Travel to Niagara Falls (US side). Evening illumination of falls."
+          },
+          {
+            "day": "Day 7",
+            "title": "Optional Toronto Add-on",
+            "description": "Optional day trip to Toronto (if multi-country add-on) or return to NYC by flight."
+          },
+          {
+            "day": "Day 8",
+            "title": "Last Day in NYC",
+            "description": "Shopping, museums, leisure time."
+          },
+          {
+            "day": "Day 9",
+            "title": "Departure",
+            "description": "Departure from New York."
+          }
+        ],
+        "includes": [
+          "Accommodation for 8 nights",
+          "Daily breakfast",
+          "Sightseeing as per itinerary",
+          "Transfers & local transport"
+        ],
+        "excludes": [
+          "Airfare",
+          "Visa fees",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Golden Gate Bridge",
+        "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+      },
+      {
+        "name": "Los Angeles",
+        "src": "https://images.unsplash.com/photo-1521185496955-15097b20c5fe"
+      },
+      {
+        "name": "San Diego",
+        "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+      },
+      {
+        "name": "New York City",
+        "src": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+      },
+      {
+        "name": "Washington D.C.",
+        "src": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e"
+      },
+      {
+        "name": "Niagara Falls",
+        "src": "https://images.unsplash.com/photo-1540202404-a2f29016b523"
+      }
+    ]
+  },
+  "italy": {
+    "slug": "italy",
+    "title": "Italy",
+    "description": "Explore Italy’s cultural gems from Rome, Florence, Tuscany to Venice with historical monuments, art, wine tours, and unforgettable experiences.",
+    "image": "https://images.unsplash.com/photo-1526481280695-3c687fd5439b?auto=format&fit=crop&w=1200&q=80",
+    "packages": [
+      {
+        "slug": "italy-cultural-circuit",
+        "title": "Italy Cultural Circuit (Rome → Florence → Tuscany → Venice)",
+        "startingPrice": "₹1,60,000",
+        "priceNote": "Per Person",
+        "duration": "9 Nights / 10 Days",
+        "nights": "9 Nights",
+        "days": "10 Days",
+        "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+        "overview": "A classic cultural journey across Italy’s most iconic cities with art, history, culinary experiences, and scenic Tuscan landscapes.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Rome",
+            "description": "Evening passeggiata (stroll) and welcome dinner. Overnight in Rome."
+          },
+          {
+            "day": "Day 2",
+            "title": "Rome Highlights",
+            "description": "Vatican City, St. Peter’s Basilica, Sistine Chapel, and Colosseum."
+          },
+          {
+            "day": "Day 3",
+            "title": "Rome Neighborhoods & Cooking Class",
+            "description": "Explore Rome neighborhoods like Trastevere and enjoy a cooking class in the evening."
+          },
+          {
+            "day": "Day 4",
+            "title": "Train to Florence",
+            "description": "Visit Florence Duomo and Uffizi Gallery (timed tickets recommended)."
+          },
+          {
+            "day": "Day 5",
+            "title": "Pisa & Lucca / Chianti Wine Roads",
+            "description": "Day trip to Pisa & Lucca or explore the Chianti wine region."
+          },
+          {
+            "day": "Day 6",
+            "title": "Tuscany Winery & Olive Farm",
+            "description": "Full-day Tuscany tour with winery, olive farm visit, and agriturismo lunch."
+          },
+          {
+            "day": "Day 7",
+            "title": "Train to Venice",
+            "description": "Explore St. Mark’s Square and optional gondola ride."
+          },
+          {
+            "day": "Day 8",
+            "title": "Murano & Burano",
+            "description": "Visit Murano & Burano with a private glass-making demo."
+          },
+          {
+            "day": "Day 9",
+            "title": "Leisure & Shopping",
+            "description": "Free day for shopping or optional evening opera."
+          },
+          {
+            "day": "Day 10",
+            "title": "Departure",
+            "description": "Checkout and transfer for departure."
+          }
+        ],
+        "includes": [
+          "Accommodation for 9 nights",
+          "Daily breakfast",
+          "High-speed train tickets (as per itinerary)",
+          "Sightseeing tours as per itinerary",
+          "Cooking class in Rome",
+          "Wine tasting in Tuscany"
+        ],
+        "excludes": [
+          "Airfare",
+          "Visa fees",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Rome",
+        "src": "https://images.unsplash.com/photo-1526481280695-3c687fd5439b"
+      },
+      {
+        "name": "Florence",
+        "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+      },
+      {
+        "name": "Tuscany Vineyards",
+        "src": "https://images.unsplash.com/photo-1549898872-3e6b5ef3c8a1"
+      },
+      {
+        "name": "Venice",
+        "src": "https://images.unsplash.com/photo-1501183638710-841dd1904471"
+      }
+    ]
+  },
+  "europe-classic-cities": {
+    "slug": "europe-classic-cities",
+    "title": "Europe Classic Cities Circuit",
+    "description": "Explore the best of Europe with a cultural and scenic tour covering Paris, Amsterdam, Berlin, Prague, and Vienna with iconic landmarks, museums, and experiences.",
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80",
+    "packages": [
+      {
+        "slug": "europe-classic-cities-circuit",
+        "title": "Europe Classic Cities Circuit (Paris → Amsterdam → Berlin → Prague → Vienna)",
+        "startingPrice": "₹1,65,999",
+        "priceNote": "Per Person",
+        "duration": "12 Nights / 13 Days",
+        "nights": "12 Nights",
+        "days": "13 Days",
+        "heroImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80",
+        "overview": "A classic Europe tour across five iconic cities with museums, river cruises, historic landmarks, and cultural experiences. Includes Eurail passes or regional flights based on itinerary.",
+        "itinerary": [
+          {
+            "day": "Day 1–3",
+            "title": "Paris",
+            "description": "Visit Louvre, Eiffel Tower, Montmartre, and enjoy a Seine River cruise."
+          },
+          {
+            "day": "Day 4–5",
+            "title": "Amsterdam",
+            "description": "Canal cruise, Anne Frank House, Van Gogh Museum."
+          },
+          {
+            "day": "Day 6–7",
+            "title": "Berlin",
+            "description": "Explore Berlin Wall, Museum Island, and enjoy the nightlife."
+          },
+          {
+            "day": "Day 8–9",
+            "title": "Prague",
+            "description": "Old Town Square, Charles Bridge, Prague Castle."
+          },
+          {
+            "day": "Day 10–11",
+            "title": "Vienna",
+            "description": "Classical concert, palaces, and coffee culture."
+          },
+          {
+            "day": "Day 12",
+            "title": "Transit Day",
+            "description": "Travel day with a countryside stop (optional Salzburg)."
+          },
+          {
+            "day": "Day 13",
+            "title": "Departure",
+            "description": "Checkout and departure."
+          }
+        ],
+        "includes": [
+          "Accommodation for 12 nights",
+          "Daily breakfast",
+          "Eurail passes or regional flights",
+          "Sightseeing as per itinerary",
+          "Seine river cruise in Paris",
+          "Canal cruise in Amsterdam"
+        ],
+        "excludes": [
+          "Airfare",
+          "Visa fees",
+          "Personal expenses",
+          "Travel insurance",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Paris – Eiffel Tower",
+        "src": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80"
+      },
+      {
+        "name": "Amsterdam – Canals",
+        "src": "https://images.unsplash.com/photo-1468436139062-f60a71c5c892?auto=format&fit=crop&w=1600&q=80"
+      },
+      {
+        "name": "Berlin – Brandenburg Gate",
+        "src": "https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=1600&q=80"
+      },
+      {
+        "name": "Prague – Charles Bridge",
+        "src": "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=1600&q=80"
+      },
+      {
+        "name": "Vienna – City View",
+        "src": "https://images.unsplash.com/photo-1524230659092-07f99a75c013?auto=format&fit=crop&w=1600&q=80"
+      }
+    ]
+  },
+  "south-america": {
+    "slug": "south-america",
+    "title": "South America",
+    "description": "Explore ancient civilizations, dramatic landscapes, and surreal natural wonders across Peru and Bolivia.",
+    "image": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=1200&q=80",
+    "packages": [
+      {
+        "slug": "peru-bolivia-classic",
+        "title": "Peru & Bolivia Explorer (Lima → Cusco → Machu Picchu → La Paz → Uyuni)",
+        "startingPrice": "₹3,71,999",
+        "priceNote": "Per Person (Twin Share)",
+        "duration": "12 Nights / 13 Days",
+        "nights": "12 Nights",
+        "days": "13 Days",
+        "heroImage": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=1200&q=80",
+        "overview": "A bucket-list South America journey covering Inca heritage, Machu Picchu guided entry, high-altitude cities, and the breathtaking Uyuni Salt Flats.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Lima",
+            "description": "City tour and Peruvian gastronomy tasting experience."
+          },
+          {
+            "day": "Day 2",
+            "title": "Fly to Cusco",
+            "description": "Acclimatization day with light city walk."
+          },
+          {
+            "day": "Day 3",
+            "title": "Sacred Valley Tour",
+            "description": "Visit Pisac, Ollantaytambo, and local markets."
+          },
+          {
+            "day": "Day 4",
+            "title": "Machu Picchu",
+            "description": "Train to Aguas Calientes and early guided Machu Picchu tour."
+          },
+          {
+            "day": "Day 5",
+            "title": "Cusco Leisure",
+            "description": "Optional Huayna Picchu hike or thermal baths."
+          },
+          {
+            "day": "Day 6",
+            "title": "Fly to La Paz",
+            "description": "Transfer to Bolivia’s capital city."
+          },
+          {
+            "day": "Day 7",
+            "title": "La Paz Sightseeing",
+            "description": "City tour, Valley of the Moon, cable car ride."
+          },
+          {
+            "day": "Day 8",
+            "title": "Uyuni Transfer",
+            "description": "Transfer to Uyuni and sunset salt flats tour."
+          },
+          {
+            "day": "Day 9",
+            "title": "Uyuni Salt Flats",
+            "description": "Full day salt flats exploration, Incahuasi Island & stargazing."
+          },
+          {
+            "day": "Day 10–12",
+            "title": "Optional Extensions",
+            "description": "Atacama / Patagonia add-on or return to Lima."
+          },
+          {
+            "day": "Day 13",
+            "title": "Departure",
+            "description": "Final departure from Lima."
+          }
+        ],
+        "includes": [
+          "International & internal flights",
+          "12 nights accommodation",
+          "Daily breakfast",
+          "Machu Picchu permit & guided entry",
+          "All transfers & sightseeing",
+          "Uyuni salt flats guided tours"
+        ],
+        "excludes": [
+          "Visa fees",
+          "Personal expenses",
+          "Travel insurance",
+          "Luxury train upgrades",
+          "Anything not mentioned in inclusions"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Machu Picchu",
+        "src": "https://images.unsplash.com/photo-1549640376-34c7c2f6085c?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "name": "Sacred Valley",
+        "src": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "name": "Uyuni Salt Flats",
+        "src": "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "name": "La Paz City",
+        "src": "https://images.unsplash.com/photo-1600861194942-f883de0dfe96?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  "eritrea": {
+    "slug": "eritrea",
+    "title": "Eritrea",
+    "description": "Eritrea offers a rare blend of Italian colonial architecture, Red Sea islands, rich culture, and untouched heritage.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "packages": [
+      {
+        "slug": "eritrea-asmara-red-sea",
+        "title": "Asmara & Red Sea Experience",
+        "startingPrice": "₹1,80,000",
+        "priceNote": "Per Person",
+        "duration": "7 Nights / 8 Days",
+        "nights": "7 Nights",
+        "days": "8 Days",
+        "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "overview": "Discover Eritrea’s cultural heart Asmara, the historic town of Keren, and the pristine Red Sea coast of Massawa.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Asmara",
+            "description": "Fly into Asmara via Addis or Juba, followed by a city walking tour highlighting Italian architecture."
+          },
+          {
+            "day": "Day 2",
+            "title": "Asmara Exploration",
+            "description": "Visit museums, local markets, historic cinema halls, and enjoy café culture."
+          },
+          {
+            "day": "Day 3",
+            "title": "Keren Day Trip",
+            "description": "Excursion to Keren to explore local markets and colonial-era forts."
+          },
+          {
+            "day": "Day 4",
+            "title": "Transfer to Massawa",
+            "description": "Scenic transfer to Massawa on the Red Sea, explore Ottoman-era architecture."
+          },
+          {
+            "day": "Day 5",
+            "title": "Red Sea Boat Day",
+            "description": "Boat excursion with snorkeling, island views, and seafood lunch."
+          },
+          {
+            "day": "Day 6",
+            "title": "Cultural Exchange",
+            "description": "Visit local villages and interact with island communities."
+          },
+          {
+            "day": "Day 7",
+            "title": "Return to Asmara",
+            "description": "Return journey to Asmara, free time for shopping and farewells."
+          },
+          {
+            "day": "Day 8",
+            "title": "Departure",
+            "description": "Transfer to airport for onward journey."
           }
         ],
         "includes": [
           "Hotel accommodation",
           "Daily breakfast",
-          "Sightseeing as per itinerary",
-          "All transfers"
+          "All internal transfers",
+          "Guided city tours",
+          "Boat excursion in Red Sea"
         ],
         "excludes": [
-          "Airfare",
+          "International airfare",
+          "Visa fees",
           "Personal expenses",
-          "Adventure activities"
+          "Travel insurance"
         ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Asmara City",
+        "src": "https://images.unsplash.com/photo-1617814076367-b759c7b5b6e3"
       },
       {
-        "slug": "ooty-adventure-hill-trip",
-        "title": "Ooty Adventure Hill Trip",
-        "startingPrice": "₹21,000",
+        "name": "Keren Market",
+        "src": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19"
+      },
+      {
+        "name": "Massawa Old Town",
+        "src": "https://images.unsplash.com/photo-1621869758341-82c8caa0e01e"
+      },
+      {
+        "name": "Red Sea Coast",
+        "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+      }
+    ]
+  },
+  "jordan": {
+    "slug": "jordan",
+    "title": "Jordan",
+    "description": "Jordan is a land of ancient wonders, desert landscapes, and healing experiences from Petra to the Dead Sea.",
+    "image": "https://images.unsplash.com/photo-1548786817-9c6d6b1a1d47",
+    "packages": [
+      {
+        "slug": "jordan-petra-wadi-rum-dead-sea",
+        "title": "Petra, Wadi Rum & Dead Sea Classic",
+        "startingPrice": "₹95,999",
         "priceNote": "Per Person",
         "duration": "5 Nights / 6 Days",
         "nights": "5 Nights",
         "days": "6 Days",
-        "heroImage": "https://images.unsplash.com/photo-1617196033963-7a7a41a0bfb0?auto=format&fit=crop&w=1200&q=80",
-        "overview": "Adventure-packed Ooty trip with trekking, lake boating, and nature trails.",
+        "heroImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "overview": "A classic Jordan journey covering the ancient city of Petra, desert adventure in Wadi Rum, and relaxation at the Dead Sea.",
         "itinerary": [
           {
             "day": "Day 1",
-            "title": "Arrival in Ooty",
-            "description": "Check in to hotel and evening free."
+            "title": "Arrival in Amman",
+            "description": "Arrival in Amman followed by city sightseeing tour."
           },
           {
             "day": "Day 2",
-            "title": "Trekking & Forest Walks",
-            "description": "Guided trekking in Nilgiri hills and forest trails."
+            "title": "Jerash & Dead Sea",
+            "description": "Visit Jerash and Ajloun or enjoy floating experience at the Dead Sea with spa time."
           },
           {
             "day": "Day 3",
-            "title": "Lake & Boat Ride",
-            "description": "Boating at Ooty Lake and leisure time."
+            "title": "Transfer to Petra",
+            "description": "Drive to Petra with optional evening Petra by Night experience."
           },
           {
             "day": "Day 4",
-            "title": "Doddabetta & Tea Gardens",
-            "description": "Visit Doddabetta peak and tea estates."
+            "title": "Explore Petra",
+            "description": "Full-day guided exploration of the ancient rose-red city of Petra."
           },
           {
             "day": "Day 5",
-            "title": "Adventure Activities",
-            "description": "Optional zip-lining, cycling, and horse riding."
+            "title": "Wadi Rum Desert",
+            "description": "Jeep safari in Wadi Rum and overnight stay in Bedouin desert camp."
           },
           {
             "day": "Day 6",
             "title": "Departure",
-            "description": "Checkout and return transfer."
-          }
-        ],
-        "includes": [
-          "Hotel stay",
-          "Daily breakfast",
-          "Trekking guidance",
-          "Lake boating"
-        ],
-        "excludes": [
-          "Adventure equipment",
-          "Personal expenses",
-          "Airfare"
-        ]
-      },
-      {
-        "slug": "ooty-relax-and-culture",
-        "title": "Ooty Relax & Culture",
-        "startingPrice": "₹18,500",
-        "priceNote": "Per Person",
-        "duration": "4 Nights / 5 Days",
-        "nights": "4 Nights",
-        "days": "5 Days",
-        "heroImage": "https://images.unsplash.com/photo-1617196033963-7a7a41a0bfb0?auto=format&fit=crop&w=1200&q=80",
-        "overview": "Relaxing Ooty trip with gardens, museums, local markets, and cultural experiences.",
-        "itinerary": [
-          {
-            "day": "Day 1",
-            "title": "Arrival & Leisure",
-            "description": "Check-in and evening leisure at hotel."
-          },
-          {
-            "day": "Day 2",
-            "title": "Botanical Gardens & Museums",
-            "description": "Visit the Government Botanical Garden and local museums."
-          },
-          {
-            "day": "Day 3",
-            "title": "Tea Factory & Market",
-            "description": "Tour of tea factory and local market shopping."
-          },
-          {
-            "day": "Day 4",
-            "title": "Rose Garden & Leisure",
-            "description": "Visit Rose Garden and relax."
-          },
-          {
-            "day": "Day 5",
-            "title": "Departure",
-            "description": "Checkout and return journey."
+            "description": "Return to Amman and transfer to airport."
           }
         ],
         "includes": [
           "Hotel accommodation",
           "Daily breakfast",
-          "Sightseeing as per itinerary",
-          "All transfers"
+          "Desert camp stay",
+          "Jeep safari in Wadi Rum",
+          "All transfers & sightseeing"
         ],
         "excludes": [
-          "Airfare",
+          "Flights",
+          "Visa fees",
           "Personal expenses",
-          "Additional spa treatments"
+          "Optional activities"
         ]
       }
     ],
     "gallery": [
       {
-        "name": "Ooty Hills",
-        "src": "https://images.unsplash.com/photo-1627894483216-2138af692e32"
-      },
-      {
-        "name": "Tea Plantations",
-        "src": "https://images.unsplash.com/photo-1599640842225-85d111c60e6b"
-      },
-      {
-        "name": "Ooty Lake",
-        "src": "https://images.unsplash.com/photo-1627894483216-2138af692e32"
-      },
-      {
-        "name": "Nilgiri Mountains",
-        "src": "https://images.unsplash.com/photo-1621761191319-c6fb62004040"
-      },
-      {
-        "name": "Botanical Garden",
-        "src": "https://images.unsplash.com/photo-1621761191319-c6fb62004040"
-      },
-      {
-        "name": "Doddabetta Peak",
-        "src": "https://images.unsplash.com/photo-1621761191319-c6fb62004040"
-      },
-      {
-        "name": "Toy Train Ride",
-        "src": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb"
-      },
-      {
-        "name": "Pine Forest",
+        "name": "Petra Treasury",
         "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+      },
+      {
+        "name": "Wadi Rum Desert",
+        "src": "https://images.unsplash.com/photo-1548786817-9c6d6b1a1d47"
+      },
+      {
+        "name": "Dead Sea",
+        "src": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+      }
+    ]
+  },
+  "japan": {
+    "slug": "japan",
+    "title": "Japan",
+    "description": "Japan blends ultra-modern cities with ancient traditions, temples, and breathtaking natural beauty.",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
+    "packages": [
+      {
+        "slug": "japan-modern-traditional",
+        "title": "Tokyo, Hakone, Kyoto & Osaka",
+        "startingPrice": "₹1,75,999",
+        "priceNote": "Per Person",
+        "duration": "9 Nights / 10 Days",
+        "nights": "9 Nights",
+        "days": "10 Days",
+        "heroImage": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80",
+        "overview": "Experience modern Tokyo, scenic Hakone, cultural Kyoto, and vibrant Osaka on this classic Japan tour.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Tokyo",
+            "description": "Arrival and night walk in Shibuya & Shinjuku."
+          },
+          {
+            "day": "Day 2",
+            "title": "Tokyo Highlights",
+            "description": "Meiji Shrine, Asakusa, Sensoji & Ueno museums."
+          },
+          {
+            "day": "Day 3",
+            "title": "Tokyo Pop Culture",
+            "description": "Akihabara, anime culture, Skytree or Tokyo Tower."
+          },
+          {
+            "day": "Day 4",
+            "title": "Hakone / Mt Fuji",
+            "description": "Day trip to Hakone or Mt Fuji region."
+          },
+          {
+            "day": "Day 5",
+            "title": "Hakone Experience",
+            "description": "Onsen bath and lake cruise."
+          },
+          {
+            "day": "Day 6",
+            "title": "Kyoto Transfer",
+            "description": "Bullet train to Kyoto, Gion walk."
+          },
+          {
+            "day": "Day 7",
+            "title": "Kyoto Culture",
+            "description": "Arashiyama Bamboo Grove and Fushimi Inari."
+          },
+          {
+            "day": "Day 8",
+            "title": "Osaka Day Trip",
+            "description": "Visit Nara or enjoy Osaka food tour."
+          },
+          {
+            "day": "Day 9",
+            "title": "Osaka Exploration",
+            "description": "Osaka Castle and Dotonbori nightlife."
+          },
+          {
+            "day": "Day 10",
+            "title": "Departure",
+            "description": "Transfer to airport."
+          }
+        ],
+        "includes": [
+          "Hotels",
+          "Daily breakfast",
+          "Bullet train tickets",
+          "City sightseeing",
+          "Local transfers"
+        ],
+        "excludes": [
+          "International airfare",
+          "Visa fees",
+          "Personal expenses"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Tokyo City",
+        "src": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Kyoto Temples",
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Mount Fuji",
+        "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Osaka Night",
+        "src": "https://images.unsplash.com/photo-1568084300290-2c24a7c97c84?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "nepal": {
+    "slug": "nepal",
+    "title": "Nepal",
+    "description": "Nepal is a haven for trekkers and nature lovers, offering Himalayan views, spiritual heritage, and peaceful landscapes.",
+    "image": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80",
+    "packages": [
+      {
+        "slug": "nepal-kathmandu-short-trek",
+        "title": "Kathmandu, Pokhara & Poon Hill Trek",
+        "startingPrice": "₹35,999",
+        "priceNote": "Per Person",
+        "duration": "6 Nights / 7 Days",
+        "nights": "6 Nights",
+        "days": "7 Days",
+        "heroImage": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80",
+        "overview": "A short Himalayan trek combined with cultural exploration of Kathmandu and scenic relaxation in Pokhara.",
+        "itinerary": [
+          {
+            "day": "Day 1",
+            "title": "Arrival in Kathmandu",
+            "description": "Arrival followed by visits to Pashupatinath Temple and Boudhanath Stupa."
+          },
+          {
+            "day": "Day 2",
+            "title": "Kathmandu to Pokhara",
+            "description": "Fly or drive to Pokhara and enjoy lakeside sunset views."
+          },
+          {
+            "day": "Day 3",
+            "title": "Trek to Ulleri",
+            "description": "Drive to Nayapul and begin trek to Ulleri village."
+          },
+          {
+            "day": "Day 4",
+            "title": "Trek to Ghorepani",
+            "description": "Scenic trek through forests to reach Ghorepani."
+          },
+          {
+            "day": "Day 5",
+            "title": "Poon Hill Sunrise",
+            "description": "Early morning hike to Poon Hill viewpoint, then trek to Tadapani."
+          },
+          {
+            "day": "Day 6",
+            "title": "Return to Pokhara",
+            "description": "Return to Pokhara and relax with yoga or meditation session."
+          },
+          {
+            "day": "Day 7",
+            "title": "Departure",
+            "description": "Fly back to Kathmandu and transfer to airport."
+          }
+        ],
+        "includes": [
+          "Hotel & tea-house accommodation",
+          "Daily breakfast",
+          "Trekking guide assistance",
+          "All ground transfers"
+        ],
+        "excludes": [
+          "International flights",
+          "Personal expenses",
+          "Travel insurance",
+          "Trekking gear"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "name": "Poon Hill Sunrise",
+        "src": "https://images.unsplash.com/photo-1544735716-6c6f1b0c6b1b?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Pokhara Lake",
+        "src": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Kathmandu Temples",
+        "src": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "name": "Himalayan Trails",
+        "src": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80"
       }
     ]
   }

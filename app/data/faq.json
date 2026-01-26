@@ -1,0 +1,26 @@
+{
+  "leftItems": [
+    {
+      "title": "Do you offer international group departures?",
+      "content": "Yes, we operate curated group departures across India and international destinations."
+    },
+    {
+      "title": "Are your spiritual or psychedelic retreats legal?",
+      "content": "Yes. Such experiences are offered only in destinations where they are legal and regulated."
+    },
+    {
+      "title": "Can I customize a trip?",
+      "content": "Absolutely. We design personalized itineraries for individual travelers and private groups."
+    }
+  ],
+  "rightItems": [
+    {
+      "title": "Do you cater to foreign travelers?",
+      "content": "Yes, we serve both Indian and international clients."
+    },
+    {
+      "title": "Is travel insurance required?",
+      "content": "Strongly recommended, especially for international and adventure travel."
+    }
+  ]
+}

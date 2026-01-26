@@ -1,42 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import faqData from '@/app/data/faq.json'; // ✅ import JSON
 
-const leftItems = [
-  {
-    title: 'What to prepare trip to Asia',
-    content:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.',
-  },
-  {
-    title: 'What document you need before go to asia',
-    content:
-      'Passport, visa requirements, travel insurance, flight tickets, hotel bookings, and local identification documents.',
-  },
-  {
-    title: 'How to scheduling Asia trip itinerary',
-    content:
-      'Plan destinations by region, allocate buffer days, check seasonal weather, and book transport in advance.',
-  },
-];
-
-const rightItems = [
-  {
-    title: 'Website must read before your trip',
-    content:
-      'Official tourism websites, embassy sites, and trusted travel blogs provide accurate travel information.',
-  },
-  {
-    title: 'This is the best budget you need to prepare',
-    content:
-      'Budget depends on country, duration, accommodation type, transport, food, and activities.',
-  },
-  {
-    title: 'This site give you the information about travel to Asia',
-    content:
-      'This site offers complete guidance including visas, itineraries, budgeting, and travel tips.',
-  },
-];
+const { leftItems, rightItems } = faqData;
 
 type AccordionItemProps = {
   index: number;
@@ -62,7 +29,6 @@ function AccordionItem({
           {index}. {title}
         </h5>
 
-        {/* Arrow */}
         <svg
           width="20"
           height="20"
@@ -81,7 +47,6 @@ function AccordionItem({
         </svg>
       </button>
 
-      {/* Content */}
       <div
         className={`grid transition-all duration-300 ease-in-out ${
           isOpen ? 'grid-rows-[1fr] pb-6' : 'grid-rows-[0fr]'
@@ -125,7 +90,7 @@ export default function FaqSection() {
 
         {/* FAQ GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16">
-          {/* LEFT COLUMN */}
+          {/* LEFT */}
           <div>
             {leftItems.map((item, i) => (
               <AccordionItem
@@ -139,7 +104,7 @@ export default function FaqSection() {
             ))}
           </div>
 
-          {/* RIGHT COLUMN */}
+          {/* RIGHT */}
           <div>
             {rightItems.map((item, i) => (
               <AccordionItem
@@ -154,7 +119,7 @@ export default function FaqSection() {
           </div>
         </div>
 
-        <video
+        {/* <video
           className="h-[250px] lg:h-screen w-full object-cover rounded-2xl mt-15"
           autoPlay
           loop
@@ -162,7 +127,18 @@ export default function FaqSection() {
           playsInline
           poster="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
           <source src="assets/videos/Nobt-world-banner.mp4" type="video/mp4" />
-        </video>
+        </video> */}
+        <div className="relative h-[250px] lg:h-screen w-full overflow-hidden rounded-2xl mt-15">
+          <iframe
+            className="absolute top-1/2 left-1/2 
+               w-[130%] h-[130%] 
+               -translate-x-1/2 -translate-y-1/2
+               pointer-events-none"
+            src="https://www.youtube.com/embed/lQTj0lOLDG0?autoplay=1&mute=1&controls=0&loop=1&playlist=lQTj0lOLDG0&modestbranding=1&rel=0&fs=0&disablekb=1"
+            title="YouTube background video"
+            allow="autoplay; encrypted-media"
+          />
+        </div>
       </div>
     </section>
   );

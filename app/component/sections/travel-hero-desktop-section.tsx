@@ -1,10 +1,11 @@
 'use client';
 import Image from 'next/image';
-import LargeImage from '../../../public/assets/images/travel-hero-section-large-image.jpg';
-import SecondImage from '../../../public/assets/images/travel-section-image2.jpg';
+import LargeImage from '../../../public/assets/images/two-persons.jpeg';
+import SecondImage from '../../../public/assets/images/group photo.jpeg';
+import ThirdImage from '../../../public/assets/images/couple-pics.jpeg';
 
 interface HeroTravelDesktopProps {
-  className?: string; // optional string
+  className?: string;
 }
 
 const HeroTravelDesktop: React.FC<HeroTravelDesktopProps> = ({ className }) => {
@@ -62,7 +63,7 @@ const HeroTravelDesktop: React.FC<HeroTravelDesktopProps> = ({ className }) => {
             <div className="flex col-span-6 flex-wrap flex-col">
               <div className="relative w-[60%] h-[400px]">
                 <Image
-                  src={SecondImage.src}
+                  src={ThirdImage.src}
                   alt="Temple"
                   fill
                   className="object-cover rounded-2xl"
