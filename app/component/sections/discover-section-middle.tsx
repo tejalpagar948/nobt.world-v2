@@ -35,7 +35,7 @@ export default function PianoGalleryResponsive() {
   const [active, setActive] = useState(2);
 
   return (
-    <section className="relative bg-black text-white">
+    <section className="relative bg-black text-white" id="pianoGallery">
       {/* ================= DESKTOP ================= */}
       <div className="relative hidden h-screen overflow-hidden lg:block">
         {/* BACKGROUND IMAGE */}

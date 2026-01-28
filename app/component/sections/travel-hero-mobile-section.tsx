@@ -1,41 +1,57 @@
 'use client';
 
 import Image from 'next/image';
-import LargeImage from '../../../public/assets/images/travel-hero-section-large-image.jpg';
-import SecondImage from '../../../public/assets/images/travel-section-image2.jpg';
+import Link from 'next/link';
+import heroData from '../../data/homePageData.json';
 
 interface HeroTravelMobileProps {
-  className?: string; // optional string
+  className?: string;
 }
 
 const HeroTravelMobile: React.FC<HeroTravelMobileProps> = ({ className }) => {
+  const { topContent, bottomImages } = heroData.TravelHeroSection;
+
+  const images = [
+    bottomImages.largeImage,
+    bottomImages.secondImage,
+    bottomImages.thirdImage,
+  ];
+
   return (
     <section className={`w-full bg-white my-14 lg:hidden ${className}`}>
       <div className="wrapper">
+        {/* TITLE */}
         <h3 className="font-serif text-[32px] leading-[1.2] mb-3">
-          Begin Your New Life Experience With Exploring New Destination
+          {topContent.title}
         </h3>
 
+        {/* DESCRIPTION */}
         <p className="text-gray-500 mb-4 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-          commodo ligula eget dolor.
+          {topContent.description}
         </p>
 
+        {/* BUTTONS */}
         <div className="flex gap-4 mb-10">
-          <button className="bg-black text-white px-6 py-3 rounded-full text-sm">
-            ABOUT US
-          </button>
-          <button className="border border-black px-6 py-3 rounded-full text-sm">
-            EXPLORE TRIP
-          </button>
+          {topContent.buttons.map((btn, index) => (
+            <Link key={index} href={btn.link}>
+              <button
+                className={`px-6 py-3 rounded-full text-sm transition ${
+                  btn.type === 'primary'
+                    ? 'bg-black text-white'
+                    : 'border border-black'
+                }`}>
+                {btn.text}
+              </button>
+            </Link>
+          ))}
         </div>
 
         {/* STACKED IMAGES */}
         <div className="flex flex-col gap-6">
-          {[LargeImage, SecondImage, SecondImage].map((img, i) => (
+          {images.map((img, i) => (
             <div key={i} className="relative w-full h-[360px]">
               <Image
-                src={img.src}
+                src={img}
                 alt="Travel"
                 fill
                 className="object-cover rounded-2xl"
@@ -43,7 +59,7 @@ const HeroTravelMobile: React.FC<HeroTravelMobileProps> = ({ className }) => {
             </div>
           ))}
 
-          {/* CARD */}
+          {/* OVERLAY CARD */}
           <div className="bg-black text-white rounded-3xl p-8">
             <div className="w-12 h-12 mb-6 rounded-full bg-white flex items-center justify-center">
               <svg
@@ -62,11 +78,11 @@ const HeroTravelMobile: React.FC<HeroTravelMobileProps> = ({ className }) => {
             </div>
 
             <h4 className="font-serif text-2xl leading-snug mb-4">
-              Variation Of Asian <br /> Travel Trip
+              {bottomImages.overlayBox.title}
             </h4>
 
             <p className="text-gray-400 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, aenean commodo ligula.
+              {bottomImages.overlayBox.description}
             </p>
           </div>
         </div>

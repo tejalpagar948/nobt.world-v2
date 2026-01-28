@@ -7,6 +7,14 @@ import { ChevronDown } from 'lucide-react';
 
 import SocialIcons from './social-icons';
 import Logo from './logo';
+import destinations from '../data/destinations.json';
+
+/* Destination type */
+interface Destination {
+  slug: string;
+  title: string;
+  type?: string;
+}
 
 interface MobileMenuProps {
   open: boolean;
@@ -31,6 +39,20 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
     }
   }, [open]);
 
+  /* 🔹 GROUP DESTINATIONS BY TYPE */
+  const groupedDestinations = Object.values(destinations).reduce<
+    Record<string, Destination[]>
+  >((acc, destination) => {
+    const type = destination.type || 'Other';
+
+    if (!acc[type]) {
+      acc[type] = [];
+    }
+
+    acc[type].push(destination);
+    return acc;
+  }, {});
+
   const mainActive = 'bg-[#4b453f]';
   const subActive = 'bg-black text-white font-semibold';
 
@@ -46,95 +68,89 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
         {/* Header */}
         <div className="flex items-center justify-between mb-10 px-4">
           <Logo />
-          <button
-            onClick={onClose}
-            className="text-2xl font-bold"
-            aria-label="Close menu">
+          <button onClick={onClose} className="text-2xl font-bold">
             ✕
           </button>
         </div>
 
         {/* Navigation */}
         <nav className="space-y-4 text-sm font-medium tracking-widest">
-          {/* HOME */}
           <Link
             href="/"
             onClick={onClose}
-            className={`block rounded-full px-6 py-3 transition
-              ${pathname === '/' ? mainActive : 'hover:bg-[#4b453f]'}`}>
+            className={`block rounded-full px-6 py-3 ${
+              pathname === '/' ? mainActive : ''
+            }`}>
             HOME
           </Link>
 
-          {/* ABOUT */}
           <Link
             href="/about"
             onClick={onClose}
-            className={`block rounded-full px-6 py-3 transition
-              ${pathname === '/about' ? mainActive : 'hover:bg-[#4b453f]'}`}>
+            className={`block rounded-full px-6 py-3 ${
+              pathname === '/about' ? mainActive : ''
+            }`}>
             ABOUT US
           </Link>
 
-          {/* CONTACT */}
           <Link
             href="/contact-us"
             onClick={onClose}
-            className={`block rounded-full px-6 py-3 transition
-              ${
-                pathname === '/contact-us' ? mainActive : 'hover:bg-[#4b453f]'
-              }`}>
+            className={`block rounded-full px-6 py-3 ${
+              pathname === '/contact-us' ? mainActive : ''
+            }`}>
             CONTACT US
           </Link>
 
           {/* DESTINATION */}
-          <div>
+          <div className="relative">
             <button
               onClick={() =>
                 setOpenSubmenu(
                   openSubmenu === 'destination' ? null : 'destination'
                 )
               }
-              className={`w-full flex items-center justify-between px-6 py-3 rounded-full transition
+              className={`w-full flex items-center justify-between px-6 py-3 rounded-full
                 ${
                   pathname.startsWith('/destination')
                     ? 'bg-white text-black'
-                    : 'hover:bg-[#4b453f]'
-                }`}
-              aria-expanded={openSubmenu === 'destination'}>
-              <span>DESTINATION</span>
+                    : ''
+                }`}>
+              DESTINATION
               <ChevronDown
                 size={18}
-                className={`transition-transform duration-300
-                  ${openSubmenu === 'destination' ? 'rotate-180' : ''}`}
+                className={`transition-transform ${
+                  openSubmenu === 'destination' ? 'rotate-180' : ''
+                }`}
               />
             </button>
-
+            {/* 🔹 DYNAMIC SUBMENU */}
             {openSubmenu === 'destination' && (
-              <div className="mt-3 rounded-2xl bg-white text-black px-3 py-3 space-y-2">
-                {/* KERALA */}
-                <Link
-                  href="/destination/kerala"
-                  onClick={onClose}
-                  className={`block rounded-full px-4 py-2 transition
-                    ${
-                      pathname === '/destination/kerala'
-                        ? subActive
-                        : 'hover:bg-gray-200'
-                    }`}>
-                  KERALA
-                </Link>
+              <div className="mt-4 rounded-2xl bg-white text-black px-3 py-3 space-y-4 z-200 absolute w-full">
+                {Object.entries(groupedDestinations).map(
+                  ([type, destinations]) => (
+                    <div key={type}>
+                      <h4 className="px-3 py-2 font-bold uppercase text-sm">
+                        {type}
+                      </h4>
 
-                {/* OOTY */}
-                <Link
-                  href="/destination/ooty"
-                  onClick={onClose}
-                  className={`block rounded-full px-4 py-2 transition
-                    ${
-                      pathname === '/destination/ooty'
-                        ? subActive
-                        : 'hover:bg-gray-200'
-                    }`}>
-                  OOTY
-                </Link>
+                      {destinations.map((destination) => (
+                        <Link
+                          key={destination.slug}
+                          href={`/destination/${destination.slug}`}
+                          onClick={onClose}
+                          className={`block rounded-full px-4 py-2 transition
+                            ${
+                              pathname === `/destination/${destination.slug}`
+                                ? subActive
+                                : 'hover:bg-gray-200'
+                            }`}>
+                          {destination.title.toUpperCase()}
+                        </Link>
+                      ))}
+                    </div>
+                  )
+                )}
               </div>
             )}
           </div>

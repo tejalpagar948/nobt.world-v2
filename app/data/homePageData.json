@@ -1,0 +1,35 @@
+{
+  "discoverSectionTop": {
+    "title": "Travel Deeper. Feel More. Remember Forever.",
+    "description": "From raw natural beauty to living cultures, we design journeys that move you beyond sightseeing. These are experiences meant to be felt, not rushed — stories you carry with you long after you return.",
+    "buttonText": "LEARN MORE"
+  },
+  "TravelHeroSection": {
+    "topContent": {
+      "title": "Where Nature, Culture, and Meaning Meet",
+      "description": "Curated journeys across India and the world — from immersive group departures to personalized experiences designed with depth, intention, and authenticity.",
+      "buttons": [
+        {
+          "text": "ABOUT US",
+          "type": "primary",
+          "link": "/about"
+        },
+        {
+          "text": "EXPLORE TRIP",
+          "type": "secondary",
+          "link": "#pianoGallery"
+        }
+      ]
+    },
+    "bottomImages": {
+      "largeImage": "/assets/images/two-persons.jpeg",
+      "secondImage": "/assets/images/group photo.jpeg",
+      "thirdImage": "/assets/images/couple-pics.jpeg",
+      "overlayBox": {
+        "title": "Designed by experience. Refined through execution.",
+        "description": "Our group journeys are backed by real on-ground execution and operational expertise — refined through multiple successful departures across diverse destinations.",
+        "icon": "menu"
+      }
+    }
+  }
+}
