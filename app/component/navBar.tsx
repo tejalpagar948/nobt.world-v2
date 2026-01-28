@@ -3,14 +3,33 @@ import destinations from '../data/destinations.json';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-
 import SubmenuArrowBlack from '../../public/assets/icons/submenu-arrow-black.svg';
 import SubmenuArrowWhite from '../../public/assets/icons/submenu-arrow-white.svg';
 
+type Destination = {
+  slug: string;
+  title: string;
+  type: string; // International or Domestic
+  description?: string;
+  image?: string;
+  packages?: any[];
+  gallery?: any[];
+};
+
 export default function Navbar() {
   const pathname = usePathname();
-
   const activeClass = 'bg-white/20';
+
+  // Group destinations by type dynamically
+  const groupedDestinations: Record<string, Destination[]> = Object.values(
+    destinations
+  ).reduce((acc, destination) => {
+    const type = destination.type || 'Other'; // fallback if type missing
+    if (!acc[type]) acc[type] = [];
+    acc[type].push(destination);
+    console.log('acc', acc);
+    return acc;
+  }, {} as Record<string, Destination[]>);
 
   return (
     <nav className="hidden lg:block">
@@ -19,8 +38,9 @@ export default function Navbar() {
         <li>
           <Link
             href="/"
-            className={`rounded-full px-5 py-2 transition
-              ${pathname === '/' ? activeClass : 'hover:bg-white/20'}`}>
+            className={`rounded-full px-5 py-2 transition ${
+              pathname === '/' ? activeClass : 'hover:bg-white/20'
+            }`}>
             HOME
           </Link>
         </li>
@@ -29,27 +49,12 @@ export default function Navbar() {
         <li>
           <Link
             href="/about"
-            className={`rounded-full px-5 py-2 transition
-              ${
-                pathname === '/about'
-                  ? activeClass
-                  : 'hover:bg-white hover:text-black'
-              }`}>
+            className={`rounded-full px-5 py-2 transition ${
+              pathname === '/about'
+                ? activeClass
+                : 'hover:bg-white hover:text-black'
+            }`}>
             ABOUT US
-          </Link>
-        </li>
-
-        {/* CONTACT */}
-        <li>
-          <Link
-            href="/contact-us"
-            className={`rounded-full px-5 py-2 transition
-              ${
-                pathname === '/contact-us'
-                  ? activeClass
-                  : 'hover:bg-white hover:text-black'
-              }`}>
-            CONTACT US
           </Link>
         </li>
 
@@ -57,12 +62,11 @@ export default function Navbar() {
         <li className="relative group">
           <Link
             href="#"
-            className={`flex items-center gap-1 rounded-full px-5 py-2 transition
-              ${
-                pathname.startsWith('/destination')
-                  ? activeClass
-                  : 'group-hover:bg-white group-hover:text-black'
-              }`}>
+            className={`flex items-center gap-1 rounded-full px-5 py-2 transition ${
+              pathname.startsWith('/destination')
+                ? activeClass
+                : 'group-hover:bg-white group-hover:text-black'
+            }`}>
             DESTINATION
             <Image
               src={SubmenuArrowWhite}
@@ -85,20 +89,42 @@ export default function Navbar() {
             className="absolute left-0 top-full pt-2 opacity-0
               pointer-events-none group-hover:opacity-100
               group-hover:pointer-events-auto transition-opacity">
-            <ul className="w-65 rounded-xl bg-white p-2 text-black shadow-lg z-50">
-              {Object.values(destinations).map((destination) => (
-                <li
-                  key={destination.slug}
-                  className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full transition-all">
-                  <Link
-                    href={`/destination/${destination.slug}`}
-                    className="uppercase">
-                    {destination.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="flex flex-row gap-8 bg-white rounded-xl shadow-lg z-50">
+              {Object.entries(groupedDestinations).map(
+                ([type, destinationsOfType]) => (
+                  <div key={type} className="rounded-xl p-2 text-black w-60">
+                    <h5 className="text-2xl font-bold px-4 py-2">{type}</h5>
+                    <ul>
+                      {destinationsOfType.map((destination) => (
+                        <li
+                          key={destination.slug}
+                          className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                          <Link
+                            href={`/destination/${destination.slug}`}
+                            className="uppercase">
+                            {destination.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              )}
+            </div>
           </div>
+        </li>
+
+        {/* CONTACT */}
+        <li>
+          <Link
+            href="/contact-us"
+            className={`rounded-full px-5 py-2 transition ${
+              pathname === '/contact-us'
+                ? activeClass
+                : 'hover:bg-white hover:text-black'
+            }`}>
+            CONTACT US
+          </Link>
         </li>
       </ul>
     </nav>
