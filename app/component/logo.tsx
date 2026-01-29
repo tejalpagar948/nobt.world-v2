@@ -10,7 +10,7 @@ type LogoProps = {
 
 export default function Logo({
   width = 140,
-  height = 65,
+  height = 50,
   className = '',
 }: LogoProps) {
   return (
@@ -20,7 +20,7 @@ export default function Logo({
         alt="NoBT Logo"
         width={width}
         height={height}
-        className={`w-[140px] h-[65px] ${className}`}
+        className={`w-[140px] h-[50px] ${className}`}
         priority
       />
     </Link>

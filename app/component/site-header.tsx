@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 z-20 w-full py-2">
+    <header className="absolute top-0 left-0 z-20 w-full py-4">
       <div className="flex items-center justify-between wrapper">
         <Logo />
         <Navbar />
