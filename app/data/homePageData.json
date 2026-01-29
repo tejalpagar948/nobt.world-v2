@@ -1,4 +1,34 @@
 {
+  "herosection": {
+    "ctaTop": {
+      "label": "Feel The Experience",
+      "href": "#"
+    },
+    "heading": "Explore the World With Intention!",
+    "ctaMain": {
+      "label": "GET STARTED",
+      "href": "#",
+      "icon": "/assets/icons/arrow.svg"
+    },
+    "infoList": [
+      {
+        "icon": "/assets/icons/clock.svg",
+        "text": "Group departures, themed journeys, and custom travel experiences built for those who want to explore deeper — not just farther."
+      },
+      {
+        "icon": "/assets/icons/clock.svg",
+        "text": "Sacred lands, natural wonders, and meaningful journeys — curated for explorers seeking connection, culture, and inner expansion."
+      }
+    ],
+    "scroll": {
+      "label": "SCROLL",
+      "icon": "/assets/images/arrow-down.png",
+      "targetId": "explore-grid"
+    },
+    "video": {
+      "youtubeId": "lQTj0lOLDG0"
+    }
+  },
   "discoverSectionTop": {
     "title": "Travel Deeper. Feel More. Remember Forever.",
     "description": "From raw natural beauty to living cultures, we design journeys that move you beyond sightseeing. These are experiences meant to be felt, not rushed — stories you carry with you long after you return.",
@@ -22,7 +52,7 @@
       ]
     },
     "bottomImages": {
-      "largeImage": "/assets/images/two-persons.jpeg",
+      "largeImage": "/assets/images/Manali-3.jpeg",
       "secondImage": "/assets/images/group photo.jpeg",
       "thirdImage": "/assets/images/couple-pics.jpeg",
       "overlayBox": {

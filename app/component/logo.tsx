@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import LogoWhite from '@/public/assets/images/NOBT_logo_transparent_3.png';
+import LogoWhite from '@/public/assets/icons/NOBT_logo_3.png';
 import Link from 'next/link';
 
 type LogoProps = {
@@ -10,17 +10,17 @@ type LogoProps = {
 
 export default function Logo({
   width = 140,
-  height = 75,
+  height = 65,
   className = '',
 }: LogoProps) {
   return (
-    <Link href="/" target="_self">
+    <Link href="./" target="_self">
       <Image
         src={LogoWhite}
         alt="NoBT Logo"
         width={width}
         height={height}
-        className={`w-[140px] h-[75px] ${className}`}
+        className={`w-[140px] h-[65px] ${className}`}
         priority
       />
     </Link>
