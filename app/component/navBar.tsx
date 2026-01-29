@@ -27,7 +27,6 @@ export default function Navbar() {
     const type = destination.type || 'Other'; // fallback if type missing
     if (!acc[type]) acc[type] = [];
     acc[type].push(destination);
-    console.log('acc', acc);
     return acc;
   }, {} as Record<string, Destination[]>);
 

@@ -1,11 +1,12 @@
 'use client';
-import React from 'react';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
 import facebook from '../../public/assets/icons/facebook.svg';
 import twitter from '../../public/assets/icons/twitter.svg';
 import instagram from '../../public/assets/icons/instagram.svg';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
 import Logo from './logo';
 
 const Footer: React.FC = () => {
@@ -13,44 +14,37 @@ const Footer: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Email submitted:', email);
-    // Add your submit logic here
   };
+
   return (
     <footer className="bg-black text-gray-300 pt-20">
-      <div className="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 pb-12">
-        {/* Logo & Address */}
-        <div>
-          <Logo className="mt-[-20px]" />
-          <p>Badung, Bali —</p>
-          <p>Jl. Desa Sawangan, No. 11</p>
-          <p>Nusa Dua, 81566</p>
+      {/* TOP FOOTER */}
+      <div className="wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 xl:gap-0 pb-12 items-start">
+        {/* LOGO & ADDRESS */}
+        <div className="flex flex-col gap-1">
+          <Logo />
 
-          <div className="flex space-x-4 mt-7">
+          <div className="space-y-1">
+            <p>Badung, Bali —</p>
+            <p>Jl. Desa Sawangan, No. 11</p>
+            <p>Nusa Dua, 81566</p>
+          </div>
+
+          <div className="flex space-x-4 mt-6">
             <Link href="#" className="hover:text-white">
-              <Image
-                src={instagram.src}
-                alt="Instagram"
-                width={20}
-                height={20}
-              />
+              <Image src={instagram} alt="Instagram" width={20} height={20} />
             </Link>
             <Link href="#" className="hover:text-white">
-              <Image
-                src={facebook.src}
-                alt="Instagram"
-                width={20}
-                height={20}
-              />
+              <Image src={facebook} alt="Facebook" width={20} height={20} />
             </Link>
             <Link href="#" className="hover:text-white">
-              <Image src={twitter.src} alt="Instagram" width={20} height={20} />
+              <Image src={twitter} alt="Twitter" width={20} height={20} />
             </Link>
           </div>
         </div>
 
-        {/* Page Links */}
-        <div>
+        {/* PAGE LINKS */}
+        <div className="flex flex-col">
           <h2 className="text-white font-semibold text-2xl mb-4">Page</h2>
           <ul className="space-y-2">
             <li>
@@ -69,65 +63,66 @@ const Footer: React.FC = () => {
               </Link>
             </li>
             <li>
-              <a href="/contact-us" className="hover:text-white">
+              <Link href="/contact-us" className="hover:text-white">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
-        {/* Important Links */}
-        <div>
+        {/* IMPORTANT LINKS */}
+        <div className="flex flex-col">
           <h2 className="text-white font-semibold text-2xl mb-4">
             Important Link
           </h2>
           <ul className="space-y-2">
             <li>
-              <a href="/privacy-policy" className="hover:text-white">
+              <Link href="/privacy-policy" className="hover:text-white">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="#" className="hover:text-white">
                 Career
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="#" className="hover:text-white">
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/terms-and-conditions" className="hover:text-white">
+              <Link href="/terms-and-conditions" className="hover:text-white">
                 Term & Condition
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
-        {/* Newsletter */}
-        <div className="flex flex-col w-full">
+        {/* NEWSLETTER */}
+        <div className="flex flex-col">
           <h2 className="text-white font-semibold text-2xl mb-4">
             Our Newsletter
           </h2>
-          <p className="mb-5">
+
+          <p className="mb-5 max-w-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec.
           </p>
-          <form>
-            <div className="flex items-center w-full max-w-[400px] rounded-full border border-white/20 bg-black/70 backdrop-blur-md p-2">
+
+          <form onSubmit={handleSubmit} className="relative">
+            <div className="flex items-center max-w-[400px] rounded-full border border-white/20 bg-black/70 backdrop-blur-md p-2">
               <input
                 type="email"
                 placeholder="Your Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 bg-transparent text-white placeholder:text-white/60 px-4 py-1 text-sm focus:outline-none"
+                className="flex-1 bg-transparent text-white placeholder:text-white/60 px-4 py-1 text-sm focus:outline-none my-2"
                 required
               />
-
               <button
                 type="submit"
-                className="bg-white text-black font-semibold text-sm px-5 py-3 rounded-full hover:opacity-90 transition">
+                className="bg-white text-black font-semibold text-sm px-5 py-3 rounded-full hover:opacity-90 transition absolute right-0 m-2">
                 SIGN UP
               </button>
             </div>
@@ -135,7 +130,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
+      {/* BOTTOM FOOTER */}
       <div className="wrapper border-t border-[#ffffff30] py-6 text-sm flex flex-col md:flex-row justify-between">
         <span>Tour & Travel Template Kit by Jegtheme</span>
         <span>Copyright © 2023. All rights reserved</span>
