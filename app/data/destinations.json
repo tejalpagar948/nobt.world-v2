@@ -1073,10 +1073,6 @@
         "src": "/assets/images/Vietnam-2.jpeg"
       },
       {
-        "name": "Ho Chi Minh City",
-        "src": "/assets/images/Vietnam-1.jpeg"
-      },
-      {
         "name": "Mekong Delta",
         "src": "/assets/images/Vietnam-4.jpeg"
       }
@@ -1189,7 +1185,7 @@
     "title": "Hong Kong & Macau",
     "type": "International",
     "description": "Hong Kong & Macau offer a perfect mix of theme parks, nightlife, iconic skylines, cruises, and luxury experiences with world-famous attractions.",
-    "image": "/assets/images/Hongkong-3.jpeg",
+    "image": "/assets/images/Hongkong Disneyland-1.jpeg",
     "packages": [
       {
         "slug": "hongkong-macau-family-tour",
@@ -1269,6 +1265,14 @@
       {
         "name": "Macau City",
         "src": "/assets/images/Hongkong-1.jpeg"
+      },
+      {
+        "name": "Disneyland",
+        "src": "/assets/images/Hongkong Disneyland-1.jpeg"
+      },
+      {
+        "name": "Disneyland",
+        "src": "/assets/images/Hongkong Disneyland-2.jpeg"
       }
     ]
   },
@@ -1863,7 +1867,7 @@
     "title": "Jordan",
     "type": "International",
     "description": "Jordan is a land of ancient wonders, desert landscapes, and healing experiences from Petra to the Dead Sea.",
-    "image": "/assets/images/Jordan-2.jpeg",
+    "image": "/assets/images/Jordan-6.jpeg",
     "packages": [
       {
         "slug": "jordan-petra-wadi-rum-dead-sea",

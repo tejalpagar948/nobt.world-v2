@@ -75,7 +75,7 @@ const HeroTravelDesktop: React.FC<HeroTravelDesktopProps> = ({ className }) => {
                 />
               </div>
 
-              <div className="bg-black text-white rounded-3xl p-8 flex flex-col justify-center h-auto w-[50%] ml-15">
+              {/* <div className="bg-black text-white rounded-3xl p-8 flex flex-col justify-center h-auto w-[50%] ml-15">
                 <div className="hidden xl:flex  w-12 h-8 mb-6 rounded-full bg-white items-center justify-center">
                   <svg
                     width="20"
@@ -106,7 +106,7 @@ const HeroTravelDesktop: React.FC<HeroTravelDesktopProps> = ({ className }) => {
                 <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                   {bottomImages.overlayBox.description}
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function Logo({
   className = '',
 }: LogoProps) {
   return (
-    <Link href="./" target="_self">
+    <Link href="/" target="_self">
       <Image
         src={LogoWhite}
         alt="NoBT Logo"
