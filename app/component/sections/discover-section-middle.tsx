@@ -2,37 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-
-const items = [
-  {
-    title: 'Bali',
-    img: 'https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=80',
-    link: '/destination/bali',
-  },
-  {
-    title: 'Thailand',
-    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/ancient-siam-or-ancient-city-bangkok-thailand--e1687499815736.jpg',
-    link: '/destination/thailand',
-  },
-  {
-    title: 'Turkey',
-    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/happy-couple-in-cappadocia-the-man-proposed-to-the-girl-honeymoon-in-cappadocia-e1687499848976.jpg',
-    link: '/destination/turkey',
-  },
-  {
-    title: 'Japan',
-    img: 'https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/himeji-castle-japan-in-spring-e1687500113328.jpg',
-    link: '/destination/japan',
-  },
-  {
-    title: 'V ietnam',
-    img: 'https://images.unsplash.com/photo-1504457047772-27faf1c00561?auto=format&fit=crop&w=1200&q=80',
-    link: '/destination/vietnam',
-  },
-];
+import pianoGalleryData from '../../data/homePageData.json';
 
 export default function PianoGalleryResponsive() {
   const [active, setActive] = useState(2);
+
+  const { items } = pianoGalleryData.pianoGallery;
 
   return (
     <section className="relative bg-black text-white" id="pianoGallery">

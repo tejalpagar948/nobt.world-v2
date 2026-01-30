@@ -29,10 +29,112 @@
       "youtubeId": "lQTj0lOLDG0"
     }
   },
+  "exploreGridSection": {
+    "items": [
+      {
+        "id": 1,
+        "title": "Tropical Beach",
+        "subtitle": "Bali, Indonesia",
+        "image": "/assets/images/Bali-1.jpeg",
+        "wrapperClass": "h-[320px] lg:row-span-2 lg:h-auto",
+        "link": "/destination/bali"
+      },
+      {
+        "id": 2,
+        "title": "The Treasury (Al-Khazneh)",
+        "subtitle": "Petra, Jordan",
+        "image": "/assets/images/Jordan-6.jpeg",
+        "wrapperClass": "h-[320px] lg:h-[280px]",
+        "link": "/destination/jordan"
+      },
+      {
+        "id": 3,
+        "title": "Indus River, Nimmu",
+        "subtitle": "Leh–Ladakh, India",
+        "image": "/assets/images/Leh & Ladakh-5.jpeg",
+        "wrapperClass": "h-[320px] lg:h-[280px]",
+        "link": "/destination/ladakh"
+      },
+      {
+        "id": 4,
+        "title": "Victoria Harbour Skyline",
+        "subtitle": "Hong Kong, China",
+        "image": "/assets/images/Hongkong-2.jpeg",
+        "wrapperClass": "h-[320px] lg:col-span-2 lg:h-[400px]",
+        "link": "/destination/hongkong-macau"
+      }
+    ]
+  },
+  "experienceAdventureSection": {
+    "title": "Experience The New Adventure",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
+    "features": [
+      {
+        "title": "Safe Traveling",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "icon": "/assets/icons/security.svg"
+      },
+      {
+        "title": "Affordable Price",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "icon": "/assets/icons/security.svg"
+      },
+      {
+        "title": "Comfort Accommodation",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "icon": "/assets/icons/security.svg"
+      }
+    ],
+    "mainImage": "/assets/images/Leh & Ladakh-5.jpeg",
+    "videoCards": [
+      {
+        "src": "/assets/images/Bali-2.jpeg",
+        "alt": "Temple",
+        "videoUrl": "/assets/videos/Beach-Video.mp4"
+      },
+      {
+        "src": "/assets/images/Japan-4.jpeg",
+        "alt": "Market",
+        "videoUrl": "/assets/videos/Japan-Video.mp4"
+      }
+    ]
+  },
   "discoverSectionTop": {
     "title": "Travel Deeper. Feel More. Remember Forever.",
     "description": "From raw natural beauty to living cultures, we design journeys that move you beyond sightseeing. These are experiences meant to be felt, not rushed — stories you carry with you long after you return.",
-    "buttonText": "LEARN MORE"
+    "button": {
+      "label": "CONTACT US",
+      "link": "/contact-us"
+    }
+  },
+  "pianoGallery": {
+    "items": [
+      {
+        "title": "Italy",
+        "img": "/assets/images/Italy-4.jpeg",
+        "link": "/destination/italy"
+      },
+      {
+        "title": "Bali",
+        "img": "/assets/images/Bali-5.jpeg",
+        "link": "/destination/bali"
+      },
+      {
+        "title": "Nepal",
+        "img": "/assets/images/Nepal-4.jpeg",
+        "link": "/destination/nepal"
+      },
+      {
+        "title": "Thailand",
+        "img": "https://templatekit.jegtheme.com/matour/wp-content/uploads/sites/388/2023/06/ancient-siam-or-ancient-city-bangkok-thailand--e1687499815736.jpg",
+        "link": "/destination/thailand"
+      },
+      {
+        "title": "Jordan",
+        "img": "/assets/images/Jordan-5.jpeg",
+        "link": "/destination/jordan"
+      }
+    ]
   },
   "TravelHeroSection": {
     "topContent": {

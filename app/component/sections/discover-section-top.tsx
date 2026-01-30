@@ -1,7 +1,8 @@
+import Link from 'next/link';
 import discoverData from '../../data/homePageData.json';
 
 const DiscoverSectionTop = () => {
-  const { title, description, buttonText } = discoverData.discoverSectionTop;
+  const { title, description, button } = discoverData.discoverSectionTop;
 
   return (
     <div className="mx-auto max-w-7xl wrapper lg:pt-27 lg:pb-18 pb-9 pt-14">
@@ -20,9 +21,11 @@ const DiscoverSectionTop = () => {
         <div className="lg:col-span-2 lg:ml-auto max-w-xl">
           <p className="leading-relaxed text-white/70">{description}</p>
 
-          <button className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-sm font-semibold tracking-wide text-black transition hover:bg-gray-200">
-            {buttonText}
-          </button>
+          <Link
+            href={button.link}
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-sm font-semibold tracking-wide text-black transition hover:bg-gray-200">
+            {button.label}
+          </Link>
         </div>
       </div>
     </div>
