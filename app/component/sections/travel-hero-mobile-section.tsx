@@ -60,7 +60,7 @@ const HeroTravelMobile: React.FC<HeroTravelMobileProps> = ({ className }) => {
           ))}
 
           {/* OVERLAY CARD */}
-          <div className="bg-black text-white rounded-3xl p-8">
+          {/* <div className="bg-black text-white rounded-3xl p-8">
             <div className="w-12 h-12 mb-6 rounded-full bg-white flex items-center justify-center">
               <svg
                 width="20"
@@ -84,7 +84,7 @@ const HeroTravelMobile: React.FC<HeroTravelMobileProps> = ({ className }) => {
             <p className="text-gray-400 text-sm leading-relaxed">
               {bottomImages.overlayBox.description}
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

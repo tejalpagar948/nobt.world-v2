@@ -21,14 +21,17 @@ const HeroSection: React.FC = () => {
         <div className="relative h-[260px]" />
 
         {/* DESKTOP VIDEO */}
+        {/* DESKTOP VIDEO */}
         <div className="hidden xl:block absolute inset-0 w-full h-full overflow-hidden">
           <div className="absolute top-1/2 left-1/2 w-[200%] h-[200%] -translate-x-1/2 -translate-y-1/2">
+            {/* YouTube iframe */}
             <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src={`https://www.youtube.com/embed/${heroData.video.youtubeId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${heroData.video.youtubeId}&modestbranding=1&rel=0`}
+              className="absolute top-0 left-0 w-full h-full pointer-events-none"
+              src={`https://www.youtube.com/embed/${heroData.video.youtubeId}?start=61&autoplay=1&mute=1&controls=0&loop=1&playlist=${heroData.video.youtubeId}&playsinline=1&modestbranding=1&rel=0`}
               title="YouTube video"
               allow="autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
+              loading="lazy"
             />
           </div>
         </div>
