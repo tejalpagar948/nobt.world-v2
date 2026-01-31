@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
           <div className="absolute top-1/2 left-1/2 w-[200%] h-[200%] -translate-x-1/2 -translate-y-1/2">
             {/* Poster image (hides loader) */}
             <img
-              src="/assets/images/Bali-5.jpeg"
+              src="/assets/images/Bali-2.jpeg"
               alt="Video placeholder"
               className="absolute top-0 left-0 w-full h-full object-cover"
             />
@@ -38,6 +38,7 @@ const HeroSection: React.FC = () => {
               title="YouTube video"
               allow="autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
+              loading="lazy"
             />
           </div>
         </div>
