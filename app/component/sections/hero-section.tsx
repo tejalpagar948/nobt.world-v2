@@ -24,13 +24,6 @@ const HeroSection: React.FC = () => {
         {/* DESKTOP VIDEO */}
         <div className="hidden xl:block absolute inset-0 w-full h-full overflow-hidden">
           <div className="absolute top-1/2 left-1/2 w-[200%] h-[200%] -translate-x-1/2 -translate-y-1/2">
-            {/* Poster image (hides loader) */}
-            <img
-              src="/assets/images/Bali-2.jpeg"
-              alt="Video placeholder"
-              className="absolute top-0 left-0 w-full h-full object-cover"
-            />
-
             {/* YouTube iframe */}
             <iframe
               className="absolute top-0 left-0 w-full h-full pointer-events-none"
