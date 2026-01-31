@@ -66,26 +66,26 @@
     ]
   },
   "experienceAdventureSection": {
-    "title": "Experience The New Adventure",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
+    "title": "Experience the New Adventure",
+    "description": "Journeys crafted with intention — balancing discovery, comfort, and authenticity across destinations that deserve to be experienced, not rushed.",
     "features": [
       {
-        "title": "Safe Traveling",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "title": "Curated Experiences",
+        "desc": "Every journey is thoughtfully designed — from routes and stays to pacing and moments — ensuring depth over checklists.",
         "icon": "/assets/icons/security.svg"
       },
       {
-        "title": "Affordable Price",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "title": "Seamless Execution",
+        "desc": "From planning to on-ground coordination, our trips are managed with precision so you can focus entirely on the experience.",
         "icon": "/assets/icons/security.svg"
       },
       {
-        "title": "Comfort Accommodation",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "title": "Travel With Purpose",
+        "desc": "We create journeys that connect you with nature, culture, and people — leaving you with stories, not just photographs.",
         "icon": "/assets/icons/security.svg"
       }
     ],
-    "mainImage": "/assets/images/Leh & Ladakh-5.jpeg",
+    "mainImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
     "videoCards": [
       {
         "src": "/assets/images/Bali-2.jpeg",
@@ -136,6 +136,14 @@
       }
     ]
   },
+  "faqTopSection": {
+    "heading": "Enjoy Our Best Quality Tour & Experience",
+    "description": "Your Journey Starts Here No pressure, no rush — just a conversation about where you want to go and how you want to experience it.",
+    "button": {
+      "text": "CONTACT US",
+      "url": "/contact-us"
+    }
+  },
   "TravelHeroSection": {
     "topContent": {
       "title": "Where Nature, Culture, and Meaning Meet",
@@ -162,6 +170,14 @@
         "description": "Our group journeys are backed by real on-ground execution and operational expertise — refined through multiple successful departures across diverse destinations.",
         "icon": "menu"
       }
+    }
+  },
+  "promoHeroSection": {
+    "title": "Every journey comes with questions and We believe clarity creates confidence.",
+    "description": "From logistics to destinations and experiences, we believe in open communication and informed travel. Explore the answers below or reach out to us directly",
+    "button": {
+      "text": "CONTACT US",
+      "url": "/contact-us"
     }
   }
 }

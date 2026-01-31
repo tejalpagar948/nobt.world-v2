@@ -2,13 +2,17 @@
 
 import Image from 'next/image';
 import backgroundImage from '../../../public/assets/images/travel-section-image2.jpg';
+import Link from 'next/link';
+import promoData from '../../data/homePageData.json';
 
 export default function PromoHeroSection() {
+  const { title, description, button } = promoData.promoHeroSection;
+
   return (
-    <section className="relative w-full h-[520px] lg:h-[450px] overflow-hidden">
+    <section className="relative w-full h-[520px] lg:h-[600px] overflow-hidden">
       {/* Background Image */}
       <Image
-        src={backgroundImage.src} // replace with your image path
+        src={backgroundImage.src}
         alt="Promo Background"
         fill
         priority
@@ -20,20 +24,20 @@ export default function PromoHeroSection() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
-        <div className="max-w-xl">
+        <div className="w-full md:w-8/12">
           <h3 className="font-serif text-white text-[38px] leading-tight lg:text-[48px] mb-2">
-            Get Closer With Us & <br />
-            Get Special Promo
+            {title}
           </h3>
 
-          <p className="text-gray-300 text-base lg:text-lg mb-6 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa.
+          <p className="text-gray-300 text-base lg:text-lg mb-9 max-w-2xl mx-auto">
+            {description}
           </p>
 
-          <button className="bg-white text-black px-12 py-4 rounded-full text-sm tracking-wide font-medium hover:bg-gray-200 transition">
-            CONTACT US
-          </button>
+          <Link
+            href={button.url}
+            className="bg-white text-black px-12 py-4 rounded-full text-sm tracking-wide font-medium hover:bg-gray-200 transition">
+            {button.text}
+          </Link>
         </div>
       </div>
     </section>

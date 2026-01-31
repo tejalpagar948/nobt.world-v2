@@ -27,7 +27,7 @@ const ExperienceAdventure = () => {
             {data.features.map((item, index) => (
               <div key={index} className="flex gap-5">
                 <figure className="flex h-max items-center justify-center rounded-full bg-black text-white mt-[6px] p-4">
-                  <Image src={item.icon} alt="icon" width={50} height={50} />
+                  <Image src={item.icon} alt="icon" width={65} height={65} />
                 </figure>
                 <div>
                   <h4 className="text-2xl font-semibold text-black">
