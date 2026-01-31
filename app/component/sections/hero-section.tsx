@@ -40,10 +40,11 @@ const HeroSection: React.FC = () => {
         <div className="block xl:hidden absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
           <iframe
             className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-w-[177.77vh] min-h-[100vh] -translate-x-1/2 -translate-y-1/2"
-            src={`https://www.youtube.com/embed/${heroData.video.youtubeId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${heroData.video.youtubeId}&modestbranding=1&rel=0`}
-            title="YouTube background video"
+            src={`https://www.youtube.com/embed/${heroData.video.youtubeId}?start=61&autoplay=1&mute=1&controls=0&loop=1&playlist=${heroData.video.youtubeId}&playsinline=1&modestbranding=1&rel=0`}
+            title="YouTube video"
             allow="autoplay; encrypted-media; picture-in-picture"
             allowFullScreen
+            loading="lazy"
           />
         </div>
 
