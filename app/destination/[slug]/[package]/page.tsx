@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import destinationData from '@/app/data/destinations.json';
-import ItineraryAccordion from '@/app/component/itinerary-accordion';
 import Link from 'next/link';
-import QueryButton from '@/app/component/query-button';
+import destinationData from '@/data/destinations.json';
+import ItineraryAccordion from '@/components/itinerary-accordion';
+import QueryButton from '@/components/query-button';
 
 type PageProps = {
   params: Promise<{ slug: string; package: string }>;

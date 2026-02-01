@@ -1,9 +1,8 @@
 'use client';
-
 import React from 'react';
 import Image from 'next/image';
-import PrivacyHero from '../../public/assets/images/travel-hero-section-large-image.jpg';
-import privacyData from '@/app/data/privacyPolicy.json';
+import PrivacyHero from '@/public/assets/images/travel-hero-section-large-image.jpg';
+import privacyData from '@/data/privacyPolicy.json';
 
 /* ================= TYPES ================= */
 

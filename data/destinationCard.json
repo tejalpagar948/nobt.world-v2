@@ -1,0 +1,210 @@
+{
+  "destinations": [
+    {
+      "title": "Bali",
+      "country": "Indonesia",
+      "price": "26,999",
+      "image": "/assets/images/Bali-1.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/bali"
+    },
+    {
+      "title": "Turkey",
+      "country": "Turkey",
+      "price": "79,999",
+      "image": "/assets/images/Turkey-1.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/turkey"
+    },
+    {
+      "title": "Thailand",
+      "country": "Thailand",
+      "price": "55,000",
+      "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/thailand"
+    },
+    {
+      "title": "Vietnam",
+      "country": "Vietnam",
+      "price": "79,999",
+      "image": "/assets/images/Vietnam-1.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/vietnam"
+    },
+    {
+      "title": "Bhutan",
+      "country": "Bhutan",
+      "price": "67,999",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/bhutan"
+    },
+    {
+      "title": "Hong Kong & Macau",
+      "country": "Hong Kong & Macau",
+      "image": "/assets/images/Hongkong Disneyland-1.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/hongkong-macau"
+    },
+    {
+      "title": "USA",
+      "country": "USA",
+      "price": "1,90,000",
+      "image": "/assets/images/USA East Coast-2.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/usa"
+    },
+    {
+      "title": "Italy",
+      "country": "Italy",
+      "price": "1,60,000",
+      "image": "/assets/images/Italy-1.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/italy"
+    },
+    {
+      "title": "Europe Classic Cities Circuit",
+      "country": "Europe",
+      "price": "1,65,999",
+      "image": "/assets/images/Paris Amsterdam Vienna-1.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/europe-classic-cities"
+    },
+    {
+      "title": "South America",
+      "country": "South America",
+      "price": "3,71,999",
+      "image": "/assets/images/Peru Bolivia-5.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/south-america"
+    },
+    {
+      "title": "Eritrea",
+      "country": "Eritrea",
+      "price": "1,80,000",
+      "image": "/assets/images/Eritrea-2.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/eritrea"
+    },
+    {
+      "title": "Jordan",
+      "country": "Jordan",
+      "price": "95,999",
+      "image": "/assets/images/Jordan-6.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/jordan"
+    },
+    {
+      "title": "Japan",
+      "country": "Japan",
+      "price": "1,75,999",
+      "image": "/assets/images/Japan-4.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/japan"
+    },
+    {
+      "title": "Nepal",
+      "country": "Nepal",
+      "price": "35,999",
+      "image": "/assets/images/Nepal-5.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/nepal"
+    },
+    {
+      "title": "New Zealand",
+      "country": "New Zealand",
+      "price": "2,99,999",
+      "image": "/assets/images/New Zealand-4.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/new-zealand"
+    },
+    {
+      "title": "Egypt",
+      "country": "Egypt",
+      "price": "1,39,999",
+      "image": "/assets/images/Egypt-5.jpeg",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/egypt"
+    },
+    {
+      "title": "Maldives",
+      "country": "Maldives",
+      "price": "79,999",
+      "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+      "category": "destination",
+      "travelType": "international",
+      "link": "/destination/maldives"
+    },
+    {
+      "title": "Kerala",
+      "country": "India",
+      "price": "18,999",
+      "image": "/assets/images/Kerela-1.jpeg",
+      "category": "destination",
+      "travelType": "domestic",
+      "link": "/destination/kerala"
+    },
+    {
+      "title": "Himachal Pradesh",
+      "country": "India",
+      "price": "12,999",
+      "image": "/assets/images/Shimla-2.jpeg",
+      "category": "destination",
+      "travelType": "domestic",
+      "link": "/destination/himachal-pradesh"
+    },
+    {
+      "title": "Kashmir",
+      "country": "India",
+      "price": "14,999",
+      "image": "/assets/images/Kashmir-7.jpeg",
+      "category": "destination",
+      "travelType": "domestic",
+      "link": "/destination/kashmir"
+    },
+    {
+      "title": "Delhi Agra Jaipur",
+      "country": "India",
+      "price": "19,999",
+      "image": "/assets/images/Agra-5.jpeg",
+      "category": "destination",
+      "travelType": "domestic",
+      "link": "/destination/delhi-agra-jaipur"
+    },
+    {
+      "title": "Ladakh",
+      "country": "India",
+      "price": "21,999",
+      "image": "/assets/images/Leh & Ladakh-5.jpeg",
+      "category": "destination",
+      "travelType": "domestic",
+      "link": "/destination/ladakh"
+    },
+    {
+      "title": "Vanvaas Yatra",
+      "country": "India",
+      "price": "69,000",
+      "image": "/assets/images/Vanvaas Yatra-1.jpeg",
+      "category": "exclusives",
+      "travelType": "domestic",
+      "link": "/destination/vanvaas-yatra"
+    }
+  ]
+}
