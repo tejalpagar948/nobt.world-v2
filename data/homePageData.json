@@ -209,11 +209,11 @@
         }
       },
       {
-        "image": "/assets/images/blog-section-image.jpg",
+        "image": "/assets/images/Italy-3.jpeg",
         "alt": "Asia for the Soul",
-        "title": "Asia for the Soul: Discover Spiritual Retreats and Practices",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo...",
-        "link": "/blogs/asia-for-the-soul",
+        "title": "Europe Diaries: Stories of Travel, Culture & Life Abroad",
+        "description": "Welcome to Europe Diaries: A travel magazine for the culturally curious....",
+        "link": "/blogs/europe",
         "cta": {
           "text": "READ MORE",
           "arrow": "→"

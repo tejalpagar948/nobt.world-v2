@@ -3097,7 +3097,7 @@
     "title": "The Vanvaas Yatra",
     "type": "Domestic",
     "description": "A sacred 10-day spiritual pilgrimage retracing the revered Vanvaas path of Lord Ram, designed for deep reflection, devotion, and historical connection.",
-    "image": "/assets/images/vanvaas/vanvaas-hero.jpg",
+    "image": "/assets/images/Vanvaas Yatra-1.jpeg",
     "packages": [
       {
         "slug": "vanvaas-yatra-budget",
@@ -3107,7 +3107,7 @@
         "duration": "9 Nights / 10 Days",
         "nights": "9 Nights",
         "days": "10 Days",
-        "heroImage": "/assets/images/vanvaas/vanvaas-budget.jpg",
+        "heroImage": "/assets/images/Vanvaas Yatra-1.jpeg",
         "overview": "An authentic and spiritually enriching Vanvaas Yatra covering all major sacred locations with comfortable stays, guided temple visits, and seamless coordination.",
         "itinerary": [
           {
@@ -3188,7 +3188,7 @@
         "duration": "9 Nights / 10 Days",
         "nights": "9 Nights",
         "days": "10 Days",
-        "heroImage": "/assets/images/vanvaas/vanvaas-luxury.jpg",
+        "heroImage": "/assets/images/Vanvaas Yatra-1.jpeg",
         "overview": "A premium Vanvaas Yatra experience designed for comfort-focused devotees, senior travelers, and NRIs, offering luxury stays, priority darshan, and a slower spiritual pace.",
         "itinerary": [
           {
@@ -3216,24 +3216,6 @@
           "Private photography/videography",
           "Anything not mentioned in inclusions"
         ]
-      }
-    ],
-    "gallery": [
-      {
-        "name": "Ayodhya",
-        "src": "/assets/images/vanvaas/ayodhya.jpg"
-      },
-      {
-        "name": "Chitrakoot",
-        "src": "/assets/images/vanvaas/chitrakoot.jpg"
-      },
-      {
-        "name": "Hampi - Kishkindha",
-        "src": "/assets/images/vanvaas/hampi.jpg"
-      },
-      {
-        "name": "Rameshwaram",
-        "src": "/assets/images/vanvaas/rameshwaram.jpg"
       }
     ]
   }
