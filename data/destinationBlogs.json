@@ -160,5 +160,51 @@
         ]
       }
     ]
+  },
+  "europe": {
+    "slug": "europe-diaries",
+    "title": "Europe Diaries",
+    "date": "January 01, 2024",
+    "category": "Travel & Culture",
+    "heroImage": "/assets/images/Italy-1.jpeg",
+    "sections": [
+      {
+        "content": [
+          "Welcome to Europe Diaries: A travel magazine for the culturally curious. Independent travel and culture stories shaped by 14 years of living, studying, and working across Europe. Founded by an Indian expat in Europe, Europe Diaries combines thoughtful travel guidance, long-term life abroad insights, and essays on migration, identity, and modern life. The magazine focuses strongly on Switzerland and Germany while offering wider Europe travel inspiration. Stay curious and explore more!",
+          "Hi there! My name is Menorca. Thanks for visiting Europe Diaries: a travel blog for the culturally curious. If you like exploring different destinations, discovering cultures, off-beat experiences, myths, vegetarian food, and travel stories from people across the world, you are in the right place."
+        ],
+        "images": [
+          "/assets/images/Italy-2.jpeg"
+        ]
+      },
+      {
+        "content": [
+          "I am named after a beautiful Spanish island which I am yet to visit. My parents took me sailing around the world when I was just three months old until I was nearly six. Though I remember very little, that journey implanted the travel bug in me forever.",
+          "I have been away from home for almost 20 years and living in Europe for nearly 15 of those. During this time, I lived along the River Rhine and the Neckar in Germany and Switzerland. That long-term expat experience is what inspired me to start this blog."
+        ],
+        "images": [
+          "/assets/images/Italy-3.jpeg"
+        ]
+      },
+      {
+        "content": [
+          "I love planning trips and instantly switch into research ninja mode when someone asks for suggestions.",
+          "If you need help planning a customized trip across Europe or India, or have questions about living or traveling in Europe, feel free to reach out via email or the Europe Trip Planner page. If you love stories, join the Travellers’ Tales Facebook group and connect with fellow travel lovers. The Travellers’ Tales series on this blog is open for you to share your own travel stories."
+        ],
+        "images": [
+          "/assets/images/Italy-4.jpeg"
+        ]
+      },
+      {
+        "content": [
+          "Switzerland is one of the most beautiful countries you will ever visit. Here you’ll find guides on living in Switzerland, travel tips, winter activities, and unique local experiences. From swimming in the Rhine to exploring alpine peaks, Switzerland offers unforgettable moments. Germany is a country full of history, culture, festivals, and medieval castles.",
+          "Explore travel guides, expat life stories, carnival experiences, and scenic river journeys across Germany. From Mainz Fastnacht to castles on the Rhine, Germany always has a story to tell.",
+          "Experiences make you richer. Discover diverse European experiences including travel with parents, first-time trips, expat life, and cultural adventures across countries like France, Italy, Spain, and the Netherlands. Food is an essential part of culture. Explore European cuisines with a special focus on vegetarian food, traditional recipes, and food stories from different cultures. From Venice to Poland to Turkey, culinary travel connects people across borders."
+        ],
+        "images": [
+          "/assets/images/Italy-1.jpeg"
+        ]
+      }
+    ]
   }
 }
