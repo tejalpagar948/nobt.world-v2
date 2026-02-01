@@ -1,10 +1,8 @@
-import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './globals.css';
-import Footer from './component/site-footer';
-import Header from './component/site-header';
+import Footer from '@/components/site-footer';
+import Header from '@/components/site-header';
 
 export default function RootLayout({
   children,

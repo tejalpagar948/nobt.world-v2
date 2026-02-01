@@ -1,12 +1,11 @@
 'use client';
-
 import React from 'react';
 import Image from 'next/image';
-import ContactHero from '../../public/assets/images/travel-hero-section-large-image.jpg';
-import ContactImage from '../../public/assets/images/blog-section-image.jpg';
-import LocationIcon from '../../public/assets/icons/location-icon.svg';
-import MailIcon from '../../public/assets/icons/mail-icon.svg';
-import PhoneIcon from '../../public/assets/icons/phone.icon.svg';
+import ContactHero from '@/public/assets/images/travel-hero-section-large-image.jpg';
+import ContactImage from '@/public/assets/images/blog-section-image.jpg';
+import LocationIcon from '@/public/assets/icons/location-icon.svg';
+import MailIcon from '@/public/assets/icons/mail-icon.svg';
+import PhoneIcon from '@/public/assets/icons/phone.icon.svg';
 
 export default function ContactPage() {
   return (
@@ -49,23 +48,31 @@ export default function ContactPage() {
             </p>
 
             <ul className="space-y-6">
+              {/* Location */}
               <li className="flex gap-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-black text-white">
                   <Image
                     src={LocationIcon.src}
-                    alt="Email Icon"
+                    alt="Location Icon"
                     width={24}
                     height={24}
                   />
                 </span>
+
                 <div>
-                  <p className="font-medium">Location</p>
-                  <p className="text-sm text-gray-600">
-                    Mumbai, Maharashtra, India
-                  </p>
+                  <p className="font-medium mb-2">Location</p>
+
+                  <ul className="list-disc pl-4 space-y-2 text-sm text-gray-600">
+                    <li>Mumbai, Maharashtra, India</li>
+                    <li>
+                      103, Meera 4D, Omaxe Eternity, Vrindavan, Uttar Pradesh –
+                      281121
+                    </li>
+                  </ul>
                 </div>
               </li>
 
+              {/* Email */}
               <li className="flex gap-4">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white">
                   <Image
@@ -75,12 +82,18 @@ export default function ContactPage() {
                     height={24}
                   />
                 </span>
-                <div>
+                <ul>
                   <p className="font-medium">Email</p>
-                  <p className="text-sm text-gray-600">support@nobtworld.com</p>
-                </div>
+                  <li className="text-sm text-gray-600">
+                    nobtholidays@gmail.com
+                  </li>
+                  <li className="text-sm text-gray-600">
+                    info@nobtholidays.com
+                  </li>
+                </ul>
               </li>
 
+              {/* Phone */}
               <li className="flex gap-4">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white">
                   <Image
@@ -90,10 +103,11 @@ export default function ContactPage() {
                     height={24}
                   />
                 </span>
-                <div>
+                <ul>
                   <p className="font-medium">Phone</p>
-                  <p className="text-sm text-gray-600">+91 98765 43210</p>
-                </div>
+                  <li className="text-sm text-gray-600">+91 9627237442</li>
+                  <li className="text-sm text-gray-600">+91 9193655725</li>
+                </ul>
               </li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import destinationData from '@/app/data/destinations.json';
+import destinationData from '@/data/destinations.json';
 
 /* ================================
    TYPES

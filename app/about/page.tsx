@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import SecurityIcon from '../../public/assets/icons/security.svg';
-import AboutPageData from '../data/aboutPageData.json';
+import SecurityIcon from '@/public/assets/icons/security.svg';
+import AboutPageData from '@/data/aboutPageData.json';
 export default function AboutPage() {
   return (
     <main className="w-full bg-white text-black">

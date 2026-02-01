@@ -3,8 +3,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import TermsHero from '../../public/assets/images/travel-hero-section-large-image.jpg';
-import termsData from '@/app/data/termsAndConditions.json';
+import TermsHero from '@/public/assets/images/travel-hero-section-large-image.jpg';
+import termsData from '@/data/termsAndConditions.json';
 
 /* ================= TYPES ================= */
 
