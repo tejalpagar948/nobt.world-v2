@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import facebook from '@/public/assets/icons/facebook.svg';
-import twitter from '@/public/assets/icons/twitter.svg';
 import instagram from '@/public/assets/icons/instagram.svg';
 import Logo from './logo';
 
@@ -29,14 +28,17 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex space-x-4 mt-6">
-            <Link href="#" className="hover:text-white">
+            <Link
+              href="https://www.instagram.com/nobtholidays?igsh=MXN4N3IxbHQ3dzhpbw%3D%3D"
+              className="hover:text-white"
+              target="_black"
+              rel="noopener noreferrer">
               <Image src={instagram} alt="Instagram" width={20} height={20} />
             </Link>
-            <Link href="#" className="hover:text-white">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61579188870576&rdid=XawPnNfKoomGMMpG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Mdk51Dvxz%2F#"
+              className="hover:text-white">
               <Image src={facebook} alt="Facebook" width={20} height={20} />
-            </Link>
-            <Link href="#" className="hover:text-white">
-              <Image src={twitter} alt="Twitter" width={20} height={20} />
             </Link>
           </div>
         </div>
@@ -104,8 +106,8 @@ const Footer: React.FC = () => {
           </h2>
 
           <p className="mb-5 max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec.
+            Be First to Discover What’s Next Updates on our newest journeys,
+            destinations, and curated travel experiences.
           </p>
 
           <form onSubmit={handleSubmit} className="relative">

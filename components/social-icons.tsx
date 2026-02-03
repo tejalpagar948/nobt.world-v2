@@ -4,7 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import facebook from '@/public/assets/icons/facebook.svg';
-import twitter from '@/public/assets/icons/twitter.svg';
 import instagram from '@/public/assets/icons/instagram.svg';
 
 interface SocialIconsProps {
@@ -21,9 +20,16 @@ const SocialIcons: React.FC<SocialIconsProps> = ({
   iconSize = 40,
 }) => {
   const icons = [
-    { name: 'Facebook', href: 'https://facebook.com', icon: facebook },
-    { name: 'Twitter', href: 'https://twitter.com', icon: twitter },
-    { name: 'Instagram', href: 'https://instagram.com', icon: instagram },
+    {
+      name: 'Facebook',
+      href: 'https://www.facebook.com/profile.php?id=61579188870576&rdid=XawPnNfKoomGMMpG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Mdk51Dvxz%2F#',
+      icon: facebook,
+    },
+    {
+      name: 'Instagram',
+      href: 'https://www.instagram.com/nobtholidays?igsh=MXN4N3IxbHQ3dzhpbw%3D%3D',
+      icon: instagram,
+    },
   ];
 
   return (

@@ -25,7 +25,7 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ open, onClose }) => {
 
       {/* RIGHT PANEL */}
       <aside
-        className={`hidden lg:block fixed top-0 right-0 z-50 h-screen w-[420px] bg-black text-white
+        className={`hidden lg:block fixed top-0 right-0 z-100 h-screen w-[420px] bg-black text-white
         transform transition-transform duration-500 ease-in-out
         ${open ? 'translate-x-0' : 'translate-x-full'}
         `}>
@@ -43,8 +43,9 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ open, onClose }) => {
           <Logo className="mb-5" />
 
           <p className="text-gray-400 mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar.
+            We specialize in curated group departures, experiential journeys,
+            and personalized travel across India and the world. Reach out to us
+            and let’s design something meaningful for you.
           </p>
 
           {/* CONTACT */}
