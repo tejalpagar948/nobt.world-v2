@@ -28,7 +28,7 @@ type TravelCard = {
 
 const INITIAL_COUNT = 8;
 const TABS: TabType[] = [
-  'destination',
+  // 'destination',
   'international',
   'domestic',
   'exclusives',
@@ -44,7 +44,6 @@ const TravelSection = () => {
   const filteredData = travelJson.destinations.filter((item) => {
     switch (activeTab) {
       case 'destination':
-        // Show all destinations
         return item.category === 'destination';
 
       case 'international':

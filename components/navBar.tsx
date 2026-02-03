@@ -86,29 +86,68 @@ export default function Navbar() {
           {/* Dropdown */}
           <div
             className="absolute left-0 top-full pt-2 opacity-0
-              pointer-events-none group-hover:opacity-100
-              group-hover:pointer-events-auto transition-opacity">
-            <div className="flex flex-row gap-8 bg-white rounded-xl shadow-lg z-50">
-              {Object.entries(groupedDestinations).map(
-                ([type, destinationsOfType]) => (
-                  <div key={type} className="rounded-xl p-2 text-black w-60">
-                    <h5 className="text-2xl font-bold px-4 py-2">{type}</h5>
-                    <ul>
-                      {destinationsOfType.map((destination) => (
-                        <li
-                          key={destination.slug}
-                          className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full transition-all">
-                          <Link
-                            href={`/destination/${destination.slug}`}
-                            className="uppercase">
-                            {destination.title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )
-              )}
+  pointer-events-none group-hover:opacity-100
+  group-hover:pointer-events-auto transition-opacity">
+            <div className="flex gap-8 bg-white rounded-xl shadow-lg z-50 p-4">
+              {/* LEFT COLUMN – International */}
+              <div className="w-60 text-black">
+                <h5 className="text-2xl font-bold px-4 py-2">International</h5>
+                <ul>
+                  {groupedDestinations.International?.map((destination) => (
+                    <li
+                      key={destination.slug}
+                      className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                      <Link
+                        href={`/destination/${destination.slug}`}
+                        className="uppercase">
+                        {destination.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* RIGHT COLUMN – Domestic + Exclusives */}
+              <div className="flex flex-col gap-6 w-60 text-black">
+                {/* Domestic */}
+                <div>
+                  <h5 className="text-2xl font-bold px-4 py-2">Domestic</h5>
+                  <ul>
+                    {groupedDestinations.Domestic?.map((destination) => (
+                      <li
+                        key={destination.slug}
+                        className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                        <Link
+                          href={`/destination/${destination.slug}`}
+                          className="uppercase">
+                          {destination.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Divider */}
+                <div className="border-t border-gray-200 mx-4"></div>
+
+                {/* Exclusives */}
+                <div>
+                  <h5 className="text-2xl font-bold px-4 py-2">Exclusives</h5>
+                  <ul>
+                    {groupedDestinations.Exclusives?.map((destination) => (
+                      <li
+                        key={destination.slug}
+                        className="px-4 py-2 hover:bg-black hover:text-white hover:rounded-full transition-all">
+                        <Link
+                          href={`/destination/${destination.slug}`}
+                          className="uppercase">
+                          {destination.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </li>

@@ -19,8 +19,6 @@ const HeroSection: React.FC = () => {
       <div className="wrapper">
         {/* Background spacing */}
         <div className="relative h-[260px]" />
-
-        {/* DESKTOP VIDEO */}
         {/* DESKTOP VIDEO */}
         <div className="hidden xl:block absolute inset-0 w-full h-full overflow-hidden">
           <div className="absolute top-1/2 left-1/2 w-[200%] h-[200%] -translate-x-1/2 -translate-y-1/2">
@@ -93,13 +91,13 @@ const HeroSection: React.FC = () => {
 
         {/* SOCIAL ICONS */}
         <SocialIcons
-          ulClassName="absolute right-6 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4 text-white/80"
+          ulClassName="absolute right-6 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4 text-white/80 z-10"
           figureClassName="p-3 rounded-full border border-white/40 bg-[#ffffff2b]"
           iconSize={32}
         />
 
         {/* SCROLL INDICATOR */}
-        <div className="z-200 absolute bottom-23 right-6 hidden lg:flex items-center text-xs tracking-widest">
+        <div className="z-10 absolute bottom-23 right-6 hidden lg:flex items-center text-xs tracking-widest">
           <span className="rotate-270 leading-none -mr-4 font-medium">
             {heroData.scroll.label}
           </span>

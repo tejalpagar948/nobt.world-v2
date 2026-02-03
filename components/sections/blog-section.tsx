@@ -78,10 +78,7 @@ function BlogItem({ image, alt, title, description }: BlogItemProps) {
           alt={alt}
           width={900}
           height={600}
-          className="
-    rounded-3xl object-cover w-full
-    h-[220px] sm:h-[240px] md:h-[260px] xl:h-[200px]
-  "
+          className="rounded-3xl object-cover w-full h-[220px] sm:h-[240px] md:h-[260px] xl:h-[200px]"
         />
       </div>
 

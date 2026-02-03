@@ -18,16 +18,16 @@ export default async function PackagePage({ params }: PageProps) {
     return <div className="p-20 text-center">Package not found</div>;
   }
 
-  const includes = [
-    { name: 'Flights', icon: '✈️' },
-    { name: 'Sightseeing', icon: '🏞️' },
-    { name: 'Transport', icon: '🚗' },
-    { name: 'Hotel', icon: '🏨' },
-    { name: 'Breakfast', icon: '🍳' },
-  ];
+  // const includes = [
+  //   { name: 'Flights', icon: '✈️' },
+  //   { name: 'Sightseeing', icon: '🏞️' },
+  //   { name: 'Transport', icon: '🚗' },
+  //   { name: 'Hotel', icon: '🏨' },
+  //   { name: 'Breakfast', icon: '🍳' },
+  // ];
 
   return (
-    <main className="bg-gray-50">
+    <main className="bg-[#f5f5f6]">
       {/* HERO */}
       <section className="relative h-[85vh]">
         <Image
@@ -68,7 +68,7 @@ export default async function PackagePage({ params }: PageProps) {
       </section>
 
       {/* MAIN CONTENT */}
-      <section className="pb-20 pt-5">
+      <section className="pb-22 pt-5">
         <div className="wrapper grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10">
           {/* LEFT */}
           <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -98,9 +98,9 @@ export default async function PackagePage({ params }: PageProps) {
               </div>
               <div className="text-sm">
                 <p className="font-semibold mb-1 text-lg">Need Assistance?</p>
-                <p>+91 9875097169</p>
-                <p>+91 9106639179</p>
-                <p className="text-[#D6A200]">info@nobt.world</p>
+                <p>+91 9627237442</p>
+                <p>+91 9193655725</p>
+                <p className="text-[#D6A200]">info@nobtholidays.com</p>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default async function PackagePage({ params }: PageProps) {
       </section>
 
       {/* TOUR INCLUDES */}
-      <section className="py-20 bg-black">
+      {/* <section className="py-20 bg-black">
         <div className="wrapper">
           <h2 className="text-3xl font-bold mb-12 text-center text-white">
             Tour Includes
@@ -145,28 +145,26 @@ export default async function PackagePage({ params }: PageProps) {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* INCLUSIONS & EXCLUSIONS */}
       <section className="py-20 bg-white">
         <div className="wrapper">
-          <h2 className="text-3xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-15 text-center">
             Inclusions & Exclusions
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* INCLUSIONS */}
-            <div className="bg-black rounded-3xl p-10 shadow-lg">
-              <h3 className="text-2xl font-semibold text-white mb-6">
-                Inclusions
-              </h3>
+            <div className="rounded-3xl p-10 shadow-lg border border-gray-200 bg-[#f5f5f6] text-gray-800">
+              <h3 className="text-2xl font-bold mb-6">Inclusions</h3>
 
-              <div className="h-px bg-white mb-6" />
+              <div className="h-px bg-gray-800 mb-6 font-semibold" />
 
               <ul className="space-y-4">
                 {pkg.includes.map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-gray-300">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/15 text-emerald-400 text-sm">
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-500 text-lg">
                       ✓
                     </span>
                     <span>{item}</span>
@@ -176,17 +174,15 @@ export default async function PackagePage({ params }: PageProps) {
             </div>
 
             {/* EXCLUSIONS */}
-            <div className="bg-black rounded-3xl p-10 shadow-lg">
-              <h3 className="text-2xl font-semibold text-white mb-6">
-                Exclusions
-              </h3>
+            <div className="rounded-3xl p-10 shadow-lg border border-gray-200 bg-[#f5f5f6] text-gray-800">
+              <h3 className="text-2xl font-bold mb-6">Exclusions</h3>
 
-              <div className="h-px bg-white mb-6" />
+              <div className="h-px bg-gray-800 mb-6 font-semibold" />
 
               <ul className="space-y-4">
                 {pkg.excludes.map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-gray-300">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-red-500/15 text-red-400 text-sm">
+                  <li key={i} className="flex items-start gap-4 ">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-red-500/20 text-red-500 text-lg">
                       ✕
                     </span>
                     <span>{item}</span>
