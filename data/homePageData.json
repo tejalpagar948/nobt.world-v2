@@ -49,11 +49,11 @@
       },
       {
         "id": 3,
-        "title": "Indus River, Nimmu",
-        "subtitle": "Leh–Ladakh, India",
-        "image": "/assets/images/Leh & Ladakh-5.jpeg",
+        "title": "Gangbal Lake",
+        "subtitle": "Kashmir, India",
+        "image": "/assets/images/Kashmir-7.jpeg",
         "wrapperClass": "h-[320px] lg:h-[280px]",
-        "link": "/destination/ladakh"
+        "link": "/destination/kashmir"
       },
       {
         "id": 4,
