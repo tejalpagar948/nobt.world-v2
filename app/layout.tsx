@@ -4,6 +4,15 @@ import './globals.css';
 import Footer from '@/components/site-footer';
 import Header from '@/components/site-header';
 
+export const metadata = {
+  title: 'NoBT Holidays – Curated Travel Experiences',
+  description:
+    'Experience curated group departures, international and domestic trips, and personalized travel journeys across India and the world.',
+  icons: {
+    icon: '/favicon.png',
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
